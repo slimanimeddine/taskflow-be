@@ -10,7 +10,7 @@ class CreateWorkspaceRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:50'],
-            'image' => ['nullable', 'image', 'max:4096'],
+            'image' => ['nullable', 'image', 'max:5000000', 'mimetypes:image/jpeg,image/png,image/webp,image/jpg,image/svg'],
         ];
     }
 
