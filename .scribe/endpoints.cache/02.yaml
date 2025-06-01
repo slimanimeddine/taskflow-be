@@ -30,7 +30,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01972647-99d2-70f2-a19e-088c524f036e","name":"Price Ltd","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01972647-99cf-70ec-b022-93f151c15c78","invite_code":"ZgO7KvMWYP","created_at":"2025-05-31T12:18:36.000000Z","updated_at":"2025-05-31T12:18:36.000000Z"},{"id":"01972647-99d8-7338-8604-24928bfb57b4","name":"Raynor Ltd","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/007733?text=business+Workspace+adipisci","user_id":"01972647-99d7-7374-8f21-b454f655ef24","invite_code":"sRPGaP0UJZ","created_at":"2025-05-31T12:18:36.000000Z","updated_at":"2025-05-31T12:18:36.000000Z"}]}'
+        content: '{"data":[{"id":"01972b0c-0522-7231-ae30-07aefa82e135","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01972b0c-0521-71b1-8dbe-a61dc480fa04","invite_code":"ZgO7KvMWYP","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"},{"id":"01972b0c-0527-7277-96c0-652b5e5eb293","name":"Raynor Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/007733?text=business+Workspace+adipisci","user_id":"01972b0c-0526-725e-a29c-6817e3c94b32","invite_code":"sRPGaP0UJZ","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -76,7 +76,7 @@ endpoints:
     bodyParameters:
       name:
         name: name
-        description: 'The name of the workspace. Must not be greater than 50 characters.'
+        description: 'The name of the workspace. Must be at least 1 character. Must not be greater than 50 characters.'
         required: true
         example: 'My Workspace'
         type: string
@@ -101,7 +101,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01972647-99f3-738d-9461-dbbcdcb3c6e6","name":"Bailey Inc","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01972647-99f1-71c4-88fd-0355556eef94","invite_code":"ddZ1ySN2uu","created_at":"2025-05-31T12:18:36.000000Z","updated_at":"2025-05-31T12:18:36.000000Z"}}'
+        content: '{"data":{"id":"01972b0c-0543-71af-8bd6-f41542c1a94c","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01972b0c-0542-737a-8d23-9c0c62047e0a","invite_code":"ddZ1ySN2uu","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -113,6 +113,188 @@ endpoints:
           }
         headers: []
         description: Unauthenticated
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PATCH
+    uri: 'api/v1/workspaces/{workspaceId}'
+    metadata:
+      groupName: Workspaces
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Edit workspace'
+      description: 'Edit the specified workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'The name of the workspace. Must be at least 1 character. Must not be greater than 50 characters.'
+        required: false
+        example: 'My Workspace'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      image:
+        name: image
+        description: 'The image for the workspace. Must be an image. Must not be greater than 5000000 kilobytes.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+    cleanBodyParameters:
+      name: 'My Workspace'
+    fileParameters:
+      image: null
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"01972b0c-0576-732f-b055-2fc613076db7","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01972b0c-0575-7277-ba16-5e2fc434054b","invite_code":"ICeDI7xc8Z","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to edit this workspace.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/workspaces/{workspaceId}'
+    metadata:
+      groupName: Workspaces
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show workspace'
+      description: 'Show the specified workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"01972b0c-0588-7369-aa60-35b0be0d0e99","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01972b0c-0586-7033-9ebe-fcea05828c98","invite_code":"NncBs5Cvlv","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to visit this workspace.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
         custom: []
     responseFields: []
     auth:

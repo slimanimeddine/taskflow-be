@@ -4,12 +4,12 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateWorkspaceRequest extends FormRequest
+class EditWorkspaceRequest extends FormRequest
 {
     public function rules(): array
     {
         return [
-            'name' => ['required', 'string', 'min:1', 'max:50'],
+            'name' => ['sometimes', 'string', 'min:1', 'max:50'],
             'image' => ['nullable', 'image', 'max:5000000', 'mimetypes:image/jpeg,image/png,image/webp,image/jpg,image/svg'],
         ];
     }
