@@ -16,11 +16,12 @@ class Workspace extends Model
 
     protected $fillable = [
         'name',
-        'imagePath',
+        'image_path',
         'user_id',
+        'invite_code',
     ];
 
-    public function user(): BelongsTo
+    public function creator(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }

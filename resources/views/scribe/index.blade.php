@@ -503,7 +503,7 @@
 
         </div>
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
-            Last updated: May 29, 2025
+            Last updated: May 31, 2025
         </div>
 
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
@@ -4431,12 +4431,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01971c0c-f29c-726b-9676-da729f9697a1&quot;,
+        &quot;id&quot;: &quot;01972647-99b0-7075-a5eb-ee1175c28e0f&quot;,
         &quot;name&quot;: &quot;Morgan Hirthe&quot;,
         &quot;email&quot;: &quot;dare.emelie@example.com&quot;,
-        &quot;email_verified_at&quot;: &quot;2025-05-29T12:38:19.000000Z&quot;,
-        &quot;created_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;
+        &quot;email_verified_at&quot;: &quot;2025-05-31T12:18:35.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -4950,7 +4950,7 @@ fetch(url, {
                                     </div>
         </div>
 
-        <p>List all workspaces for the authenticated user.</p>
+        <p>List all workspaces the authenticated user belongs to.</p>
     </div>
     <div class="sl-flex">
         <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
@@ -5271,20 +5271,22 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01971c0c-f2ba-7384-9d7d-90913fe38a9c&quot;,
+            &quot;id&quot;: &quot;01972647-99d2-70f2-a19e-088c524f036e&quot;,
             &quot;name&quot;: &quot;Price Ltd&quot;,
             &quot;imagePath&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-            &quot;user_id&quot;: &quot;01971c0c-f2b7-73a5-9f0a-fab5362b4316&quot;,
-            &quot;created_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;
+            &quot;user_id&quot;: &quot;01972647-99cf-70ec-b022-93f151c15c78&quot;,
+            &quot;invite_code&quot;: &quot;ZgO7KvMWYP&quot;,
+            &quot;created_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;01971c0c-f2c3-7182-8e74-3352c9cb0b2b&quot;,
-            &quot;name&quot;: &quot;McLaughlin and Sons&quot;,
-            &quot;imagePath&quot;: &quot;https://via.placeholder.com/640x480.png/0088bb?text=business+Workspace+aut&quot;,
-            &quot;user_id&quot;: &quot;01971c0c-f2c1-7393-a0b7-7c91a1a257b5&quot;,
-            &quot;created_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;
+            &quot;id&quot;: &quot;01972647-99d8-7338-8604-24928bfb57b4&quot;,
+            &quot;name&quot;: &quot;Raynor Ltd&quot;,
+            &quot;imagePath&quot;: &quot;https://via.placeholder.com/640x480.png/007733?text=business+Workspace+adipisci&quot;,
+            &quot;user_id&quot;: &quot;01972647-99d7-7374-8f21-b454f655ef24&quot;,
+            &quot;invite_code&quot;: &quot;sRPGaP0UJZ&quot;,
+            &quot;created_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -5451,13 +5453,13 @@ fetch(url, {
                                     </div>
                                     </div>
                 <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>The image for the workspace. Must be an image. Must not be greater than 4096 kilobytes.</p>
+            <p>The image for the workspace. Must be an image. Must not be greater than 5000000 kilobytes.</p>
         </div>
                                             <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpp8tmbup2jpaheoHpkHA
+                        /tmp/phpfg8c067evvaa4JbKCEC
                     </div>
                 </div>
             </div>
@@ -5703,7 +5705,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/phpp8tmbup2jpaheoHpkHA" </code></pre>                                        </div>
+    --form "image=@/tmp/phpfg8c067evvaa4JbKCEC" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -5769,12 +5771,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01971c0c-f2da-716d-a833-d7377d435187&quot;,
+        &quot;id&quot;: &quot;01972647-99f3-738d-9461-dbbcdcb3c6e6&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
         &quot;imagePath&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
-        &quot;user_id&quot;: &quot;01971c0c-f2d9-73ab-a3a5-52f79789e8ea&quot;,
-        &quot;created_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-05-29T12:38:20.000000Z&quot;
+        &quot;user_id&quot;: &quot;01972647-99f1-71c4-88fd-0355556eef94&quot;,
+        &quot;invite_code&quot;: &quot;ddZ1ySN2uu&quot;,
+        &quot;created_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-05-31T12:18:36.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>

@@ -5,8 +5,10 @@ namespace App\Http\Controllers\V1;
 use App\Http\Controllers\ApiController;
 use App\Http\Requests\V1\CreateWorkspaceRequest;
 use App\Http\Resources\V1\WorkspaceResource;
+use App\Models\Member;
 use App\Models\Workspace;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 /**
  * @group Workspaces
@@ -16,7 +18,7 @@ class WorkspaceController extends ApiController
     /**
      * List authenticated user workspaces
      *
-     * List all workspaces for the authenticated user.
+     * List all workspaces the authenticated user belongs to.
      *
      * @authenticated
      *
@@ -32,7 +34,7 @@ class WorkspaceController extends ApiController
     {
         $user = $request->user();
 
-        $workspaces = Workspace::where('user_id', $user->id)->get();
+        $workspaces = $user->allWorkspaces()->get();
 
         return WorkspaceResource::collection($workspaces);
     }
@@ -64,8 +66,15 @@ class WorkspaceController extends ApiController
 
         $workspace = Workspace::create([
             'name' => $request->name,
-            'imagePath' => $imagePath,
+            'image_path' => $imagePath,
             'user_id' => $user->id,
+            'invite_code' => Str::random(10),
+        ]);
+
+        Member::create([
+            'role' => 'admin',
+            'user_id' => $user->id,
+            'workspace_id' => $workspace->id,
         ]);
 
         return new WorkspaceResource($workspace);

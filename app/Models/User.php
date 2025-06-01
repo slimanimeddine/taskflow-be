@@ -7,7 +7,7 @@ namespace App\Models;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -55,8 +55,26 @@ class User extends Authenticatable implements MustVerifyEmail
         ];
     }
 
-    public function workspaces(): HasMany
+    public function allWorkspaces(): BelongsToMany
     {
-        return $this->hasMany(Workspace::class);
+        return $this->belongsToMany(Workspace::class, 'members', 'user_id', 'workspace_id')
+            ->withPivot('role')
+            ->withTimestamps();
+    }
+
+    public function adminWorkspaces(): BelongsToMany
+    {
+        return $this->belongsToMany(Workspace::class, 'members', 'user_id', 'workspace_id')
+            ->withPivot('role')
+            ->wherePivot('role', 'admin')
+            ->withTimestamps();
+    }
+
+    public function memberWorkspaces(): BelongsToMany
+    {
+        return $this->belongsToMany(Workspace::class, 'members', 'user_id', 'workspace_id')
+            ->withPivot('role')
+            ->wherePivot('role', 'member')
+            ->withTimestamps();
     }
 }

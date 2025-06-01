@@ -13,7 +13,7 @@ endpoints:
       subgroup: ''
       subgroupDescription: ''
       title: 'List authenticated user workspaces'
-      description: 'List all workspaces for the authenticated user.'
+      description: 'List all workspaces the authenticated user belongs to.'
       authenticated: true
       custom: []
     headers:
@@ -30,7 +30,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01971c0c-f2ba-7384-9d7d-90913fe38a9c","name":"Price Ltd","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01971c0c-f2b7-73a5-9f0a-fab5362b4316","created_at":"2025-05-29T12:38:20.000000Z","updated_at":"2025-05-29T12:38:20.000000Z"},{"id":"01971c0c-f2c3-7182-8e74-3352c9cb0b2b","name":"McLaughlin and Sons","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/0088bb?text=business+Workspace+aut","user_id":"01971c0c-f2c1-7393-a0b7-7c91a1a257b5","created_at":"2025-05-29T12:38:20.000000Z","updated_at":"2025-05-29T12:38:20.000000Z"}]}'
+        content: '{"data":[{"id":"01972647-99d2-70f2-a19e-088c524f036e","name":"Price Ltd","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01972647-99cf-70ec-b022-93f151c15c78","invite_code":"ZgO7KvMWYP","created_at":"2025-05-31T12:18:36.000000Z","updated_at":"2025-05-31T12:18:36.000000Z"},{"id":"01972647-99d8-7338-8604-24928bfb57b4","name":"Raynor Ltd","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/007733?text=business+Workspace+adipisci","user_id":"01972647-99d7-7374-8f21-b454f655ef24","invite_code":"sRPGaP0UJZ","created_at":"2025-05-31T12:18:36.000000Z","updated_at":"2025-05-31T12:18:36.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -86,7 +86,7 @@ endpoints:
         custom: []
       image:
         name: image
-        description: 'The image for the workspace. Must be an image. Must not be greater than 4096 kilobytes.'
+        description: 'The image for the workspace. Must be an image. Must not be greater than 5000000 kilobytes.'
         required: false
         example: null
         type: file
@@ -101,7 +101,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01971c0c-f2da-716d-a833-d7377d435187","name":"Bailey Inc","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01971c0c-f2d9-73ab-a3a5-52f79789e8ea","created_at":"2025-05-29T12:38:20.000000Z","updated_at":"2025-05-29T12:38:20.000000Z"}}'
+        content: '{"data":{"id":"01972647-99f3-738d-9461-dbbcdcb3c6e6","name":"Bailey Inc","imagePath":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01972647-99f1-71c4-88fd-0355556eef94","invite_code":"ddZ1ySN2uu","created_at":"2025-05-31T12:18:36.000000Z","updated_at":"2025-05-31T12:18:36.000000Z"}}'
         headers: []
         description: Success
         custom: []

@@ -10,6 +10,7 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
+    "fumeapp/modeltyper": "^3.1",
     "knuckleswtf/scribe": "^5.2.1",
     "laravel/framework": "^12.16",
     "laravel/sanctum": "^4.1.1",
@@ -19,7 +20,6 @@
   },
   "require-dev": {
     "fakerphp/faker": "^1.24.1",
-    "fumeapp/modeltyper": "^3.1.1",
     "laravel/pail": "^1.2.2",
     "laravel/pint": "^1.22.1",
     "laravel/sail": "^1.43.1",
@@ -71,7 +71,7 @@
       "@php artisan scribe:generate --verbose"
     ],
     "models:gen": [
-      "@php artisan model:typer > resources/js/models.ts"
+      "@php artisan model:typer --no-hidden resources/models.ts && cp resources/models.ts /home/slimanimeddine/devstuff/taskflow/taskflow-fe/src/types"
     ]
   },
   "extra": {
