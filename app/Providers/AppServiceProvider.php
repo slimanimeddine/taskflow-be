@@ -16,17 +16,20 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Register any application services.
      */
-    public function register(): void {}
+    public function register(): void
+    {
+    }
 
     /**
      * Bootstrap any application services.
      */
     public function boot(): void
     {
-        RateLimiter::for('sign-in', fn (Request $request) => [
+        // rate limiting
+        RateLimiter::for('sign-in', fn(Request $request) => [
             Limit::perMinute(5)
-                ->by(Str::lower($request->input('email')).'|'.$request->ip())
-                ->response(fn (Request $request, array $headers) => $this->rateLimitExceeded(
+                ->by(Str::lower($request->input('email')) . '|' . $request->ip())
+                ->response(fn(Request $request, array $headers) => $this->rateLimitExceeded(
                     'Too many login attempts.',
                 )),
         ]);

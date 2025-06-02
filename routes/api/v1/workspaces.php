@@ -3,7 +3,14 @@
 use App\Http\Controllers\V1\WorkspaceController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('users/me/workspaces', [WorkspaceController::class, 'index'])->middleware('auth:sanctum');
-Route::post('workspaces', [WorkspaceController::class, 'create'])->middleware('auth:sanctum');
-Route::post('workspaces/{workspaceId}', [WorkspaceController::class, 'edit'])->middleware('auth:sanctum')->whereUuid('workspaceId');
-Route::get('workspaces/{workspaceId}', [WorkspaceController::class, 'show'])->middleware('auth:sanctum')->whereUuid('workspaceId');
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('users/me/workspaces', [WorkspaceController::class, 'index']);
+
+    Route::prefix('workspaces')->group(function () {
+        Route::post('/', [WorkspaceController::class, 'create']);
+        Route::post('/{workspaceId}', [WorkspaceController::class, 'edit'])->whereUuid('workspaceId');
+        Route::get('/{workspaceId}', [WorkspaceController::class, 'show'])->whereUuid('workspaceId');
+        Route::delete('/{workspaceId}', [WorkspaceController::class, 'delete'])->whereUuid('workspaceId');
+        Route::patch('/{workspaceId}/reset-invite-code', [WorkspaceController::class, 'resetInviteCode'])->whereUuid('workspaceId');
+    });
+});

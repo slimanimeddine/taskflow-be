@@ -1,0 +1,94 @@
+name: Members
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/workspaces/{workspaceId}/members'
+    metadata:
+      groupName: Members
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create member'
+      description: 'Create a new member in a workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      invite_code:
+        name: invite_code
+        description: 'The invite code for the workspace. The <code>invite_code</code> of an existing record in the workspaces table.'
+        required: true
+        example: QWErty1245
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+    cleanBodyParameters:
+      invite_code: QWErty1245
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"01973173-e619-704d-ac7d-c37bba6299f3","role":"admin","user_id":"01973173-e613-72d7-9ed1-04f2ebb7cdd5","workspace_id":"01973173-e617-7031-8fbc-c80f98efb215","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 400
+        content: |-
+          {
+                "message": "You are already a member of this workspace.",
+                "status": 400
+          }
+        headers: []
+        description: Error
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []

@@ -30,7 +30,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01972b0c-0503-707a-a398-20290ad30f20","name":"Morgan Hirthe","email":"dare.emelie@example.com","email_verified_at":"2025-06-01T10:31:37.000000Z","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}}'
+        content: '{"data":{"id":"01973173-e55c-7089-85e0-3be3070bf37d","name":"Morgan Hirthe","email":"dare.emelie@example.com","email_verified_at":"2025-06-02T16:22:47.000000Z","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
         headers: []
         description: Success
         custom: []

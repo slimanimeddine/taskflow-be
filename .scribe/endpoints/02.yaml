@@ -28,7 +28,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01972b0c-0522-7231-ae30-07aefa82e135","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01972b0c-0521-71b1-8dbe-a61dc480fa04","invite_code":"ZgO7KvMWYP","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"},{"id":"01972b0c-0527-7277-96c0-652b5e5eb293","name":"Raynor Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/007733?text=business+Workspace+adipisci","user_id":"01972b0c-0526-725e-a29c-6817e3c94b32","invite_code":"sRPGaP0UJZ","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}]}'
+        content: '{"data":[{"id":"01973173-e57c-7060-b2b4-8bf50634e9a6","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01973173-e57b-723b-9427-18f8b20a2287","invite_code":"ZgO7KvMWYP","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"},{"id":"01973173-e582-70a9-ad08-1f2ef9e97d33","name":"Raynor Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/007733?text=business+Workspace+adipisci","user_id":"01973173-e580-7315-bd3f-46d6e74b433b","invite_code":"sRPGaP0UJZ","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -99,7 +99,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01972b0c-0543-71af-8bd6-f41542c1a94c","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01972b0c-0542-737a-8d23-9c0c62047e0a","invite_code":"ddZ1ySN2uu","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}}'
+        content: '{"data":{"id":"01973173-e59c-72f4-abc5-d1064733b026","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01973173-e59b-7150-9745-602c0b61b6c9","invite_code":"ddZ1ySN2uu","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -123,7 +123,7 @@ endpoints:
     custom: []
   -
     httpMethods:
-      - PATCH
+      - POST
     uri: 'api/v1/workspaces/{workspaceId}'
     metadata:
       groupName: Workspaces
@@ -181,7 +181,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01972b0c-0576-732f-b055-2fc613076db7","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01972b0c-0575-7277-ba16-5e2fc434054b","invite_code":"ICeDI7xc8Z","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}}'
+        content: '{"data":{"id":"01973173-e5d2-729d-946e-5d295468ba3b","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01973173-e5d0-7258-a4f8-5bade700248b","invite_code":"ICeDI7xc8Z","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -261,7 +261,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01972b0c-0588-7369-aa60-35b0be0d0e99","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01972b0c-0586-7033-9ebe-fcea05828c98","invite_code":"NncBs5Cvlv","created_at":"2025-06-01T10:31:37.000000Z","updated_at":"2025-06-01T10:31:37.000000Z"}}'
+        content: '{"data":{"id":"01973173-e5e3-70b2-9bbd-ac9f3323fda0","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01973173-e5e1-7141-9f44-ec22cf3d5ba2","invite_code":"NncBs5Cvlv","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -279,6 +279,170 @@ endpoints:
         content: |-
           {
                 "message": "You are not authorized to visit this workspace.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/workspaces/{workspaceId}'
+    metadata:
+      groupName: Workspaces
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete workspace'
+      description: 'Delete the specified workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+                "message": "Workspace deleted successfully",
+                "status": 200
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to edit this workspace.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PATCH
+    uri: 'api/v1/workspaces/{workspaceId}/reset-invite-code'
+    metadata:
+      groupName: Workspaces
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Reset workspace invite code'
+      description: 'Reset the invite code for the specified workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"01973173-e5fe-7325-8fd1-2826f18e6d46","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01973173-e5fd-73d5-8ccc-317ec38aabaf","invite_code":"8JzXP5lHud","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to reset the invite code for this workspace.",
                 "status": 403
           }
         headers: []

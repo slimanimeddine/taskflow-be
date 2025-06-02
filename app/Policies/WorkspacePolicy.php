@@ -5,13 +5,9 @@ namespace App\Policies;
 use App\Models\Member;
 use App\Models\User;
 use App\Models\Workspace;
-use Illuminate\Auth\Access\Response;
 
 class WorkspacePolicy
 {
-    /**
-     * Determine whether the user can update the model.
-     */
     public function edit(User $user, Workspace $workspace): bool
     {
         $isAdmin = Member::where('user_id', $user->id)
@@ -22,9 +18,6 @@ class WorkspacePolicy
         return $isAdmin;
     }
 
-    /**
-     * Determine whether the user can see the model.
-     */
     public function show(User $user, Workspace $workspace): bool
     {
         $isMember = Member::where('user_id', $user->id)
@@ -32,5 +25,15 @@ class WorkspacePolicy
             ->exists();
 
         return $isMember;
+    }
+
+    public function delete(User $user, Workspace $workspace): bool
+    {
+        return $this->edit($user, $workspace);
+    }
+
+    public function resetInviteCode(User $user, Workspace $workspace): bool
+    {
+        return $this->edit($user, $workspace);
     }
 }

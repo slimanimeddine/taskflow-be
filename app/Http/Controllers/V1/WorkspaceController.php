@@ -178,4 +178,92 @@ class WorkspaceController extends ApiController
 
         return new WorkspaceResource($workspace);
     }
+
+    /**
+     * Delete workspace
+     *
+     * Delete the specified workspace.
+     *
+     * @authenticated
+     *
+     * @urlParam workspaceId string required the id of the workspace Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @response 200 scenario=Success {
+     *       "message": "Workspace deleted successfully",
+     *       "status": 200
+     * }
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to edit this workspace.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Workspace not found",
+     *       "status": 404
+     * }
+     */
+    public function delete(Request $request, string $workspaceId)
+    {
+        $user = $request->user();
+        $workspace = Workspace::find($workspaceId);
+
+        if (!$workspace) {
+            return $this->notFound('Workspace not found');
+        }
+
+        if ($user->cannot('delete', $workspace)) {
+            return $this->unauthorized('You are not authorized to delete this workspace.');
+        }
+
+        $workspace->delete();
+
+        return $this->successNoData('Workspace deleted successfully');
+    }
+
+    /**
+     * Reset workspace invite code
+     *
+     * Reset the invite code for the specified workspace.
+     *
+     * @authenticated
+     *
+     * @urlParam workspaceId string required the id of the workspace Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @apiResource scenario=Success App\Http\Resources\V1\WorkspaceResource
+     *
+     * @apiResourceModel App\Models\Workspace
+     * 
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to reset the invite code for this workspace.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Workspace not found",
+     *       "status": 404
+     * }
+     */
+    public function resetInviteCode(Request $request, string $workspaceId)
+    {
+        $user = $request->user();
+        $workspace = Workspace::find($workspaceId);
+
+        if (!$workspace) {
+            return $this->notFound('Workspace not found');
+        }
+
+        if ($user->cannot('resetInviteCode', $workspace)) {
+            return $this->unauthorized('You are not authorized to reset the invite code for this workspace.');
+        }
+
+        $workspace->update([
+            'invite_code' => Str::random(10),
+        ]);
+
+        return new WorkspaceResource($workspace);
+    }
 }
