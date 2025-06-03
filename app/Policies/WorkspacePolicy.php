@@ -36,4 +36,9 @@ class WorkspacePolicy
     {
         return $this->edit($user, $workspace);
     }
+
+    public function listWorkspaceMembers(User $user, Workspace $workspace): bool
+    {
+        return $this->show($user, $workspace);
+    }
 }

@@ -6,6 +6,86 @@ endpoints:
   -
     httpMethods:
       - GET
+    uri: 'api/v1/workspaces/{workspaceId}/users'
+    metadata:
+      groupName: Users
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List Workspace Members'
+      description: 'Retrieve a list of all users that are members of a specific workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":[{"id":"019735f9-c576-704d-9985-15e7c3d932de","name":"Morgan Hirthe","email":"dare.emelie@example.com","email_verified_at":"2025-06-03T13:27:30.000000Z","created_at":"2025-06-03T13:27:30.000000Z","updated_at":"2025-06-03T13:27:30.000000Z"},{"id":"019735f9-c5a6-73f4-865f-29756494a16a","name":"Prof. Mina Bauch","email":"okeefe.isidro@example.org","email_verified_at":"2025-06-03T13:27:30.000000Z","created_at":"2025-06-03T13:27:30.000000Z","updated_at":"2025-06-03T13:27:30.000000Z"}]}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to view this workspace members.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
     uri: api/v1/users/me
     metadata:
       groupName: Users
@@ -30,7 +110,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01973173-e55c-7089-85e0-3be3070bf37d","name":"Morgan Hirthe","email":"dare.emelie@example.com","email_verified_at":"2025-06-02T16:22:47.000000Z","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
+        content: '{"data":{"id":"019735f9-c5b6-72db-b694-75a6815c94b3","name":"Morgan Hirthe","email":"imclaughlin@example.org","email_verified_at":"2025-06-03T13:27:30.000000Z","created_at":"2025-06-03T13:27:30.000000Z","updated_at":"2025-06-03T13:27:30.000000Z"}}'
         headers: []
         description: Success
         custom: []

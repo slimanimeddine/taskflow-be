@@ -52,7 +52,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01973173-e619-704d-ac7d-c37bba6299f3","role":"admin","user_id":"01973173-e613-72d7-9ed1-04f2ebb7cdd5","workspace_id":"01973173-e617-7031-8fbc-c80f98efb215","created_at":"2025-06-02T16:22:48.000000Z","updated_at":"2025-06-02T16:22:48.000000Z"}}'
+        content: '{"data":{"id":"019735f9-c68c-70ce-986a-c8d03783c1c4","role":"admin","user_id":"019735f9-c686-735f-bda2-7ccee41eef70","workspace_id":"019735f9-c68a-73ed-ada4-c59099a3de3c","created_at":"2025-06-03T13:27:31.000000Z","updated_at":"2025-06-03T13:27:31.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -84,6 +84,131 @@ endpoints:
           }
         headers: []
         description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/workspaces/{workspaceId}/users/{userId}/members'
+    metadata:
+      groupName: Members
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete member'
+      description: 'Delete a member from a workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+      userId:
+        name: userId
+        description: 'the id of the member'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+      userId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+                "message": "Member deleted successfully.",
+                "status": 200
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 400
+        content: |-
+          {
+                "message": "You cannot delete the last member of a workspace.",
+                "status": 400
+          }
+        headers: []
+        description: 'Cannot Delete Last Member'
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to delete this member.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Workspace Not Found'
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "User not found",
+                "status": 404
+          }
+        headers: []
+        description: 'User Not Found'
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "This user is not a member of this workspace.",
+                "status": 404
+          }
+        headers: []
+        description: 'Member Not Found'
         custom: []
     responseFields: []
     auth:
