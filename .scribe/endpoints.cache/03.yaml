@@ -41,7 +41,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197372c-6085-7310-a2c7-1085e732d022","role":"admin","user_id":"0197372c-607e-7274-9b11-30fa6f9ff03f","workspace_id":"0197372c-6083-7069-bac9-ff022437e67e","created_at":"2025-06-03T19:02:24.000000Z","updated_at":"2025-06-03T19:02:24.000000Z"}}'
+        content: '{"data":{"id":"01973aa8-1ce1-7011-8617-35590065b781","role":"admin","user_id":"01973aa8-1cdb-71ca-b7f1-8758c4dfd1b0","workspace_id":"01973aa8-1ce0-720e-9f7e-d965e55ef153","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -132,7 +132,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197372c-6099-7175-8e85-e1d65c11d81f","role":"admin","user_id":"0197372c-6093-70a9-b68a-292e4bbfa3b6","workspace_id":"0197372c-6096-7259-8ce9-e74068a22584","created_at":"2025-06-03T19:02:24.000000Z","updated_at":"2025-06-03T19:02:24.000000Z"}}'
+        content: '{"data":{"id":"01973aa8-1cf6-72af-9661-67f2ae01fd89","role":"admin","user_id":"01973aa8-1cef-7234-99a0-b6425ceac65a","workspace_id":"01973aa8-1cf4-7133-becb-ac90a82decc3","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -255,6 +255,117 @@ endpoints:
         content: |-
           {
                 "message": "You are not authorized to delete this member.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Workspace Not Found'
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "User not found",
+                "status": 404
+          }
+        headers: []
+        description: 'User Not Found'
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "This user is not a member of this workspace.",
+                "status": 404
+          }
+        headers: []
+        description: 'Member Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PATCH
+    uri: 'api/v1/workspaces/{workspaceId}/users/{userId}/members'
+    metadata:
+      groupName: Members
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Promote member'
+      description: 'Promote a member to admin in a workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+      userId:
+        name: userId
+        description: 'the id of the member'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+      userId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"01973aa8-1d14-72b9-8303-32590a4eac6f","role":"admin","user_id":"01973aa8-1d0f-713c-8982-faef96b68400","workspace_id":"01973aa8-1d13-711c-b6dc-a52d81827da9","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to promote this member.",
                 "status": 403
           }
         headers: []

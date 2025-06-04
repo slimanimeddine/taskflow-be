@@ -183,4 +183,65 @@ class MemberController extends ApiController
 
         return new MemberResource($member);
     }
+
+    /**
+     * Promote member
+     *
+     * Promote a member to admin in a workspace.
+     *
+     * @authenticated
+     *
+     * @urlParam workspaceId string required the id of the workspace Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     * @urlParam userId string required the id of the member Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @apiResource scenario=Success App\Http\Resources\V1\MemberResource
+     *
+     * @apiResourceModel App\Models\Member
+     *
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to promote this member.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Workspace Not Found" {
+     *       "message": "Workspace not found",
+     *       "status": 404
+     * }
+     * @response 404 scenario="User Not Found" {
+     *       "message": "User not found",
+     *       "status": 404
+     * }
+     * @response 404 scenario="Member Not Found" {
+     *       "message": "This user is not a member of this workspace.",
+     *       "status": 404
+     * }
+     */
+    public function promote(Request $request, string $workspaceId, string $userId)
+    {
+        $authUser = $request->user();
+        $workspace = Workspace::find($workspaceId);
+        $user = User::find($userId);
+        $member = Member::where('user_id', $user->id)
+            ->where('workspace_id', $workspace->id)
+            ->first();
+
+        if (! $workspace) {
+            return $this->notFound('Workspace not found');
+        }
+        if (! $user) {
+            return $this->notFound('User not found');
+        }
+        if (! $member) {
+            return $this->notFound('This user is not a member of this workspace.');
+        }
+        if ($authUser->cannot('promote', $member)) {
+            return $this->unauthorized('You are not authorized to promote this member.');
+        }
+
+        $member->update(['role' => 'admin']);
+
+        return new MemberResource($member);
+    }
 }

@@ -43,7 +43,7 @@ class ProjectController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -62,7 +62,7 @@ class ProjectController extends ApiController
      * Create a new project in a specific workspace for the authenticated user.
      *
      * @authenticated
-     * 
+     *
      * @urlParam workspaceId string required the id of the workspace Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
      *
      * @apiResource scenario=Success App\Http\Resources\V1\ProjectResource
@@ -86,7 +86,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -109,4 +109,45 @@ class ProjectController extends ApiController
         return new ProjectResource($project);
     }
 
+    /**
+     * Show project
+     *
+     * Show the specified project.
+     *
+     * @authenticated
+     *
+     * @urlParam projectId string required the id of the project Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @apiResource scenario=Success App\Http\Resources\V1\ProjectResource
+     *
+     * @apiResourceModel App\Models\Project
+     *
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to view this project.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Project not found",
+     *       "status": 404
+     * }
+     */
+    public function show(Request $request, string $projectId)
+    {
+        $user = $request->user();
+
+        $project = Project::find($projectId);
+
+        if (! $project) {
+            return $this->notFound('Project not found');
+        }
+
+        if ($user->cannot('show', $project)) {
+            return $this->unauthorized('You are not authorized to view this project.');
+        }
+
+        return new ProjectResource($project);
+    }
 }

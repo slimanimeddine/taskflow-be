@@ -13,4 +13,8 @@ Route::middleware(['auth:sanctum'])->group(function () {
     Route::delete('workspaces/{workspaceId}/users/{userId}/members', [MemberController::class, 'delete'])
         ->whereUuid('workspaceId')
         ->whereUuid('userId');
+
+    Route::patch('workspaces/{workspaceId}/users/{userId}/members', [MemberController::class, 'promote'])
+        ->whereUuid('workspaceId')
+        ->whereUuid('userId');
 });

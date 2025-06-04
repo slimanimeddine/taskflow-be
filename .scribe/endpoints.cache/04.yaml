@@ -6,6 +6,86 @@ endpoints:
   -
     httpMethods:
       - GET
+    uri: 'api/v1/projects/{projectId}'
+    metadata:
+      groupName: Projects
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show project'
+      description: 'Show the specified project.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      projectId:
+        name: projectId
+        description: 'the id of the project'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      projectId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"01973aa8-1d28-706a-b5ee-aa7920d3c5a0","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"01973aa8-1d27-7093-9cb2-ee0d62929987","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to view this project.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Project not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
     uri: 'api/v1/workspaces/{workspaceId}/projects'
     metadata:
       groupName: Projects
@@ -41,7 +121,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"0197372c-60b8-7382-b3e2-a06f364c1ae1","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"0197372c-60b6-71d9-b32f-abe38dc646f1","created_at":"2025-06-03T19:02:24.000000Z","updated_at":"2025-06-03T19:02:24.000000Z"},{"id":"0197372c-60c2-7121-b97c-823d507ac8ad","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0033cc?text=business+Workspace+id","name":"Kshlerin, Gaylord and Hettinger","workspace_id":"0197372c-60bf-7291-80d5-69e46c825f41","created_at":"2025-06-03T19:02:24.000000Z","updated_at":"2025-06-03T19:02:24.000000Z"}]}'
+        content: '{"data":[{"id":"01973aa8-1d39-7263-aa63-7432181b6c29","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"01973aa8-1d38-7265-b0a2-a62c78908f0c","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"},{"id":"01973aa8-1d41-7329-809e-321da22ca438","image_path":"https:\/\/via.placeholder.com\/640x480.png\/001100?text=business+Workspace+fugit","name":"Pagac-Emmerich","workspace_id":"01973aa8-1d40-715a-9e64-cdac523152b4","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -143,7 +223,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197372c-60da-7266-be7d-775ad54c3dc5","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"0197372c-60d8-7098-9b18-a044b84dda25","created_at":"2025-06-03T19:02:24.000000Z","updated_at":"2025-06-03T19:02:24.000000Z"}}'
+        content: '{"data":{"id":"01973aa8-1d54-735d-a958-42c85c124ca3","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01973aa8-1d53-7230-aac3-a33467effcff","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}}'
         headers: []
         description: Success
         custom: []

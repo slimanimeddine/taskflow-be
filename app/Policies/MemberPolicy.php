@@ -15,4 +15,16 @@ class MemberPolicy
 
         return ($user->id === $member->user_id) || ($user->id !== $member->user_id && $actionTaker->role === 'admin' && $member->role === 'member');
     }
+
+    public function promote(User $user, Member $member): bool
+    {
+        $isSelf = $user->id === $member->user_id;
+        $isMember = $member->role === 'member';
+        $actionTaker = Member::where('user_id', $user->id)
+            ->where('workspace_id', $member->workspace->id)
+            ->where('role', 'admin')
+            ->exists();
+
+        return ! $isSelf && $isMember && $actionTaker;
+    }
 }
