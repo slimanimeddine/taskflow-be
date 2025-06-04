@@ -19,7 +19,7 @@ class CreateMemberRequest extends FormRequest
             'invite_code' => [
                 'description' => 'The invite code for the workspace',
                 'example' => 'QWErty1245',
-            ]
+            ],
         ];
     }
 }

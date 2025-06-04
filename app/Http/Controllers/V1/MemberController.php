@@ -27,7 +27,7 @@ class MemberController extends ApiController
      * @apiResource scenario=Success App\Http\Resources\V1\MemberResource
      *
      * @apiResourceModel App\Models\Member
-     * 
+     *
      * @response 400 scenario=Error {
      *       "message": "You are already a member of this workspace.",
      *       "status": 400
@@ -45,7 +45,7 @@ class MemberController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -73,7 +73,6 @@ class MemberController extends ApiController
      * @authenticated
      *
      * @urlParam workspaceId string required the id of the workspace Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
-     * 
      * @urlParam userId string required the id of the member Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
      *
      * @response 200 scenario=Success {
@@ -114,7 +113,7 @@ class MemberController extends ApiController
             ->where('workspace_id', $workspace->id)
             ->first();
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -124,11 +123,11 @@ class MemberController extends ApiController
             return $this->error('You cannot delete the last member of a workspace.');
         }
 
-        if (!$user) {
+        if (! $user) {
             return $this->notFound('User not found');
         }
 
-        if (!$member) {
+        if (! $member) {
             return $this->notFound('This user is not a member of this workspace.');
         }
 
@@ -139,5 +138,49 @@ class MemberController extends ApiController
         $member->delete();
 
         return $this->successNoData('Member deleted successfully.');
+    }
+
+    /**
+     * Show authenticated user member
+     *
+     * Retrieve the member details of the authenticated user in a specific workspace.
+     *
+     * @authenticated
+     *
+     * @urlParam workspaceId string required the id of the workspace Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @apiResource scenario=Success App\Http\Resources\V1\MemberResource
+     *
+     * @apiResourceModel App\Models\Member
+     *
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 404 scenario="Workspace Not Found" {
+     *       "message": "Workspace not found",
+     *       "status": 404
+     * }
+     * @response 404 scenario="Member Not Found" {
+     *       "message": "This user is not a member of this workspace.",
+     *       "status": 404
+     * }
+     */
+    public function showAuthUserMember(Request $request, string $workspaceId)
+    {
+        $authUser = $request->user();
+        $workspace = Workspace::find($workspaceId);
+        $member = Member::where('user_id', $authUser->id)
+            ->where('workspace_id', $workspace->id)
+            ->first();
+
+        if (! $workspace) {
+            return $this->notFound('Workspace not found');
+        }
+
+        if (! $member) {
+            return $this->notFound('This user is not a member of this workspace.');
+        }
+
+        return new MemberResource($member);
     }
 }

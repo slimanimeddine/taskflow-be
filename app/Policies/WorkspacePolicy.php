@@ -41,4 +41,14 @@ class WorkspacePolicy
     {
         return $this->show($user, $workspace);
     }
+
+    public function listWorkspaceProjects(User $user, Workspace $workspace): bool
+    {
+        return $this->show($user, $workspace);
+    }
+
+    public function createProject(User $user, Workspace $workspace): bool
+    {
+        return $this->show($user, $workspace);
+    }
 }

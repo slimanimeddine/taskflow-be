@@ -3,6 +3,86 @@ description: ''
 endpoints:
   -
     httpMethods:
+      - GET
+    uri: 'api/v1/workspaces/{workspaceId}/users/me/members'
+    metadata:
+      groupName: Members
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show authenticated user member'
+      description: 'Retrieve the member details of the authenticated user in a specific workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"0197372c-6085-7310-a2c7-1085e732d022","role":"admin","user_id":"0197372c-607e-7274-9b11-30fa6f9ff03f","workspace_id":"0197372c-6083-7069-bac9-ff022437e67e","created_at":"2025-06-03T19:02:24.000000Z","updated_at":"2025-06-03T19:02:24.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Workspace Not Found'
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "This user is not a member of this workspace.",
+                "status": 404
+          }
+        headers: []
+        description: 'Member Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
       - POST
     uri: 'api/v1/workspaces/{workspaceId}/members'
     metadata:
@@ -50,7 +130,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"019735f9-c68c-70ce-986a-c8d03783c1c4","role":"admin","user_id":"019735f9-c686-735f-bda2-7ccee41eef70","workspace_id":"019735f9-c68a-73ed-ada4-c59099a3de3c","created_at":"2025-06-03T13:27:31.000000Z","updated_at":"2025-06-03T13:27:31.000000Z"}}'
+        content: '{"data":{"id":"0197372c-6099-7175-8e85-e1d65c11d81f","role":"admin","user_id":"0197372c-6093-70a9-b68a-292e4bbfa3b6","workspace_id":"0197372c-6096-7259-8ce9-e74068a22584","created_at":"2025-06-03T19:02:24.000000Z","updated_at":"2025-06-03T19:02:24.000000Z"}}'
         headers: []
         description: Success
         custom: []

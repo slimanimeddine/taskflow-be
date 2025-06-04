@@ -93,7 +93,7 @@ class UserController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
