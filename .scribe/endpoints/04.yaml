@@ -39,7 +39,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01973aa8-1d28-706a-b5ee-aa7920d3c5a0","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"01973aa8-1d27-7093-9cb2-ee0d62929987","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}}'
+        content: '{"data":{"id":"019759bf-168d-732e-9593-c3cf08dac427","image_path":"https:\/\/via.placeholder.com\/640x480.png\/003355?text=business+Workspace+cumque","name":"Miller, Casper and Goyette","workspace_id":"019759bf-168b-7058-8f65-8841f0723ef8","created_at":"2025-06-10T12:09:44.000000Z","updated_at":"2025-06-10T12:09:44.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -57,6 +57,203 @@ endpoints:
         content: |-
           {
                 "message": "You are not authorized to view this project.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Project not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/projects/{projectId}'
+    metadata:
+      groupName: Projects
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Edit project'
+      description: 'Edit the specified project.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      projectId:
+        name: projectId
+        description: ''
+        required: true
+        example: 01975168-d8d7-71ed-9872-a1d5fc41c1b8
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the project'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      projectId: 01975168-d8d7-71ed-9872-a1d5fc41c1b8
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'The name of the project. Must be at least 1 character. Must not be greater than 50 characters.'
+        required: false
+        example: 'My Workspace'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        custom: []
+      image:
+        name: image
+        description: 'The image for the project. Must be an image. Must not be greater than 5000000 kilobytes.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        custom: []
+    cleanBodyParameters:
+      name: 'My Workspace'
+    fileParameters:
+      image: null
+    responses:
+      -
+        status: 200
+        content: '{"data":{"id":"019759bf-16a3-7209-b1c4-24e26e2593d6","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"019759bf-16a2-735f-96b6-b2c16a88e0f4","created_at":"2025-06-10T12:09:44.000000Z","updated_at":"2025-06-10T12:09:44.000000Z"}}'
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to edit this project.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Project not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/projects/{projectId}'
+    metadata:
+      groupName: Projects
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete project'
+      description: 'Delete the specified project.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      projectId:
+        name: projectId
+        description: 'the id of the project'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      projectId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+                "message": "Project deleted successfully",
+                "status": 200
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to delete this project.",
                 "status": 403
           }
         headers: []
@@ -103,14 +300,14 @@ endpoints:
         name: workspaceId
         description: ''
         required: true
-        example: 01973718-e4e1-704f-a09a-16c59d3dc824
+        example: 01975168-9139-7391-806e-ba73b3969246
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      workspaceId: 01973718-e4e1-704f-a09a-16c59d3dc824
+      workspaceId: 01975168-9139-7391-806e-ba73b3969246
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -119,7 +316,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01973aa8-1d39-7263-aa63-7432181b6c29","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"01973aa8-1d38-7265-b0a2-a62c78908f0c","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"},{"id":"01973aa8-1d41-7329-809e-321da22ca438","image_path":"https:\/\/via.placeholder.com\/640x480.png\/001100?text=business+Workspace+fugit","name":"Pagac-Emmerich","workspace_id":"01973aa8-1d40-715a-9e64-cdac523152b4","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}]}'
+        content: '{"data":[{"id":"019759bf-16ba-7097-b2f7-7fc18ef02202","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"019759bf-16b9-71a0-a727-1b095c543c13","created_at":"2025-06-10T12:09:44.000000Z","updated_at":"2025-06-10T12:09:44.000000Z"},{"id":"019759bf-16c2-727d-a6ec-0236afdd7f6c","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0033cc?text=business+Workspace+id","name":"Kshlerin, Gaylord and Hettinger","workspace_id":"019759bf-16c0-72d0-876e-9b8719a3ef83","created_at":"2025-06-10T12:09:44.000000Z","updated_at":"2025-06-10T12:09:44.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -221,7 +418,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01973aa8-1d54-735d-a958-42c85c124ca3","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01973aa8-1d53-7230-aac3-a33467effcff","created_at":"2025-06-04T11:16:25.000000Z","updated_at":"2025-06-04T11:16:25.000000Z"}}'
+        content: '{"data":{"id":"019759bf-16d7-7157-bd1e-ca23f1abb454","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"019759bf-16d7-7157-bd1e-ca23f0c4db9a","created_at":"2025-06-10T12:09:44.000000Z","updated_at":"2025-06-10T12:09:44.000000Z"}}'
         headers: []
         description: Success
         custom: []

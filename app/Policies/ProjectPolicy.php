@@ -16,4 +16,14 @@ class ProjectPolicy
 
         return $isMember;
     }
+
+    public function edit(User $user, Project $project): bool
+    {
+        return $this->show($user, $project);
+    }
+
+    public function delete(User $user, Project $project): bool
+    {
+        return $user->id === $project->user_id;
+    }
 }

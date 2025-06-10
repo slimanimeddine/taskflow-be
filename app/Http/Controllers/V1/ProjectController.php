@@ -4,10 +4,12 @@ namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\ApiController;
 use App\Http\Requests\V1\CreateProjectRequest;
+use App\Http\Requests\V1\EditProjectRequest;
 use App\Http\Resources\V1\ProjectResource;
 use App\Models\Project;
 use App\Models\Workspace;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * @group Projects
@@ -43,7 +45,7 @@ class ProjectController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -86,7 +88,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -140,7 +142,7 @@ class ProjectController extends ApiController
 
         $project = Project::find($projectId);
 
-        if (! $project) {
+        if (!$project) {
             return $this->notFound('Project not found');
         }
 
@@ -149,5 +151,103 @@ class ProjectController extends ApiController
         }
 
         return new ProjectResource($project);
+    }
+
+    /**
+     * Edit project
+     *
+     * Edit the specified project.
+     *
+     * @authenticated
+     *
+     * @urlParam workspaceId string required the id of the project Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @apiResource scenario=Success App\Http\Resources\V1\ProjectResource
+     *
+     * @apiResourceModel App\Models\Project
+     *
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to edit this project.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Project not found",
+     *       "status": 404
+     * }
+     */
+    public function edit(EditProjectRequest $request, string $projectId)
+    {
+        $user = $request->user();
+        $project = Project::find($projectId);
+
+        if (!$project) {
+            return $this->notFound('Project not found');
+        }
+
+        if ($user->cannot('edit', $project)) {
+            return $this->unauthorized('You are not authorized to edit this project.');
+        }
+
+        $imagePath = null;
+
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            if ($project->image_path) {
+                Storage::delete($project->image_path);
+            }
+            $imagePath = $request->file('image')->store('projects');
+        }
+
+        $project->update([
+            'name' => $request->name,
+            'image_path' => $imagePath,
+        ]);
+
+        return new ProjectResource($project);
+    }
+
+    /**
+     * Delete project
+     *
+     * Delete the specified project.
+     *
+     * @authenticated
+     *
+     * @urlParam projectId string required the id of the project Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @response 200 scenario=Success {
+     *       "message": "Project deleted successfully",
+     *       "status": 200
+     * }
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to delete this project.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Project not found",
+     *       "status": 404
+     * }
+     */
+    public function delete(Request $request, string $projectId)
+    {
+        $user = $request->user();
+        $project = Project::find($projectId);
+
+        if (!$project) {
+            return $this->notFound('Project not found');
+        }
+
+        if ($user->cannot('delete', $project)) {
+            return $this->unauthorized('You are not authorized to delete this project.');
+        }
+
+        $project->delete();
+
+        return $this->successNoData('Project deleted successfully');
     }
 }

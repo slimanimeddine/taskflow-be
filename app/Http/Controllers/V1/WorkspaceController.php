@@ -112,7 +112,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -168,7 +168,7 @@ class WorkspaceController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -196,7 +196,7 @@ class WorkspaceController extends ApiController
      *       "message": "Unauthenticated",
      * }
      * @response 403 scenario=Unauthorized {
-     *       "message": "You are not authorized to edit this workspace.",
+     *       "message": "You are not authorized to delete this workspace.",
      *       "status": 403
      * }
      * @response 404 scenario="Not Found" {
@@ -209,7 +209,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -252,7 +252,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 

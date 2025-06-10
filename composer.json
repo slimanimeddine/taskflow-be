@@ -71,7 +71,7 @@
       "@php artisan scribe:generate --verbose"
     ],
     "models:gen": [
-      "@php artisan model:typer --no-hidden resources/models.ts && cp resources/models.ts /home/slimanimeddine/devstuff/taskflow/taskflow-fe/src/types"
+      "@php artisan model:typer --no-hidden resources/models.ts && cp resources/models.ts ../taskflow-fe/src/types"
     ]
   },
   "extra": {
