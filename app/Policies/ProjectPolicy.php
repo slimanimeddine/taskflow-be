@@ -24,6 +24,11 @@ class ProjectPolicy
 
     public function delete(User $user, Project $project): bool
     {
-        return $user->id === $project->user_id;
+        $isAdmin = Member::where('user_id', $user->id)
+            ->where('workspace_id', $project->workspace_id)
+            ->where('role', 'admin')
+            ->exists();
+
+        return $isAdmin;
     }
 }

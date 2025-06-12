@@ -21,6 +21,26 @@ export interface Project {
   updated_at: string | null
   // relations
   workspace: Workspace
+  tasks: Task[]
+}
+
+export interface Task {
+  // columns
+  id: string
+  name: string
+  description: string | null
+  due_date: string | null
+  status: string
+  position: number
+  workspace_id: string
+  project_id: string
+  assignee_id: string
+  created_at: string | null
+  updated_at: string | null
+  // relations
+  workspace: Workspace
+  project: Project
+  assignee: User
 }
 
 export interface User {
@@ -52,4 +72,5 @@ export interface Workspace {
   creator: User
   users: User[]
   projects: Project[]
+  tasks: Task[]
 }
