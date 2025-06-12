@@ -45,7 +45,7 @@ class ProjectController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -88,7 +88,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -142,7 +142,7 @@ class ProjectController extends ApiController
 
         $project = Project::find($projectId);
 
-        if (!$project) {
+        if (! $project) {
             return $this->notFound('Project not found');
         }
 
@@ -183,7 +183,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $project = Project::find($projectId);
 
-        if (!$project) {
+        if (! $project) {
             return $this->notFound('Project not found');
         }
 
@@ -238,7 +238,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $project = Project::find($projectId);
 
-        if (!$project) {
+        if (! $project) {
             return $this->notFound('Project not found');
         }
 

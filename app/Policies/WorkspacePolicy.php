@@ -56,4 +56,9 @@ class WorkspacePolicy
     {
         return $this->show($user, $workspace);
     }
+
+    public function viewTasks(User $user, Workspace $workspace): bool
+    {
+        return $this->show($user, $workspace);
+    }
 }

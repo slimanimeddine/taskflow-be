@@ -69,15 +69,15 @@ class TaskController extends ApiController
         $project = Project::find($request->project_id);
         $assignee = User::find($request->assignee_id);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
-        if (!$project) {
+        if (! $project) {
             return $this->notFound('Project not found');
         }
 
-        if (!$assignee) {
+        if (! $assignee) {
             return $this->notFound('Assignee not found');
         }
 
@@ -85,7 +85,7 @@ class TaskController extends ApiController
             ->where('workspace_id', $workspace->id)
             ->exists();
 
-        if (!$member) {
+        if (! $member) {
             return $this->error('Assignee is not a member of the workspace.', 400);
         }
 
@@ -135,19 +135,34 @@ class TaskController extends ApiController
      *
      * @apiResourceCollection scenario=Success App\Http\Resources\V1\TaskResource
      *
-     * @apiResourceModel App\Models\Task paginate=10
+     * @apiResourceModel App\Models\Task with=assignee,project paginate=10
      *
      * @response 401 scenario=Unauthenticated {
      *       "message": "Unauthenticated",
      * }
      * @response 403 scenario=Unauthorized {
-     *       "message": "message",
+     *       "message": "You are not authorized to view tasks in this workspace.",
      *       "status": 403
+     * }
+     * @response 404 scenario="Workspace Not Found" {
+     *       "message": "Workspace not found",
+     *       "status": 404
      * }
      */
     public function index(Request $request)
     {
-        $tasks = QueryBuilder::for(Task::class)
+        $user = $request->user();
+        $workspace = Workspace::find($request->query('filter.workspace'));
+
+        if (! $workspace) {
+            return $this->notFound('Workspace not found');
+        }
+
+        if ($user->cannot('viewTasks', $workspace)) {
+            return $this->unauthorized('You are not authorized to view tasks in this workspace.');
+        }
+
+        $tasks = QueryBuilder::for(Task::with(['assignee', 'project']))
             ->allowedFilters([
                 'name',
                 AllowedFilter::scope('due_date'),
@@ -157,12 +172,13 @@ class TaskController extends ApiController
                 AllowedFilter::exact('project', 'project_id'),
                 AllowedFilter::exact('assignee', 'assignee_id'),
             ])
+            ->defaultSort('-created_at')
             ->allowedSorts([
                 'name',
                 'due_date',
                 'status',
-                AllowedSort::custom('project', new ProjectNameSort()),
-                AllowedSort::custom('assignee', new AssigneeNameSort()),
+                AllowedSort::custom('project', new ProjectNameSort),
+                AllowedSort::custom('assignee', new AssigneeNameSort),
             ])
             ->paginate();
 

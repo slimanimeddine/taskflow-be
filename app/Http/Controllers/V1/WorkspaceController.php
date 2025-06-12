@@ -112,7 +112,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -168,7 +168,7 @@ class WorkspaceController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -209,7 +209,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -252,7 +252,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
