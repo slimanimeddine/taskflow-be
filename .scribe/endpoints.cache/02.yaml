@@ -30,7 +30,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01976c3b-779d-7376-9a03-831980554f5d","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01976c3b-779c-72cb-885c-b5c28b319f93","invite_code":"ZgO7KvMWYP","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"},{"id":"01976c3b-77a3-7044-9227-7f3ae29b786f","name":"Raynor Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/007733?text=business+Workspace+adipisci","user_id":"01976c3b-77a2-7097-be8f-36b8c7183b00","invite_code":"sRPGaP0UJZ","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}]}'
+        content: '{"data":[{"id":"01976f1b-ee73-72f6-9a54-60542db05fdc","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01976f1b-ee72-735d-902f-bee6651f33e3","invite_code":"ZgO7KvMWYP","created_at":"2025-06-14T15:43:10.000000Z","updated_at":"2025-06-14T15:43:10.000000Z"},{"id":"01976f1b-ee79-725c-91f2-7f7724f3b48c","name":"Raynor Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/007733?text=business+Workspace+adipisci","user_id":"01976f1b-ee78-718f-81bb-4dea5723cc2a","invite_code":"sRPGaP0UJZ","created_at":"2025-06-14T15:43:10.000000Z","updated_at":"2025-06-14T15:43:10.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -101,7 +101,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-77bb-7369-9fb0-378d1b4b44f1","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01976c3b-77ba-7257-8a32-923b151bce01","invite_code":"ddZ1ySN2uu","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-ee92-7243-81db-3de1605aba60","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01976f1b-ee91-7386-8f2d-84c880da79df","invite_code":"ddZ1ySN2uu","created_at":"2025-06-14T15:43:10.000000Z","updated_at":"2025-06-14T15:43:10.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -183,7 +183,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-77cb-7245-8afb-70fe9c20af08","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01976c3b-77c9-7264-a6f5-30fe3879efec","invite_code":"ICeDI7xc8Z","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-eea5-7203-a3d4-6c189f25cd4f","name":"Bailey Inc","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","user_id":"01976f1b-eea4-7231-8e67-b0cfae302fd5","invite_code":"ICeDI7xc8Z","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -263,7 +263,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-77db-71fc-9247-eea226b79805","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01976c3b-77d9-7133-be3f-d9be05d447de","invite_code":"NncBs5Cvlv","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-eeb8-7276-8f7d-21a5de88a257","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01976f1b-eeb6-72ef-86ac-2999a8c985fd","invite_code":"NncBs5Cvlv","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -427,7 +427,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-77f2-71d1-8ff9-2d725e79adbe","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01976c3b-77f0-73a4-8298-9c93c7590ec3","invite_code":"8JzXP5lHud","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-eed2-73a6-9d03-6975b9efd74c","name":"Price Ltd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","user_id":"01976f1b-eed0-7018-a5ba-70aaf2486a9d","invite_code":"8JzXP5lHud","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []

@@ -131,7 +131,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01976c3b-78cb-7145-844f-0f41d1605512","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"01976c3b-78c2-72df-8fbc-22aeed4a742c","project_id":"01976c3b-78c8-736c-8378-bf85b67f5d19","assignee_id":"01976c3b-78c9-7201-a5f1-4faca55653c7","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z","assignee":{"id":"01976c3b-78c9-7201-a5f1-4faca55653c7","name":"Margaretta Thiel","email":"walker26@example.com","email_verified_at":"2025-06-14T02:18:46.000000Z","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"},"project":{"id":"01976c3b-78c8-736c-8378-bf85b67f5d19","image_path":"https:\/\/via.placeholder.com\/640x480.png\/004488?text=business+Workspace+repudiandae","name":"Schmidt PLC","workspace_id":"01976c3b-78c7-7127-b8bb-6f05f4896df3","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}},{"id":"01976c3b-78dc-7281-a6b5-51ca1b0aaa36","name":"Douglas Group","description":"Molestiae ut rem est esse. Aut molestiae sunt suscipit doloribus fugiat. Aut deserunt et error neque recusandae et.","due_date":"2014-11-14 12:30:09","status":"backlog","position":503257,"workspace_id":"01976c3b-78d4-730e-b120-1b887ede33d5","project_id":"01976c3b-78d9-7331-b188-e1148ec5c490","assignee_id":"01976c3b-78da-73eb-9956-c1e685e0cfcc","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z","assignee":{"id":"01976c3b-78da-73eb-9956-c1e685e0cfcc","name":"Prof. Kenna Ortiz","email":"barton.shanon@example.com","email_verified_at":"2025-06-14T02:18:46.000000Z","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"},"project":{"id":"01976c3b-78d9-7331-b188-e1148ec5c490","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0000ff?text=business+Workspace+id","name":"Konopelski LLC","workspace_id":"01976c3b-78d8-71c7-b637-10a2dbd8bc33","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}],"links":{"first":"\/?page=1","last":"\/?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"\/?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"\/","per_page":10,"to":2,"total":2}}'
+        content: '{"data":[{"id":"01976f1b-efca-72da-86d2-0d3423d9befe","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"01976f1b-efbe-72ed-8c2c-1c8e0eb3fde9","project_id":"01976f1b-efc7-72be-bcca-22b9fe583fa5","assignee_id":"01976f1b-efc8-73f0-9f32-5478cc8850da","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z","assignee":{"id":"01976f1b-efc8-73f0-9f32-5478cc8850da","name":"Margaretta Thiel","email":"walker26@example.com","email_verified_at":"2025-06-14T15:43:11.000000Z","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"},"project":{"id":"01976f1b-efc7-72be-bcca-22b9fe583fa5","image_path":"https:\/\/via.placeholder.com\/640x480.png\/004488?text=business+Workspace+repudiandae","name":"Schmidt PLC","workspace_id":"01976f1b-efc5-73cb-9c5e-dc0402fabcb0","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}},{"id":"01976f1b-efdd-73b3-883a-cc5082e0909d","name":"Douglas Group","description":"Molestiae ut rem est esse. Aut molestiae sunt suscipit doloribus fugiat. Aut deserunt et error neque recusandae et.","due_date":"2014-11-14 12:30:09","status":"backlog","position":503257,"workspace_id":"01976f1b-efd5-7197-bdfc-537fd94d31ad","project_id":"01976f1b-efdb-713c-8948-49d3c9b1e6d0","assignee_id":"01976f1b-efdc-7219-85ad-951b0bc5217a","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z","assignee":{"id":"01976f1b-efdc-7219-85ad-951b0bc5217a","name":"Prof. Kenna Ortiz","email":"barton.shanon@example.com","email_verified_at":"2025-06-14T15:43:11.000000Z","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"},"project":{"id":"01976f1b-efdb-713c-8948-49d3c9b1e6d0","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0000ff?text=business+Workspace+id","name":"Konopelski LLC","workspace_id":"01976f1b-efd9-7263-b59e-189ffd996fe6","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}],"links":{"first":"\/?page=1","last":"\/?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"\/?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"\/","per_page":10,"to":2,"total":2}}'
         headers: []
         description: Success
         custom: []
@@ -282,7 +282,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-78ff-7015-864c-4f474e643a8d","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01976c3b-78f7-7014-8474-90173603e80f","project_id":"01976c3b-78fc-72c2-b857-95742832b4a1","assignee_id":"01976c3b-78fe-72ae-8e7f-5ba955511b3f","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-f003-73a7-b6b7-855e29828e93","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01976f1b-effa-733b-9b1f-0e6d4ff2dcb3","project_id":"01976f1b-efff-721c-a5a4-05b6c4cf3a6f","assignee_id":"01976f1b-f001-703c-a9bd-5e69254cbc4b","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -354,6 +354,90 @@ endpoints:
           }
         headers: []
         description: 'Assignee Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/tasks/{taskId}'
+    metadata:
+      groupName: Tasks
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete task'
+      description: 'Delete the specified task.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      taskId:
+        name: taskId
+        description: 'the id of the task'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      taskId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+                "message": "Task deleted successfully",
+                "status": 200
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to delete this task.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Task not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
         custom: []
     responseFields: []
     auth:

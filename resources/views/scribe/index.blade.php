@@ -600,6 +600,18 @@
                                                                                     </div>
 
                                                                             </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-tasks-DELETEapi-v1-tasks--taskId-">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Delete task">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#tasks-DELETEapi-v1-tasks--taskId-">
+                                                    Delete task
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
+                                                                            </div>
                                                             </div>
                                             </div>
                                     <div class="expandable">
@@ -4745,12 +4757,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-780b-722c-9980-7a8a127ae749&quot;,
+        &quot;id&quot;: &quot;01976f1b-eeed-73cd-9855-c8a500204325&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;01976c3b-7804-7104-867f-ae0162654997&quot;,
-        &quot;workspace_id&quot;: &quot;01976c3b-780a-721f-9d34-a6ddcef062c4&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;user_id&quot;: &quot;01976f1b-eee8-73e0-835c-f4b617183a95&quot;,
+        &quot;workspace_id&quot;: &quot;01976f1b-eeec-70b1-a7cf-e220e87873d2&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -5279,12 +5291,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-7823-7336-b60b-d2f4c5c6f183&quot;,
+        &quot;id&quot;: &quot;01976f1b-ef02-71a3-87e2-0243e7609d2a&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;01976c3b-781e-73fc-935a-251c1db70bab&quot;,
-        &quot;workspace_id&quot;: &quot;01976c3b-7822-704a-9fd9-57b51c067ce9&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;user_id&quot;: &quot;01976f1b-eefc-707c-bbc0-2d99803bc878&quot;,
+        &quot;workspace_id&quot;: &quot;01976f1b-ef01-7335-a404-d487e1864827&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -6313,12 +6325,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-7840-73f8-8f0d-a8ae30814adf&quot;,
+        &quot;id&quot;: &quot;01976f1b-ef24-730c-8dac-a92fb9dad9f7&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;01976c3b-783b-7316-8534-116952c43e31&quot;,
-        &quot;workspace_id&quot;: &quot;01976c3b-783f-718f-b1fc-9c7e5c32d96b&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;user_id&quot;: &quot;01976f1b-ef1e-7235-8817-d9f28f439738&quot;,
+        &quot;workspace_id&quot;: &quot;01976f1b-ef22-71c6-be6f-fb8d7f27c149&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -6808,12 +6820,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-785e-729a-a59b-2811cf9607a1&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/000033?text=business+Workspace+quasi&quot;,
-        &quot;name&quot;: &quot;Stokes-O&#039;Keefe&quot;,
-        &quot;workspace_id&quot;: &quot;01976c3b-785d-716d-8a7b-0a1aa40c9643&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;id&quot;: &quot;01976f1b-ef4a-7289-a6d5-ad10601f2ae0&quot;,
+        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00dd00?text=business+Workspace+quidem&quot;,
+        &quot;name&quot;: &quot;Bechtelar, Schinner and Kovacek&quot;,
+        &quot;workspace_id&quot;: &quot;01976f1b-ef48-72b9-974c-a6014c49df84&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -7056,7 +7068,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phptmb8q71ba60m4LEloGH
+                        /tmp/phpmhojve05u66kdNiobmc
                     </div>
                 </div>
             </div>
@@ -7347,7 +7359,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/phptmb8q71ba60m4LEloGH" </code></pre>                                        </div>
+    --form "image=@/tmp/phpmhojve05u66kdNiobmc" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -7415,12 +7427,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-786e-7161-8040-3fe7eacc15fd&quot;,
+        &quot;id&quot;: &quot;01976f1b-ef60-7077-8a4f-a3798834f8d0&quot;,
         &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
-        &quot;workspace_id&quot;: &quot;01976c3b-786d-71e2-b633-2f2eb2220b8c&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01976f1b-ef5f-7257-a932-790afc7ff959&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -8337,20 +8349,20 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01976c3b-788d-7344-a32d-b62baa9189cb&quot;,
+            &quot;id&quot;: &quot;01976f1b-ef85-73f2-a6c5-61f351e26fe6&quot;,
             &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
             &quot;name&quot;: &quot;Price Ltd&quot;,
-            &quot;workspace_id&quot;: &quot;01976c3b-788c-730c-b906-4fa1f015a0af&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+            &quot;workspace_id&quot;: &quot;01976f1b-ef83-7042-bc62-ce0035973a6a&quot;,
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;01976c3b-7894-723e-9596-27a4e5babc68&quot;,
+            &quot;id&quot;: &quot;01976f1b-ef8b-70bc-a854-c1aa25db84cf&quot;,
             &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/0033cc?text=business+Workspace+id&quot;,
             &quot;name&quot;: &quot;Kshlerin, Gaylord and Hettinger&quot;,
-            &quot;workspace_id&quot;: &quot;01976c3b-7892-732a-b81b-d79d06dcfc63&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+            &quot;workspace_id&quot;: &quot;01976f1b-ef8a-7017-83c3-46f14ce56921&quot;,
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -8575,7 +8587,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpknvg95hbijb6fABCHnI
+                        /tmp/phpvpicmeseouutapbPpie
                     </div>
                 </div>
             </div>
@@ -8854,7 +8866,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Project"\
-    --form "image=@/tmp/phpknvg95hbijb6fABCHnI" </code></pre>                                        </div>
+    --form "image=@/tmp/phpvpicmeseouutapbPpie" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -8922,12 +8934,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-78a8-7133-a941-e3fff6d6f217&quot;,
+        &quot;id&quot;: &quot;01976f1b-ef9e-7075-9010-991cf28aedb5&quot;,
         &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
-        &quot;workspace_id&quot;: &quot;01976c3b-78a7-736c-a762-debe4b5dd3a8&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01976f1b-ef9c-7252-b419-461bf20a5418&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -9657,61 +9669,61 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01976c3b-78cb-7145-844f-0f41d1605512&quot;,
+            &quot;id&quot;: &quot;01976f1b-efca-72da-86d2-0d3423d9befe&quot;,
             &quot;name&quot;: &quot;Price Ltd&quot;,
             &quot;description&quot;: &quot;Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.&quot;,
             &quot;due_date&quot;: &quot;2020-03-13 08:10:43&quot;,
             &quot;status&quot;: &quot;backlog&quot;,
             &quot;position&quot;: 814216,
-            &quot;workspace_id&quot;: &quot;01976c3b-78c2-72df-8fbc-22aeed4a742c&quot;,
-            &quot;project_id&quot;: &quot;01976c3b-78c8-736c-8378-bf85b67f5d19&quot;,
-            &quot;assignee_id&quot;: &quot;01976c3b-78c9-7201-a5f1-4faca55653c7&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
+            &quot;workspace_id&quot;: &quot;01976f1b-efbe-72ed-8c2c-1c8e0eb3fde9&quot;,
+            &quot;project_id&quot;: &quot;01976f1b-efc7-72be-bcca-22b9fe583fa5&quot;,
+            &quot;assignee_id&quot;: &quot;01976f1b-efc8-73f0-9f32-5478cc8850da&quot;,
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
             &quot;assignee&quot;: {
-                &quot;id&quot;: &quot;01976c3b-78c9-7201-a5f1-4faca55653c7&quot;,
+                &quot;id&quot;: &quot;01976f1b-efc8-73f0-9f32-5478cc8850da&quot;,
                 &quot;name&quot;: &quot;Margaretta Thiel&quot;,
                 &quot;email&quot;: &quot;walker26@example.com&quot;,
-                &quot;email_verified_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-                &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+                &quot;email_verified_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
             },
             &quot;project&quot;: {
-                &quot;id&quot;: &quot;01976c3b-78c8-736c-8378-bf85b67f5d19&quot;,
+                &quot;id&quot;: &quot;01976f1b-efc7-72be-bcca-22b9fe583fa5&quot;,
                 &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/004488?text=business+Workspace+repudiandae&quot;,
                 &quot;name&quot;: &quot;Schmidt PLC&quot;,
-                &quot;workspace_id&quot;: &quot;01976c3b-78c7-7127-b8bb-6f05f4896df3&quot;,
-                &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+                &quot;workspace_id&quot;: &quot;01976f1b-efc5-73cb-9c5e-dc0402fabcb0&quot;,
+                &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
             }
         },
         {
-            &quot;id&quot;: &quot;01976c3b-78dc-7281-a6b5-51ca1b0aaa36&quot;,
+            &quot;id&quot;: &quot;01976f1b-efdd-73b3-883a-cc5082e0909d&quot;,
             &quot;name&quot;: &quot;Douglas Group&quot;,
             &quot;description&quot;: &quot;Molestiae ut rem est esse. Aut molestiae sunt suscipit doloribus fugiat. Aut deserunt et error neque recusandae et.&quot;,
             &quot;due_date&quot;: &quot;2014-11-14 12:30:09&quot;,
             &quot;status&quot;: &quot;backlog&quot;,
             &quot;position&quot;: 503257,
-            &quot;workspace_id&quot;: &quot;01976c3b-78d4-730e-b120-1b887ede33d5&quot;,
-            &quot;project_id&quot;: &quot;01976c3b-78d9-7331-b188-e1148ec5c490&quot;,
-            &quot;assignee_id&quot;: &quot;01976c3b-78da-73eb-9956-c1e685e0cfcc&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
+            &quot;workspace_id&quot;: &quot;01976f1b-efd5-7197-bdfc-537fd94d31ad&quot;,
+            &quot;project_id&quot;: &quot;01976f1b-efdb-713c-8948-49d3c9b1e6d0&quot;,
+            &quot;assignee_id&quot;: &quot;01976f1b-efdc-7219-85ad-951b0bc5217a&quot;,
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
             &quot;assignee&quot;: {
-                &quot;id&quot;: &quot;01976c3b-78da-73eb-9956-c1e685e0cfcc&quot;,
+                &quot;id&quot;: &quot;01976f1b-efdc-7219-85ad-951b0bc5217a&quot;,
                 &quot;name&quot;: &quot;Prof. Kenna Ortiz&quot;,
                 &quot;email&quot;: &quot;barton.shanon@example.com&quot;,
-                &quot;email_verified_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-                &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+                &quot;email_verified_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+                &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
             },
             &quot;project&quot;: {
-                &quot;id&quot;: &quot;01976c3b-78d9-7331-b188-e1148ec5c490&quot;,
+                &quot;id&quot;: &quot;01976f1b-efdb-713c-8948-49d3c9b1e6d0&quot;,
                 &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/0000ff?text=business+Workspace+id&quot;,
                 &quot;name&quot;: &quot;Konopelski LLC&quot;,
-                &quot;workspace_id&quot;: &quot;01976c3b-78d8-71c7-b637-10a2dbd8bc33&quot;,
-                &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+                &quot;workspace_id&quot;: &quot;01976f1b-efd9-7263-b59e-189ffd996fe6&quot;,
+                &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
             }
         }
     ],
@@ -10393,17 +10405,17 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-78ff-7015-864c-4f474e643a8d&quot;,
+        &quot;id&quot;: &quot;01976f1b-f003-73a7-b6b7-855e29828e93&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
         &quot;description&quot;: &quot;Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.&quot;,
         &quot;due_date&quot;: &quot;1977-08-15 10:47:14&quot;,
         &quot;status&quot;: &quot;done&quot;,
         &quot;position&quot;: 123724,
-        &quot;workspace_id&quot;: &quot;01976c3b-78f7-7014-8474-90173603e80f&quot;,
-        &quot;project_id&quot;: &quot;01976c3b-78fc-72c2-b857-95742832b4a1&quot;,
-        &quot;assignee_id&quot;: &quot;01976c3b-78fe-72ae-8e7f-5ba955511b3f&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01976f1b-effa-733b-9b1f-0e6d4ff2dcb3&quot;,
+        &quot;project_id&quot;: &quot;01976f1b-efff-721c-a5a4-05b6c4cf3a6f&quot;,
+        &quot;assignee_id&quot;: &quot;01976f1b-f001-703c-a9bd-5e69254cbc4b&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -10480,6 +10492,465 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;message&quot;: &quot;Assignee not found&quot;,
+    &quot;status&quot;: 404
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                    </div>
+                            </div>
+    </div>
+</div>
+
+                    <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
+    <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+        <div class="sl-relative">
+            <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
+                <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
+                    id="tasks-DELETEapi-v1-tasks--taskId-">
+                    Delete task
+                </h2>
+            </div>
+        </div>
+
+        <div class="sl-relative">
+            <div title="http://localhost:8000/api/v1/tasks/{taskId}"
+                     class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
+                >
+                                            <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
+                             style="background-color: red;"
+                        >
+                            DELETE
+                        </div>
+                                        <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
+                        <div dir="rtl"
+                             class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/tasks/{taskId}</div>
+                    </div>
+
+                                                    <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
+                                 style="background-color: darkred"
+                            >requires authentication
+                            </div>
+                                    </div>
+        </div>
+
+        <p>Delete the specified task.</p>
+    </div>
+    <div class="sl-flex">
+        <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
+            <div class="sl-stack sl-stack--vertical sl-stack--10 sl-flex sl-flex-col sl-items-stretch">
+                <div class="sl-stack sl-stack--vertical sl-stack--8 sl-flex sl-flex-col sl-items-stretch">
+                                            <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">
+                                Headers
+                            </h3>
+                            <div class="sl-text-sm">
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Authorization</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Content-Type</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Accept</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                            </div>
+                        </div>
+                    
+                                            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">URL Parameters</h3>
+
+                            <div class="sl-text-sm">
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">taskId</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                    <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                    <span class="sl-ml-2 sl-text-warning">required</span>
+                                    </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>the id of the task</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        01972a18-9d62-72ff-8a2b-d55e57b34d1c
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                            </div>
+                        </div>
+                    
+
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        <div data-testid="two-column-right" class="sl-relative sl-w-2/5 sl-ml-16" style="max-width: 500px;">
+            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+
+                                    <div class="sl-inverted">
+    <div class="sl-overflow-y-hidden sl-rounded-lg">
+        <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
+              data-method="DELETE"
+              data-path="api/v1/tasks/{taskId}"
+              data-hasfiles="0"
+              data-hasjsonbody="0">
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Auth
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                            <label aria-hidden="true"
+                                   for="auth-DELETEapi-v1-tasks--taskId-">Authorization</label>
+                            <span class="sl-mx-3">:</span>
+                            <div class="sl-flex sl-flex-1">
+                                <div class="sl-input sl-flex-1 sl-relative">
+                                    <code>Bearer </code>
+                                    <input aria-label="Authorization"
+                                           id="auth-DELETEapi-v1-tasks--taskId-"
+                                           data-component="header"
+                                           data-prefix="Bearer "
+                                           name="Authorization"
+                                           placeholder="{YOUR_AUTH_KEY}"
+                                           class="auth-value sl-relative sl-w-3/5 sl-h-md sl-text-base sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Headers
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                                                                                                                            <label aria-hidden="true"
+                                       for="header-DELETEapi-v1-tasks--taskId--Content-Type">Content-Type</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Content-Type" name="Content-Type"
+                                               id="header-DELETEapi-v1-tasks--taskId--Content-Type"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-DELETEapi-v1-tasks--taskId--Accept">Accept</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Accept" name="Accept"
+                                               id="header-DELETEapi-v1-tasks--taskId--Accept"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            URL Parameters
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                                                            <label aria-hidden="true"
+                                       for="urlparam-DELETEapi-v1-tasks--taskId--taskId">taskId</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="taskId" name="taskId"
+                                               id="urlparam-DELETEapi-v1-tasks--taskId--taskId"
+                                               placeholder="the id of the task"
+                                               value="01972a18-9d62-72ff-8a2b-d55e57b34d1c" data-component="url"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            
+            
+            
+            <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
+                <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
+                    <button type="button" data-endpoint="DELETEapi-v1-tasks--taskId-"
+                            class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
+                    >
+                        Send Request 💥
+                    </button>
+                </div>
+            </div>
+
+            <div data-endpoint="DELETEapi-v1-tasks--taskId-"
+                 class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
+                <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                     role="button">
+                    <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                        <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                 data-icon="caret-down"
+                                 class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                      d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                            </svg>
+                        </div>
+                        Request failed with error
+                    </div>
+                </div>
+                <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                    <div class="sl-panel__content sl-p-4">
+                        <p class="sl-pb-2"><strong class="error-message"></strong></p>
+                        <p class="sl-pb-2">Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</p>
+                    </div>
+                </div>
+            </div>
+
+                <div data-endpoint="DELETEapi-v1-tasks--taskId-"
+                     class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Received response
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="sl-panel__content sl-p-4">
+                            <p class="sl-pb-2 response-status"></p>
+                            <pre><code class="sl-pb-2 response-content language-json"
+                                       data-empty-response-text="<Empty response>"
+                                       style="max-height: 300px;"></code></pre>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+                
+                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
+                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
+                                <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                                    <div class="sl--ml-2">
+                                        Example request:
+                                        <select class="example-request-lang-toggle sl-text-base"
+                                                aria-label="Request Sample Language"
+                                                onchange="switchExampleLanguage(event.target.value);">
+                                                                                            <option>bash</option>
+                                                                                            <option>javascript</option>
+                                                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-bash"
+                                     style="">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost:8000/api/v1/tasks/01972a18-9d62-72ff-8a2b-d55e57b34d1c" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-javascript"
+                                     style="display: none;">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/tasks/01972a18-9d62-72ff-8a2b-d55e57b34d1c"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                    
+                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
+                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
+                                <div class="sl-flex sl-flex-1 sl-items-center sl-py-2">
+                                    <div class="sl--ml-2">
+                                        <div class="sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-text-muted sl-rounded sl-border-transparent sl-border">
+                                            <div class="sl-mb-2 sl-inline-block">Example response:</div>
+                                            <div class="sl-mb-2 sl-inline-block">
+                                                <select
+                                                        class="example-response-DELETEapi-v1-tasks--taskId--toggle sl-text-base"
+                                                        aria-label="Response sample"
+                                                        onchange="switchExampleResponse('DELETEapi-v1-tasks--taskId-', event.target.value);">
+                                                                                                            <option value="0">200, Success</option>
+                                                                                                            <option value="1">401, Unauthenticated</option>
+                                                                                                            <option value="2">403, Unauthorized</option>
+                                                                                                            <option value="3">404, Not Found</option>
+                                                                                                    </select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                        class="sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 hover:sl-bg-canvas-50 active:sl-bg-canvas-100 sl-text-muted hover:sl-text-body focus:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70">
+                                    <div class="sl-mx-0">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy"
+                                             class="svg-inline--fa fa-copy fa-fw fa-sm sl-icon" role="img"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                  d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-DELETEapi-v1-tasks--taskId- example-response-DELETEapi-v1-tasks--taskId--0"
+                                     style=" "
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+    &quot;message&quot;: &quot;Task deleted successfully&quot;,
+    &quot;status&quot;: 200
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-DELETEapi-v1-tasks--taskId- example-response-DELETEapi-v1-tasks--taskId--1"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+      &quot;message&quot;: &quot;Unauthenticated&quot;,
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-DELETEapi-v1-tasks--taskId- example-response-DELETEapi-v1-tasks--taskId--2"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+    &quot;message&quot;: &quot;You are not authorized to delete this task.&quot;,
+    &quot;status&quot;: 403
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-DELETEapi-v1-tasks--taskId- example-response-DELETEapi-v1-tasks--taskId--3"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+    &quot;message&quot;: &quot;Task not found&quot;,
     &quot;status&quot;: 404
 }</code></pre>
                                                                             </div>
@@ -10916,20 +11387,20 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01976c3b-775a-7380-8da7-0a26f86df80b&quot;,
+            &quot;id&quot;: &quot;01976f1b-ee32-72a5-b3dd-364b5b0fee3b&quot;,
             &quot;name&quot;: &quot;Morgan Hirthe&quot;,
             &quot;email&quot;: &quot;dare.emelie@example.com&quot;,
-            &quot;email_verified_at&quot;: &quot;2025-06-14T02:18:45.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:45.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:45.000000Z&quot;
+            &quot;email_verified_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;01976c3b-7777-71a4-ace3-ef79f6c7515a&quot;,
+            &quot;id&quot;: &quot;01976f1b-ee4d-7275-8fd8-671b4733716b&quot;,
             &quot;name&quot;: &quot;Prof. Mina Bauch&quot;,
             &quot;email&quot;: &quot;okeefe.isidro@example.org&quot;,
-            &quot;email_verified_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+            &quot;email_verified_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -11325,12 +11796,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-7787-7107-bfd3-0d755209e2f9&quot;,
+        &quot;id&quot;: &quot;01976f1b-ee5d-7320-b427-0d2935331d51&quot;,
         &quot;name&quot;: &quot;Morgan Hirthe&quot;,
         &quot;email&quot;: &quot;imclaughlin@example.org&quot;,
-        &quot;email_verified_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;email_verified_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -12165,22 +12636,22 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01976c3b-779d-7376-9a03-831980554f5d&quot;,
+            &quot;id&quot;: &quot;01976f1b-ee73-72f6-9a54-60542db05fdc&quot;,
             &quot;name&quot;: &quot;Price Ltd&quot;,
             &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-            &quot;user_id&quot;: &quot;01976c3b-779c-72cb-885c-b5c28b319f93&quot;,
+            &quot;user_id&quot;: &quot;01976f1b-ee72-735d-902f-bee6651f33e3&quot;,
             &quot;invite_code&quot;: &quot;ZgO7KvMWYP&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;01976c3b-77a3-7044-9227-7f3ae29b786f&quot;,
+            &quot;id&quot;: &quot;01976f1b-ee79-725c-91f2-7f7724f3b48c&quot;,
             &quot;name&quot;: &quot;Raynor Ltd&quot;,
             &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/007733?text=business+Workspace+adipisci&quot;,
-            &quot;user_id&quot;: &quot;01976c3b-77a2-7097-be8f-36b8c7183b00&quot;,
+            &quot;user_id&quot;: &quot;01976f1b-ee78-718f-81bb-4dea5723cc2a&quot;,
             &quot;invite_code&quot;: &quot;sRPGaP0UJZ&quot;,
-            &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+            &quot;created_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -12353,7 +12824,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpbi83a4us21544FlMJhB
+                        /tmp/php6np0848a06ac2kOhiNK
                     </div>
                 </div>
             </div>
@@ -12599,7 +13070,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/phpbi83a4us21544FlMJhB" </code></pre>                                        </div>
+    --form "image=@/tmp/php6np0848a06ac2kOhiNK" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -12665,13 +13136,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-77bb-7369-9fb0-378d1b4b44f1&quot;,
+        &quot;id&quot;: &quot;01976f1b-ee92-7243-81db-3de1605aba60&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
         &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
-        &quot;user_id&quot;: &quot;01976c3b-77ba-7257-8a32-923b151bce01&quot;,
+        &quot;user_id&quot;: &quot;01976f1b-ee91-7386-8f2d-84c880da79df&quot;,
         &quot;invite_code&quot;: &quot;ddZ1ySN2uu&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:10.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -12871,7 +13342,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/php36coq7f9dr1a0GMOJLC
+                        /tmp/php3mq4g6qpv8hl6iCmkLN
                     </div>
                 </div>
             </div>
@@ -13150,7 +13621,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/php36coq7f9dr1a0GMOJLC" </code></pre>                                        </div>
+    --form "image=@/tmp/php3mq4g6qpv8hl6iCmkLN" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -13218,13 +13689,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-77cb-7245-8afb-70fe9c20af08&quot;,
+        &quot;id&quot;: &quot;01976f1b-eea5-7203-a3d4-6c189f25cd4f&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
         &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
-        &quot;user_id&quot;: &quot;01976c3b-77c9-7264-a6f5-30fe3879efec&quot;,
+        &quot;user_id&quot;: &quot;01976f1b-eea4-7231-8e67-b0cfae302fd5&quot;,
         &quot;invite_code&quot;: &quot;ICeDI7xc8Z&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -13684,13 +14155,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-77db-71fc-9247-eea226b79805&quot;,
+        &quot;id&quot;: &quot;01976f1b-eeb8-7276-8f7d-21a5de88a257&quot;,
         &quot;name&quot;: &quot;Price Ltd&quot;,
         &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-        &quot;user_id&quot;: &quot;01976c3b-77d9-7133-be3f-d9be05d447de&quot;,
+        &quot;user_id&quot;: &quot;01976f1b-eeb6-72ef-86ac-2999a8c985fd&quot;,
         &quot;invite_code&quot;: &quot;NncBs5Cvlv&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -14609,13 +15080,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01976c3b-77f2-71d1-8ff9-2d725e79adbe&quot;,
+        &quot;id&quot;: &quot;01976f1b-eed2-73a6-9d03-6975b9efd74c&quot;,
         &quot;name&quot;: &quot;Price Ltd&quot;,
         &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-        &quot;user_id&quot;: &quot;01976c3b-77f0-73a4-8298-9c93c7590ec3&quot;,
+        &quot;user_id&quot;: &quot;01976f1b-eed0-7018-a5ba-70aaf2486a9d&quot;,
         &quot;invite_code&quot;: &quot;8JzXP5lHud&quot;,
-        &quot;created_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-14T02:18:46.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-14T15:43:11.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>

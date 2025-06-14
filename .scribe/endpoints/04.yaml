@@ -39,7 +39,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-785e-729a-a59b-2811cf9607a1","image_path":"https:\/\/via.placeholder.com\/640x480.png\/000033?text=business+Workspace+quasi","name":"Stokes-O''Keefe","workspace_id":"01976c3b-785d-716d-8a7b-0a1aa40c9643","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-ef4a-7289-a6d5-ad10601f2ae0","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00dd00?text=business+Workspace+quidem","name":"Bechtelar, Schinner and Kovacek","workspace_id":"01976f1b-ef48-72b9-974c-a6014c49df84","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -152,7 +152,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-786e-7161-8040-3fe7eacc15fd","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01976c3b-786d-71e2-b633-2f2eb2220b8c","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-ef60-7077-8a4f-a3798834f8d0","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01976f1b-ef5f-7257-a932-790afc7ff959","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -316,7 +316,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01976c3b-788d-7344-a32d-b62baa9189cb","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"01976c3b-788c-730c-b906-4fa1f015a0af","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"},{"id":"01976c3b-7894-723e-9596-27a4e5babc68","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0033cc?text=business+Workspace+id","name":"Kshlerin, Gaylord and Hettinger","workspace_id":"01976c3b-7892-732a-b81b-d79d06dcfc63","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}]}'
+        content: '{"data":[{"id":"01976f1b-ef85-73f2-a6c5-61f351e26fe6","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"01976f1b-ef83-7042-bc62-ce0035973a6a","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"},{"id":"01976f1b-ef8b-70bc-a854-c1aa25db84cf","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0033cc?text=business+Workspace+id","name":"Kshlerin, Gaylord and Hettinger","workspace_id":"01976f1b-ef8a-7017-83c3-46f14ce56921","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -418,7 +418,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-78a8-7133-a941-e3fff6d6f217","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01976c3b-78a7-736c-a762-debe4b5dd3a8","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-ef9e-7075-9010-991cf28aedb5","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01976f1b-ef9c-7252-b419-461bf20a5418","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []

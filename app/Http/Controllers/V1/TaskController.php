@@ -69,15 +69,15 @@ class TaskController extends ApiController
         $project = Project::find($request->project_id);
         $assignee = User::find($request->assignee_id);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
-        if (!$project) {
+        if (! $project) {
             return $this->notFound('Project not found');
         }
 
-        if (!$assignee) {
+        if (! $assignee) {
             return $this->notFound('Assignee not found');
         }
 
@@ -85,7 +85,7 @@ class TaskController extends ApiController
             ->where('workspace_id', $workspace->id)
             ->exists();
 
-        if (!$member) {
+        if (! $member) {
             return $this->error('Assignee is not a member of the workspace.', 400);
         }
 
@@ -157,7 +157,7 @@ class TaskController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (!$workspace) {
+        if (! $workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -180,11 +180,54 @@ class TaskController extends ApiController
                 'name',
                 'due_date',
                 'status',
-                AllowedSort::custom('project', new ProjectNameSort()),
-                AllowedSort::custom('assignee', new AssigneeNameSort()),
+                AllowedSort::custom('project', new ProjectNameSort),
+                AllowedSort::custom('assignee', new AssigneeNameSort),
             ])
             ->paginate();
 
         return TaskResource::collection($tasks);
+    }
+
+    /**
+     * Delete task
+     *
+     * Delete the specified task.
+     *
+     * @authenticated
+     *
+     * @urlParam taskId string required the id of the task Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @response 200 scenario=Success {
+     *       "message": "Task deleted successfully",
+     *       "status": 200
+     * }
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to delete this task.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Task not found",
+     *       "status": 404
+     * }
+     */
+    public function delete(Request $request, string $taskId)
+    {
+        $user = $request->user();
+        $task = Task::find($taskId);
+
+        if (! $task) {
+            return $this->notFound('Task not found');
+        }
+
+        if ($user->cannot('delete', $task)) {
+            return $this->unauthorized('You are not authorized to delete this task.');
+        }
+
+        $task->delete();
+
+        return $this->successNoData('Task deleted successfully');
     }
 }

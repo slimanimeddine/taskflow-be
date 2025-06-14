@@ -39,7 +39,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-780b-722c-9980-7a8a127ae749","role":"admin","user_id":"01976c3b-7804-7104-867f-ae0162654997","workspace_id":"01976c3b-780a-721f-9d34-a6ddcef062c4","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-eeed-73cd-9855-c8a500204325","role":"admin","user_id":"01976f1b-eee8-73e0-835c-f4b617183a95","workspace_id":"01976f1b-eeec-70b1-a7cf-e220e87873d2","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -130,7 +130,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-7823-7336-b60b-d2f4c5c6f183","role":"admin","user_id":"01976c3b-781e-73fc-935a-251c1db70bab","workspace_id":"01976c3b-7822-704a-9fd9-57b51c067ce9","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-ef02-71a3-87e2-0243e7609d2a","role":"admin","user_id":"01976f1b-eefc-707c-bbc0-2d99803bc878","workspace_id":"01976f1b-ef01-7335-a404-d487e1864827","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -346,7 +346,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01976c3b-7840-73f8-8f0d-a8ae30814adf","role":"admin","user_id":"01976c3b-783b-7316-8534-116952c43e31","workspace_id":"01976c3b-783f-718f-b1fc-9c7e5c32d96b","created_at":"2025-06-14T02:18:46.000000Z","updated_at":"2025-06-14T02:18:46.000000Z"}}'
+        content: '{"data":{"id":"01976f1b-ef24-730c-8dac-a92fb9dad9f7","role":"admin","user_id":"01976f1b-ef1e-7235-8817-d9f28f439738","workspace_id":"01976f1b-ef22-71c6-be6f-fb8d7f27c149","created_at":"2025-06-14T15:43:11.000000Z","updated_at":"2025-06-14T15:43:11.000000Z"}}'
         headers: []
         description: Success
         custom: []
