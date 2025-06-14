@@ -69,15 +69,15 @@ class TaskController extends ApiController
         $project = Project::find($request->project_id);
         $assignee = User::find($request->assignee_id);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
-        if (! $project) {
+        if (!$project) {
             return $this->notFound('Project not found');
         }
 
-        if (! $assignee) {
+        if (!$assignee) {
             return $this->notFound('Assignee not found');
         }
 
@@ -85,7 +85,7 @@ class TaskController extends ApiController
             ->where('workspace_id', $workspace->id)
             ->exists();
 
-        if (! $member) {
+        if (!$member) {
             return $this->error('Assignee is not a member of the workspace.', 400);
         }
 
@@ -152,9 +152,12 @@ class TaskController extends ApiController
     public function index(Request $request)
     {
         $user = $request->user();
-        $workspace = Workspace::find($request->query('filter.workspace'));
+        $queryParams = $request->query();
+        $workspaceId = data_get($queryParams, 'filter.workspace');
 
-        if (! $workspace) {
+        $workspace = Workspace::find($workspaceId);
+
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -177,8 +180,8 @@ class TaskController extends ApiController
                 'name',
                 'due_date',
                 'status',
-                AllowedSort::custom('project', new ProjectNameSort),
-                AllowedSort::custom('assignee', new AssigneeNameSort),
+                AllowedSort::custom('project', new ProjectNameSort()),
+                AllowedSort::custom('assignee', new AssigneeNameSort()),
             ])
             ->paginate();
 
