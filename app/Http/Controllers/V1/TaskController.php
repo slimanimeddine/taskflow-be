@@ -4,6 +4,7 @@ namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\ApiController;
 use App\Http\Requests\V1\CreateTaskRequest;
+use App\Http\Requests\V1\EditTaskRequest;
 use App\Http\Resources\V1\TaskResource;
 use App\Models\Member;
 use App\Models\Project;
@@ -69,15 +70,15 @@ class TaskController extends ApiController
         $project = Project::find($request->project_id);
         $assignee = User::find($request->assignee_id);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
-        if (! $project) {
+        if (!$project) {
             return $this->notFound('Project not found');
         }
 
-        if (! $assignee) {
+        if (!$assignee) {
             return $this->notFound('Assignee not found');
         }
 
@@ -85,7 +86,7 @@ class TaskController extends ApiController
             ->where('workspace_id', $workspace->id)
             ->exists();
 
-        if (! $member) {
+        if (!$member) {
             return $this->error('Assignee is not a member of the workspace.', 400);
         }
 
@@ -157,7 +158,7 @@ class TaskController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -218,7 +219,7 @@ class TaskController extends ApiController
         $user = $request->user();
         $task = Task::find($taskId);
 
-        if (! $task) {
+        if (!$task) {
             return $this->notFound('Task not found');
         }
 
@@ -229,5 +230,89 @@ class TaskController extends ApiController
         $task->delete();
 
         return $this->successNoData('Task deleted successfully');
+    }
+
+    /**
+     * Edit task
+     *
+     * Edit the specified task.
+     *
+     * @authenticated
+     *
+     * @urlParam taskId string required the id of the task Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @apiResource scenario=Success App\Http\Resources\V1\TaskResource
+     *
+     * @apiResourceModel App\Models\Task
+     *
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to edit this task.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Task not found",
+     *       "status": 404
+     * }
+     */
+    public function edit(EditTaskRequest $request, string $taskId)
+    {
+        $user = $request->user();
+        $task = Task::find($taskId);
+
+        if (!$task) {
+            return $this->notFound('Task not found');
+        }
+
+        if ($user->cannot('edit', $task)) {
+            return $this->unauthorized('You are not authorized to edit this task.');
+        }
+
+        $task->update($request->validated());
+
+        return new TaskResource($task);
+    }
+
+    /**
+     * Show task
+     *
+     * Show the specified task.
+     *
+     * @authenticated
+     *
+     * @urlParam taskId string required the id of the task Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @apiResource scenario=Success App\Http\Resources\V1\TaskResource
+     *
+     * @apiResourceModel App\Models\Task
+     *
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to view this task.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Task not found",
+     *       "status": 404
+     * }
+     */
+    public function show(Request $request, string $taskId)
+    {
+        $user = $request->user();
+        $task = Task::find($taskId);
+
+        if (!$task) {
+            return $this->notFound('Task not found');
+        }
+
+        if ($user->cannot('show', $task)) {
+            return $this->unauthorized('You are not authorized to view this task.');
+        }
+
+        return new TaskResource($task);
     }
 }

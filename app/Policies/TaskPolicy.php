@@ -16,4 +16,14 @@ class TaskPolicy
 
         return $isMember;
     }
+
+    public function edit(User $user, Task $task): bool
+    {
+        return $this->delete($user, $task);
+    }
+
+    public function show(User $user, Task $task): bool
+    {
+        return $this->delete($user, $task);
+    }
 }
