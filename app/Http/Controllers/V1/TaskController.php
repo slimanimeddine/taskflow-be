@@ -133,11 +133,12 @@ class TaskController extends ApiController
      * @queryParam filter[project] string task project id. Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
      * @queryParam filter[assignee] string task assignee id. Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
      * @queryParam sort string sort tasks. Enum:name,-name,due_date,-due_date,status,-status,project,-project,assignee,-assignee. Example: -due_date
+     * @queryParam paginate integer required whether to paginate the results. Enum:1,0. Example: 1
      *
-     * @apiResourceCollection scenario=Success App\Http\Resources\V1\TaskResource
-     *
-     * @apiResourceModel App\Models\Task with=assignee,project paginate=10
-     *
+     * @responseFile status=200 scenario="Paginated" storage/responses/tasks.paginated.json
+     * 
+     * @responseFile status=200 scenario="Not Paginated" storage/responses/tasks.not_paginated.json
+     * 
      * @response 401 scenario=Unauthenticated {
      *       "message": "Unauthenticated",
      * }
@@ -154,6 +155,7 @@ class TaskController extends ApiController
     {
         $user = $request->user();
         $queryParams = $request->query();
+
         $workspaceId = data_get($queryParams, 'filter.workspace');
 
         $workspace = Workspace::find($workspaceId);
@@ -166,7 +168,9 @@ class TaskController extends ApiController
             return $this->unauthorized('You are not authorized to view tasks in this workspace.');
         }
 
-        $tasks = QueryBuilder::for(Task::with(['assignee', 'project']))
+        $paginate = data_get($queryParams, 'paginate');
+
+        $query = QueryBuilder::for(Task::with(['assignee', 'project']))
             ->allowedFilters([
                 'name',
                 AllowedFilter::scope('due_date'),
@@ -183,8 +187,13 @@ class TaskController extends ApiController
                 'status',
                 AllowedSort::custom('project', new ProjectNameSort),
                 AllowedSort::custom('assignee', new AssigneeNameSort),
-            ])
-            ->paginate();
+            ]);
+
+        if ($paginate === "1") {
+            $tasks = $query->paginate();
+        } else {
+            $tasks = $query->get();
+        }
 
         return TaskResource::collection($tasks);
     }

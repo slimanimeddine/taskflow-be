@@ -118,6 +118,18 @@ endpoints:
         exampleWasSpecified: true
         nullable: false
         custom: []
+      paginate:
+        name: paginate
+        description: 'whether to paginate the results.'
+        required: true
+        example: 1
+        type: integer
+        enumValues:
+          - 1
+          - 0
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
     cleanQueryParameters:
       'filter[name]': 'Design mockup'
       'filter[due_date]': '2023-10-01'
@@ -127,15 +139,181 @@ endpoints:
       'filter[project]': 01972a18-9d62-72ff-8a2b-d55e57b34d1c
       'filter[assignee]': 01972a18-9d62-72ff-8a2b-d55e57b34d1c
       sort: '-due_date'
+      paginate: 1
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01977364-f8e2-7392-8872-3ef301c5dc33","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"01977364-f8da-700f-81fe-1cfd3b4c8985","project_id":"01977364-f8df-733c-b657-2a4559a7e200","assignee_id":"01977364-f8e0-70a5-8554-c7e1cd81ca28","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z","assignee":{"id":"01977364-f8e0-70a5-8554-c7e1cd81ca28","name":"Margaretta Thiel","email":"walker26@example.com","email_verified_at":"2025-06-15T11:41:26.000000Z","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z"},"project":{"id":"01977364-f8df-733c-b657-2a4559a7e200","image_path":"https:\/\/via.placeholder.com\/640x480.png\/004488?text=business+Workspace+repudiandae","name":"Schmidt PLC","workspace_id":"01977364-f8de-7208-8796-2065a639eb5b","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z"}},{"id":"01977364-f8f4-73a1-a1dc-c75699e609cf","name":"Douglas Group","description":"Molestiae ut rem est esse. Aut molestiae sunt suscipit doloribus fugiat. Aut deserunt et error neque recusandae et.","due_date":"2014-11-14 12:30:09","status":"backlog","position":503257,"workspace_id":"01977364-f8eb-70fb-b26c-25c9598d1757","project_id":"01977364-f8f1-7229-bebf-1abcdd3601eb","assignee_id":"01977364-f8f3-71cb-bed1-c104b49cc470","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z","assignee":{"id":"01977364-f8f3-71cb-bed1-c104b49cc470","name":"Prof. Kenna Ortiz","email":"barton.shanon@example.com","email_verified_at":"2025-06-15T11:41:26.000000Z","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z"},"project":{"id":"01977364-f8f1-7229-bebf-1abcdd3601eb","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0000ff?text=business+Workspace+id","name":"Konopelski LLC","workspace_id":"01977364-f8f0-72c3-ae39-76f6e274398e","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z"}}],"links":{"first":"\/?page=1","last":"\/?page=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"\/?page=1","label":"1","active":true},{"url":null,"label":"Next &raquo;","active":false}],"path":"\/","per_page":10,"to":2,"total":2}}'
+        content: |+
+          {
+              "data": [
+                  {
+                      "id": "01977672-d516-71f7-af68-c123fef3f3a3",
+                      "name": "Price Ltd",
+                      "description": "Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.",
+                      "due_date": "2020-03-13 08:10:43",
+                      "status": "backlog",
+                      "position": 814216,
+                      "workspace_id": "01977672-d50f-7084-aac8-479a92070a3e",
+                      "project_id": "01977672-d514-70f4-9277-10342a14fe6e",
+                      "assignee_id": "01977672-d515-725b-99b8-7f5e226f51e5",
+                      "created_at": "2025-06-16T01:55:26.000000Z",
+                      "updated_at": "2025-06-16T01:55:26.000000Z",
+                      "assignee": {
+                          "id": "01977672-d515-725b-99b8-7f5e226f51e5",
+                          "name": "Margaretta Thiel",
+                          "email": "walker26@example.com",
+                          "email_verified_at": "2025-06-16T01:55:26.000000Z",
+                          "created_at": "2025-06-16T01:55:26.000000Z",
+                          "updated_at": "2025-06-16T01:55:26.000000Z"
+                      },
+                      "project": {
+                          "id": "01977672-d514-70f4-9277-10342a14fe6e",
+                          "image_path": "https://via.placeholder.com/640x480.png/004488?text=business+Workspace+repudiandae",
+                          "name": "Schmidt PLC",
+                          "workspace_id": "01977672-d513-7002-a4f0-fec12248c7f3",
+                          "created_at": "2025-06-16T01:55:26.000000Z",
+                          "updated_at": "2025-06-16T01:55:26.000000Z"
+                      }
+                  },
+                  {
+                      "id": "01977672-d529-710d-9096-ce17eceaaf44",
+                      "name": "Douglas Group",
+                      "description": "Molestiae ut rem est esse. Aut molestiae sunt suscipit doloribus fugiat. Aut deserunt et error neque recusandae et.",
+                      "due_date": "2014-11-14 12:30:09",
+                      "status": "backlog",
+                      "position": 503257,
+                      "workspace_id": "01977672-d51f-717c-a94c-1da3bda9b3f8",
+                      "project_id": "01977672-d524-73a6-bb24-e85c7f42140a",
+                      "assignee_id": "01977672-d528-7294-879b-1b460811728a",
+                      "created_at": "2025-06-16T01:55:26.000000Z",
+                      "updated_at": "2025-06-16T01:55:26.000000Z",
+                      "assignee": {
+                          "id": "01977672-d528-7294-879b-1b460811728a",
+                          "name": "Prof. Kenna Ortiz",
+                          "email": "barton.shanon@example.com",
+                          "email_verified_at": "2025-06-16T01:55:26.000000Z",
+                          "created_at": "2025-06-16T01:55:26.000000Z",
+                          "updated_at": "2025-06-16T01:55:26.000000Z"
+                      },
+                      "project": {
+                          "id": "01977672-d524-73a6-bb24-e85c7f42140a",
+                          "image_path": "https://via.placeholder.com/640x480.png/0000ff?text=business+Workspace+id",
+                          "name": "Konopelski LLC",
+                          "workspace_id": "01977672-d523-7117-a040-21a1915286d7",
+                          "created_at": "2025-06-16T01:55:26.000000Z",
+                          "updated_at": "2025-06-16T01:55:26.000000Z"
+                      }
+                  }
+              ],
+              "links": {
+                  "first": "/?page=1",
+                  "last": "/?page=1",
+                  "prev": null,
+                  "next": null
+              },
+              "meta": {
+                  "current_page": 1,
+                  "from": 1,
+                  "last_page": 1,
+                  "links": [
+                      {
+                          "url": null,
+                          "label": "&laquo; Previous",
+                          "active": false
+                      },
+                      {
+                          "url": "/?page=1",
+                          "label": "1",
+                          "active": true
+                      },
+                      {
+                          "url": null,
+                          "label": "Next &raquo;",
+                          "active": false
+                      }
+                  ],
+                  "path": "/",
+                  "per_page": 10,
+                  "to": 2,
+                  "total": 2
+              }
+          }
+
+           
+
         headers: []
-        description: Success
+        description: Paginated
+        custom: []
+      -
+        status: 200
+        content: |
+          {
+              "data": [
+                  {
+                      "id": "01977674-525f-732f-ae6f-158b5a5d6d97",
+                      "name": "Price Ltd",
+                      "description": "Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.",
+                      "due_date": "2020-03-13 08:10:43",
+                      "status": "backlog",
+                      "position": 814216,
+                      "workspace_id": "01977674-5257-72f5-8257-fdd04b4bc20f",
+                      "project_id": "01977674-525d-7316-b0b1-f83b9244b242",
+                      "assignee_id": "01977674-525e-733b-9c36-d9eb5a93f78a",
+                      "created_at": "2025-06-16T01:57:04.000000Z",
+                      "updated_at": "2025-06-16T01:57:04.000000Z",
+                      "assignee": {
+                          "id": "01977674-525e-733b-9c36-d9eb5a93f78a",
+                          "name": "Margaretta Thiel",
+                          "email": "walker26@example.com",
+                          "email_verified_at": "2025-06-16T01:57:04.000000Z",
+                          "created_at": "2025-06-16T01:57:04.000000Z",
+                          "updated_at": "2025-06-16T01:57:04.000000Z"
+                      },
+                      "project": {
+                          "id": "01977674-525d-7316-b0b1-f83b9244b242",
+                          "image_path": "https://via.placeholder.com/640x480.png/004488?text=business+Workspace+repudiandae",
+                          "name": "Schmidt PLC",
+                          "workspace_id": "01977674-525b-7232-8c8a-39c053cc24a2",
+                          "created_at": "2025-06-16T01:57:04.000000Z",
+                          "updated_at": "2025-06-16T01:57:04.000000Z"
+                      }
+                  },
+                  {
+                      "id": "01977674-5270-7105-9105-16335104563c",
+                      "name": "Douglas Group",
+                      "description": "Molestiae ut rem est esse. Aut molestiae sunt suscipit doloribus fugiat. Aut deserunt et error neque recusandae et.",
+                      "due_date": "2014-11-14 12:30:09",
+                      "status": "backlog",
+                      "position": 503257,
+                      "workspace_id": "01977674-5268-71c7-a183-3c821edcad6a",
+                      "project_id": "01977674-526d-726b-9020-772c90e8ae04",
+                      "assignee_id": "01977674-526f-7308-9705-7705e0920817",
+                      "created_at": "2025-06-16T01:57:04.000000Z",
+                      "updated_at": "2025-06-16T01:57:04.000000Z",
+                      "assignee": {
+                          "id": "01977674-526f-7308-9705-7705e0920817",
+                          "name": "Prof. Kenna Ortiz",
+                          "email": "barton.shanon@example.com",
+                          "email_verified_at": "2025-06-16T01:57:04.000000Z",
+                          "created_at": "2025-06-16T01:57:04.000000Z",
+                          "updated_at": "2025-06-16T01:57:04.000000Z"
+                      },
+                      "project": {
+                          "id": "01977674-526d-726b-9020-772c90e8ae04",
+                          "image_path": "https://via.placeholder.com/640x480.png/0000ff?text=business+Workspace+id",
+                          "name": "Konopelski LLC",
+                          "workspace_id": "01977674-526c-71c2-841e-776dcf6636bb",
+                          "created_at": "2025-06-16T01:57:04.000000Z",
+                          "updated_at": "2025-06-16T01:57:04.000000Z"
+                      }
+                  }
+              ]
+          }
+        headers: []
+        description: 'Not Paginated'
         custom: []
       -
         status: 401
@@ -284,7 +462,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01977364-f91d-7114-b314-a27681f66ee5","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01977364-f914-70ad-a43c-7693cab0b53f","project_id":"01977364-f91a-7243-a703-0191a48f9637","assignee_id":"01977364-f91b-72f6-99aa-2bdd3e141008","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z"}}'
+        content: '{"data":{"id":"019776af-67ff-7021-9566-b5c8ed44bf18","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"019776af-67f2-7371-b358-b14bc2d68510","project_id":"019776af-67fb-7246-9890-6b25f992e7f5","assignee_id":"019776af-67fd-72f3-919e-c9f1667441b8","created_at":"2025-06-16T03:01:36.000000Z","updated_at":"2025-06-16T03:01:36.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -559,7 +737,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01977364-f94b-714a-ab24-8c3043db8cf3","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01977364-f93f-70a0-9da2-e30d5cade0ee","project_id":"01977364-f948-70ee-a667-218fc13d6294","assignee_id":"01977364-f94a-72c8-ae8f-9485467da3e3","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z"}}'
+        content: '{"data":{"id":"019776af-682d-73df-99dc-cb86dc595e8d","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"019776af-6824-70e1-b166-3e69888650f8","project_id":"019776af-682b-7215-8b48-a2f8acad967f","assignee_id":"019776af-682c-730f-b965-50579d55bf22","created_at":"2025-06-16T03:01:36.000000Z","updated_at":"2025-06-16T03:01:36.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -639,7 +817,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01977364-f96a-73b4-8a9a-32cd3e9ed8a6","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"01977364-f95f-7039-9170-2ff7abe46025","project_id":"01977364-f967-7059-97a2-b9a869d5a69e","assignee_id":"01977364-f969-7308-8b59-e8a8bc08f7ab","created_at":"2025-06-15T11:41:26.000000Z","updated_at":"2025-06-15T11:41:26.000000Z"}}'
+        content: '{"data":{"id":"019776af-684a-7187-8b61-5e7fe85ffec8","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"019776af-6841-7008-a90b-147b0217ae5c","project_id":"019776af-6847-73c5-95dd-dc88c49be43f","assignee_id":"019776af-6848-7342-aae7-88606bcf482e","created_at":"2025-06-16T03:01:36.000000Z","updated_at":"2025-06-16T03:01:36.000000Z"}}'
         headers: []
         description: Success
         custom: []
