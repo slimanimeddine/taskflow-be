@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\ApiController;
+use App\Http\Requests\V1\BulkEditTasksRequest;
 use App\Http\Requests\V1\CreateTaskRequest;
 use App\Http\Requests\V1\EditTaskRequest;
 use App\Http\Resources\V1\TaskResource;
@@ -98,18 +99,16 @@ class TaskController extends ApiController
             return $this->error('Project does not belong to the specified workspace.', 400);
         }
 
-        $highestPositionTask = Task::where('workspace_id', $workspace->id)
-            ->where('project_id', $project->id)
-            ->where('status', $request->status)
-            ->orderBy('position', 'desc')
-            ->first();
+        $highestPosition = Task::where('workspace_id', $project->workspace_id)
+            ->where('status', $request)
+            ->max('position');
 
         $task = Task::create([
             'name' => $request->name,
             'description' => $request->description,
             'due_date' => $request->due_date,
             'status' => $request->status,
-            'position' => $highestPositionTask ? $highestPositionTask->position + 1000 : 1000,
+            'position' => $highestPosition !== null ? $highestPosition + 1 : 1,
             'workspace_id' => $workspace->id,
             'project_id' => $project->id,
             'assignee_id' => $assignee->id,
@@ -136,9 +135,8 @@ class TaskController extends ApiController
      * @queryParam paginate integer required whether to paginate the results. Enum:1,0. Example: 1
      *
      * @responseFile status=200 scenario="Paginated" storage/responses/tasks.paginated.json
-     * 
      * @responseFile status=200 scenario="Not Paginated" storage/responses/tasks.not_paginated.json
-     * 
+     *
      * @response 401 scenario=Unauthenticated {
      *       "message": "Unauthenticated",
      * }
@@ -189,8 +187,8 @@ class TaskController extends ApiController
                 AllowedSort::custom('assignee', new AssigneeNameSort),
             ]);
 
-        if ($paginate === "1") {
-            $tasks = $query->paginate();
+        if ($paginate === '1') {
+            $tasks = $query->paginate(10);
         } else {
             $tasks = $query->get();
         }
@@ -323,5 +321,43 @@ class TaskController extends ApiController
         }
 
         return new TaskResource($task);
+    }
+
+    /**
+     * Bulk edit tasks
+     *
+     * Bulk edit tasks in a workspace.
+     *
+     * @authenticated
+     *
+     * @response 200 scenario=Success {
+     *       "message": "Tasks updated successfully",
+     *       "status": 200
+     * }
+     * @response 400 scenario="No tasks provided" {
+     *       "message": "No tasks provided for bulk edit.",
+     *       "status": 400
+     * }
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     */
+    public function bulkEdit(BulkEditTasksRequest $request)
+    {
+        $tasks = $request->validated('tasks');
+
+        $totalTasks = count($tasks);
+
+        if ($totalTasks === 0) {
+            return $this->error('No tasks provided for bulk edit.', 400);
+        }
+
+        if (isset($tasks[0]['status'])) {
+            Task::upsert($tasks, uniqueBy: ['id'], update: ['position', 'status']);
+        } else {
+            Task::upsert($tasks, uniqueBy: ['id'], update: ['position']);
+        }
+
+        return $this->successNoData('Tasks updated successfully');
     }
 }

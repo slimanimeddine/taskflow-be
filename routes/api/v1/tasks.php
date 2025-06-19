@@ -9,6 +9,7 @@ Route::middleware(['auth:sanctum'])->group(function () {
         Route::post('/', [TaskController::class, 'create']);
         Route::delete('/{taskId}', [TaskController::class, 'delete'])->whereUuid('taskId');
         Route::patch('/{taskId}', [TaskController::class, 'edit'])->whereUuid('taskId');
+        Route::patch('/', [TaskController::class, 'bulkEdit']);
         Route::get('/{taskId}', [TaskController::class, 'show'])->whereUuid('taskId');
     });
 });

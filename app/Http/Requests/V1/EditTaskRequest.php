@@ -12,6 +12,7 @@ class EditTaskRequest extends FormRequest
             'name' => ['sometimes', 'string', 'min:1', 'max:50'],
             'description' => ['sometimes', 'nullable', 'string'],
             'due_date' => ['sometimes', 'nullable', 'date'],
+            'position' => ['sometimes', 'integer'],
             'status' => ['sometimes', 'string', 'in:backlog,todo,in_progress,in_review,done'],
             'project_id' => ['sometimes', 'uuid', 'exists:projects,id'],
             'assignee_id' => ['sometimes', 'uuid', 'exists:users,id'],
@@ -32,6 +33,10 @@ class EditTaskRequest extends FormRequest
             'due_date' => [
                 'description' => 'The due date for the task',
                 'example' => '2023-10-01T12:00:00Z',
+            ],
+            'position' => [
+                'description' => 'The position of the task in the list',
+                'example' => 1000,
             ],
             'status' => [
                 'description' => 'The current status of the task',
