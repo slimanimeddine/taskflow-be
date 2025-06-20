@@ -17,9 +17,11 @@ class ProjectFactory extends Factory
      */
     public function definition(): array
     {
+        $selectedImage = fake()->numberBetween(1, 40);
+
         return [
             'name' => fake()->company(),
-            'image_path' => fake()->imageUrl(640, 480, 'business', true, 'Workspace'),
+            'image_path' => "seeding-photos/{$selectedImage}.jpeg",
             'workspace_id' => Workspace::factory(),
         ];
     }

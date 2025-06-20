@@ -17,9 +17,11 @@ class WorkspaceFactory extends Factory
      */
     public function definition(): array
     {
+        $selectedImage = fake()->numberBetween(1, 40);
+
         return [
             'name' => fake()->company(),
-            'image_path' => fake()->imageUrl(640, 480, 'business', true, 'Workspace'),
+            'image_path' => "seeding-photos/{$selectedImage}.jpeg",
             'user_id' => User::factory(),
             'invite_code' => fake()->unique()->regexify('[A-Za-z0-9]{10}'),
         ];

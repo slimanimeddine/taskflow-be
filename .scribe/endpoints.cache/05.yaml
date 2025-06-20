@@ -462,7 +462,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978918-ea3e-700c-af46-74390038de7a","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01978918-ea34-7094-b11d-a13dcea5ceaa","project_id":"01978918-ea3b-7272-9ffe-b75e4678cba5","assignee_id":"01978918-ea3d-725e-9931-1b4902e54715","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"}}'
+        content: '{"data":{"id":"01978cf9-4bf6-72f5-b824-4bbf4040c5db","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01978cf9-4bef-7312-b3ab-a0a66677158b","project_id":"01978cf9-4bf3-71a5-a40b-6ca839d724c0","assignee_id":"01978cf9-4bf5-722e-a3e7-5c748590c8a0","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -748,7 +748,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978918-ea6d-70df-aaa0-5ae6f2896366","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01978918-ea63-7122-a94a-8682d5c2a941","project_id":"01978918-ea69-7221-861e-58f09fde15af","assignee_id":"01978918-ea6b-700f-9df2-8e6f7310088a","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"}}'
+        content: '{"data":{"id":"01978cf9-4c20-70b6-8979-f60804a3fe99","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01978cf9-4c18-7308-a1e8-74645ae9b8a6","project_id":"01978cf9-4c1d-712b-84ef-6671a1ab2025","assignee_id":"01978cf9-4c1f-7011-9642-45af53632c22","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -799,8 +799,8 @@ endpoints:
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Bulk edit tasks'
-      description: 'Bulk edit tasks in a workspace.'
+      title: 'Bulk edit tasks positions'
+      description: 'Bulk edit tasks positions in a workspace.'
       authenticated: true
       custom: []
     headers:
@@ -843,34 +843,18 @@ endpoints:
         exampleWasSpecified: false
         nullable: false
         custom: []
-      'tasks[].status':
-        name: 'tasks[].status'
-        description: 'The status of the task.'
-        required: false
-        example: done
-        type: string
-        enumValues:
-          - backlog
-          - todo
-          - in_progress
-          - in_review
-          - done
-        exampleWasSpecified: false
-        nullable: false
-        custom: []
     cleanBodyParameters:
       tasks:
         -
           id: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
           position: 10
-          status: done
     fileParameters: []
     responses:
       -
         status: 200
         content: |-
           {
-                "message": "Tasks updated successfully",
+                "message": "Tasks positions updated successfully",
                 "status": 200
           }
         headers: []
@@ -942,7 +926,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978918-ea92-72ea-b42e-58860011986b","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"01978918-ea89-71da-b90f-e0cba00ae4ce","project_id":"01978918-ea8f-7398-a658-603cf28e0aab","assignee_id":"01978918-ea91-71c2-b3d4-696785886cb5","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"}}'
+        content: '{"data":{"id":"01978cf9-4c46-73cc-bd1a-ba41b751df3c","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"01978cf9-4c3e-7213-8a65-ab3c2192d938","project_id":"01978cf9-4c43-715b-93e8-0b5f194a98c6","assignee_id":"01978cf9-4c45-7083-b6fe-612bbf0dacaa","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
         headers: []
         description: Success
         custom: []

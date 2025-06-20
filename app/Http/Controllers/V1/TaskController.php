@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\ApiController;
-use App\Http\Requests\V1\BulkEditTasksRequest;
+use App\Http\Requests\V1\BulkEditTasksPositionsRequest;
 use App\Http\Requests\V1\CreateTaskRequest;
 use App\Http\Requests\V1\EditTaskRequest;
 use App\Http\Resources\V1\TaskResource;
@@ -324,14 +324,14 @@ class TaskController extends ApiController
     }
 
     /**
-     * Bulk edit tasks
+     * Bulk edit tasks positions
      *
-     * Bulk edit tasks in a workspace.
+     * Bulk edit tasks positions in a workspace.
      *
      * @authenticated
      *
      * @response 200 scenario=Success {
-     *       "message": "Tasks updated successfully",
+     *       "message": "Tasks positions updated successfully",
      *       "status": 200
      * }
      * @response 400 scenario="No tasks provided" {
@@ -342,7 +342,7 @@ class TaskController extends ApiController
      *       "message": "Unauthenticated",
      * }
      */
-    public function bulkEdit(BulkEditTasksRequest $request)
+    public function bulkEditPositions(BulkEditTasksPositionsRequest $request)
     {
         $tasks = $request->validated('tasks');
 
@@ -352,11 +352,7 @@ class TaskController extends ApiController
             return $this->error('No tasks provided for bulk edit.', 400);
         }
 
-        if (isset($tasks[0]['status'])) {
-            Task::upsert($tasks, uniqueBy: ['id'], update: ['position', 'status']);
-        } else {
-            Task::upsert($tasks, uniqueBy: ['id'], update: ['position']);
-        }
+        Task::upsert($tasks, uniqueBy: ['id'], update: ['position']);
 
         return $this->successNoData('Tasks updated successfully');
     }

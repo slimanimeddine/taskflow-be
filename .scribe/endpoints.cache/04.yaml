@@ -41,7 +41,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978918-e9b2-70f6-9085-54810c584b06","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00ddaa?text=business+Workspace+voluptatem","name":"Durgan, Kris and Schroeder","workspace_id":"01978918-e9b0-7319-9c47-f90d96a6e3d8","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"}}'
+        content: '{"data":{"id":"01978cf9-4b5c-72c0-bd55-0d209e003048","image_path":"seeding-photos\/30.jpeg","name":"Cole-Pfeffer","workspace_id":"01978cf9-4b5a-7037-9d9f-4f7cb6a230bc","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -105,7 +105,7 @@ endpoints:
         name: projectId
         description: ''
         required: true
-        example: 0197807f-e78a-7218-8d51-4bb3e5402b79
+        example: 01978cf0-52b5-706c-b29f-3d2b29064da2
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -122,7 +122,7 @@ endpoints:
         nullable: false
         custom: []
     cleanUrlParameters:
-      projectId: 0197807f-e78a-7218-8d51-4bb3e5402b79
+      projectId: 01978cf0-52b5-706c-b29f-3d2b29064da2
       workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
     queryParameters: []
     cleanQueryParameters: []
@@ -154,7 +154,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978918-e9ca-7180-868f-3045951d59cb","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01978918-e9c9-7295-b87a-b26a1a2810ad","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"}}'
+        content: '{"data":{"id":"01978cf9-4b79-7180-b64b-9e344c722e04","image_path":"seeding-photos\/16.jpeg","name":"Bailey Ltd","workspace_id":"01978cf9-4b78-7285-ad8f-6913c3fe890c","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -302,14 +302,14 @@ endpoints:
         name: workspaceId
         description: ''
         required: true
-        example: 0197807e-e5c1-7242-a28f-2ee7a421dab8
+        example: 01978cf0-51a0-700d-9e65-f695d347bb4f
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      workspaceId: 0197807e-e5c1-7242-a28f-2ee7a421dab8
+      workspaceId: 01978cf0-51a0-700d-9e65-f695d347bb4f
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -318,7 +318,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01978918-e9e3-7242-83e6-06b4eabab81d","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cc99?text=business+Workspace+nostrum","name":"Price Ltd","workspace_id":"01978918-e9e2-724f-bf13-67ff9ab11727","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"},{"id":"01978918-e9ec-72e4-84cf-c5c294545cc7","image_path":"https:\/\/via.placeholder.com\/640x480.png\/0033cc?text=business+Workspace+id","name":"Kshlerin, Gaylord and Hettinger","workspace_id":"01978918-e9ea-70b7-8eec-7334b4587ba3","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"}]}'
+        content: '{"data":[{"id":"01978cf9-4b92-7220-95c6-9c67fa2f5d15","image_path":"seeding-photos\/1.jpeg","name":"Hirthe Inc","workspace_id":"01978cf9-4b8f-72ff-8020-30bdfa9d04b3","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"},{"id":"01978cf9-4b9d-7164-856c-77b4a982db14","image_path":"seeding-photos\/10.jpeg","name":"Haag and Sons","workspace_id":"01978cf9-4b9b-709d-848c-b28fbb959eb9","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -420,7 +420,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978918-ea00-7173-9e8f-ea8f20aa4ad3","image_path":"https:\/\/via.placeholder.com\/640x480.png\/00cccc?text=business+Workspace+animi","name":"Bailey Inc","workspace_id":"01978918-e9ff-70d3-909d-d5930d784f36","created_at":"2025-06-19T16:50:00.000000Z","updated_at":"2025-06-19T16:50:00.000000Z"}}'
+        content: '{"data":{"id":"01978cf9-4bb5-7061-9f65-30f76524d69d","image_path":"seeding-photos\/16.jpeg","name":"Bailey Ltd","workspace_id":"01978cf9-4bb3-735a-a203-a93154ad487f","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
         headers: []
         description: Success
         custom: []

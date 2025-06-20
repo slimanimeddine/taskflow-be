@@ -627,10 +627,10 @@
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
                                              id="toc-item-tasks-PATCHapi-v1-tasks">
-                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Bulk edit tasks">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Bulk edit tasks positions">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
                                                    href="#tasks-PATCHapi-v1-tasks">
-                                                    Bulk edit tasks
+                                                    Bulk edit tasks positions
                                                 </a>
                                             </div>
                                                                                     </div>
@@ -800,7 +800,7 @@
 
         </div>
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
-            Last updated: June 19, 2025
+            Last updated: June 20, 2025
         </div>
 
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
@@ -4793,12 +4793,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e95e-7057-84cc-fc0c1c1236dc&quot;,
+        &quot;id&quot;: &quot;01978cf9-4b10-734a-998f-b5b906527816&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;01978918-e958-729b-90ac-dff3be5f6de1&quot;,
-        &quot;workspace_id&quot;: &quot;01978918-e95c-738b-9996-4430ff6dd9ef&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;user_id&quot;: &quot;01978cf9-4b07-72f9-bd6d-d02d6be95803&quot;,
+        &quot;workspace_id&quot;: &quot;01978cf9-4b0e-7171-a737-11009a3ea2e4&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -5327,12 +5327,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e972-731c-8e82-748d16e82b8e&quot;,
+        &quot;id&quot;: &quot;01978cf9-4b25-728b-b8b4-6bcbd022bf55&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;01978918-e96d-70e5-b9d4-3ae1cfdafe4a&quot;,
-        &quot;workspace_id&quot;: &quot;01978918-e971-7310-af8e-22b756e2ff68&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;user_id&quot;: &quot;01978cf9-4b20-712e-878e-73b408867ed5&quot;,
+        &quot;workspace_id&quot;: &quot;01978cf9-4b23-704b-a446-5cc8d2b03727&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -6361,12 +6361,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e992-71b7-9ca2-b363a888addf&quot;,
+        &quot;id&quot;: &quot;01978cf9-4b41-72a7-ae78-631145e4f7b8&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;01978918-e98d-73ea-b0f8-bf9582b62851&quot;,
-        &quot;workspace_id&quot;: &quot;01978918-e991-718a-abb5-5d594e0d670e&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;user_id&quot;: &quot;01978cf9-4b3c-704e-bb39-948202c45f49&quot;,
+        &quot;workspace_id&quot;: &quot;01978cf9-4b40-7170-bf2c-189ca51d4203&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -6856,12 +6856,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e9b2-70f6-9085-54810c584b06&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00ddaa?text=business+Workspace+voluptatem&quot;,
-        &quot;name&quot;: &quot;Durgan, Kris and Schroeder&quot;,
-        &quot;workspace_id&quot;: &quot;01978918-e9b0-7319-9c47-f90d96a6e3d8&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;id&quot;: &quot;01978cf9-4b5c-72c0-bd55-0d209e003048&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/30.jpeg&quot;,
+        &quot;name&quot;: &quot;Cole-Pfeffer&quot;,
+        &quot;workspace_id&quot;: &quot;01978cf9-4b5a-7037-9d9f-4f7cb6a230bc&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -7023,7 +7023,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        0197807f-e78a-7218-8d51-4bb3e5402b79
+                        01978cf0-52b5-706c-b29f-3d2b29064da2
                     </div>
                 </div>
             </div>
@@ -7104,7 +7104,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpgdf8ln183k856JBmDFe
+                        /tmp/php2c1r120s2h73djNPoHk
                     </div>
                 </div>
             </div>
@@ -7236,7 +7236,7 @@ fetch(url, {
                                         <input aria-label="projectId" name="projectId"
                                                id="urlparam-POSTapi-v1-projects--projectId--projectId"
                                                placeholder=""
-                                               value="0197807f-e78a-7218-8d51-4bb3e5402b79" data-component="url"
+                                               value="01978cf0-52b5-706c-b29f-3d2b29064da2" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -7390,12 +7390,12 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request POST \
-    "http://localhost:8000/api/v1/projects/0197807f-e78a-7218-8d51-4bb3e5402b79" \
+    "http://localhost:8000/api/v1/projects/01978cf0-52b5-706c-b29f-3d2b29064da2" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/phpgdf8ln183k856JBmDFe" </code></pre>                                        </div>
+    --form "image=@/tmp/php2c1r120s2h73djNPoHk" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -7403,7 +7403,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/projects/0197807f-e78a-7218-8d51-4bb3e5402b79"
+    "http://localhost:8000/api/v1/projects/01978cf0-52b5-706c-b29f-3d2b29064da2"
 );
 
 const headers = {
@@ -7463,12 +7463,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e9ca-7180-868f-3045951d59cb&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
-        &quot;name&quot;: &quot;Bailey Inc&quot;,
-        &quot;workspace_id&quot;: &quot;01978918-e9c9-7295-b87a-b26a1a2810ad&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;id&quot;: &quot;01978cf9-4b79-7180-b64b-9e344c722e04&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
+        &quot;name&quot;: &quot;Bailey Ltd&quot;,
+        &quot;workspace_id&quot;: &quot;01978cf9-4b78-7285-ad8f-6913c3fe890c&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -8089,7 +8089,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        0197807e-e5c1-7242-a28f-2ee7a421dab8
+                        01978cf0-51a0-700d-9e65-f695d347bb4f
                     </div>
                 </div>
             </div>
@@ -8222,7 +8222,7 @@ fetch(url, {
                                         <input aria-label="workspaceId" name="workspaceId"
                                                id="urlparam-GETapi-v1-workspaces--workspaceId--projects-workspaceId"
                                                placeholder=""
-                                               value="0197807e-e5c1-7242-a28f-2ee7a421dab8" data-component="url"
+                                               value="01978cf0-51a0-700d-9e65-f695d347bb4f" data-component="url"
                                                class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
                                     </div>
                                 </div>
@@ -8318,7 +8318,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost:8000/api/v1/workspaces/0197807e-e5c1-7242-a28f-2ee7a421dab8/projects" \
+    --get "http://localhost:8000/api/v1/workspaces/01978cf0-51a0-700d-9e65-f695d347bb4f/projects" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre>                                        </div>
@@ -8329,7 +8329,7 @@ You can check the Dev Tools console for debugging information.</p>
                                     <div class="sl-px-0 sl-py-1">
                                         <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
                                             <pre><code class="language-javascript">const url = new URL(
-    "http://localhost:8000/api/v1/workspaces/0197807e-e5c1-7242-a28f-2ee7a421dab8/projects"
+    "http://localhost:8000/api/v1/workspaces/01978cf0-51a0-700d-9e65-f695d347bb4f/projects"
 );
 
 const headers = {
@@ -8385,20 +8385,20 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01978918-e9e3-7242-83e6-06b4eabab81d&quot;,
-            &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-            &quot;name&quot;: &quot;Price Ltd&quot;,
-            &quot;workspace_id&quot;: &quot;01978918-e9e2-724f-bf13-67ff9ab11727&quot;,
-            &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+            &quot;id&quot;: &quot;01978cf9-4b92-7220-95c6-9c67fa2f5d15&quot;,
+            &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
+            &quot;name&quot;: &quot;Hirthe Inc&quot;,
+            &quot;workspace_id&quot;: &quot;01978cf9-4b8f-72ff-8020-30bdfa9d04b3&quot;,
+            &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;01978918-e9ec-72e4-84cf-c5c294545cc7&quot;,
-            &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/0033cc?text=business+Workspace+id&quot;,
-            &quot;name&quot;: &quot;Kshlerin, Gaylord and Hettinger&quot;,
-            &quot;workspace_id&quot;: &quot;01978918-e9ea-70b7-8eec-7334b4587ba3&quot;,
-            &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+            &quot;id&quot;: &quot;01978cf9-4b9d-7164-856c-77b4a982db14&quot;,
+            &quot;image_path&quot;: &quot;seeding-photos/10.jpeg&quot;,
+            &quot;name&quot;: &quot;Haag and Sons&quot;,
+            &quot;workspace_id&quot;: &quot;01978cf9-4b9b-709d-848c-b28fbb959eb9&quot;,
+            &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -8623,7 +8623,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/php14levolbmu9r8eBIfkf
+                        /tmp/phpfa2tbidl97qdePfAnol
                     </div>
                 </div>
             </div>
@@ -8902,7 +8902,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Project"\
-    --form "image=@/tmp/php14levolbmu9r8eBIfkf" </code></pre>                                        </div>
+    --form "image=@/tmp/phpfa2tbidl97qdePfAnol" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -8970,12 +8970,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-ea00-7173-9e8f-ea8f20aa4ad3&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
-        &quot;name&quot;: &quot;Bailey Inc&quot;,
-        &quot;workspace_id&quot;: &quot;01978918-e9ff-70d3-909d-d5930d784f36&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;id&quot;: &quot;01978cf9-4bb5-7061-9f65-30f76524d69d&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
+        &quot;name&quot;: &quot;Bailey Ltd&quot;,
+        &quot;workspace_id&quot;: &quot;01978cf9-4bb3-735a-a203-a93154ad487f&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -10551,17 +10551,17 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-ea3e-700c-af46-74390038de7a&quot;,
+        &quot;id&quot;: &quot;01978cf9-4bf6-72f5-b824-4bbf4040c5db&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
         &quot;description&quot;: &quot;Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.&quot;,
         &quot;due_date&quot;: &quot;1977-08-15 10:47:14&quot;,
         &quot;status&quot;: &quot;done&quot;,
         &quot;position&quot;: 123724,
-        &quot;workspace_id&quot;: &quot;01978918-ea34-7094-b11d-a13dcea5ceaa&quot;,
-        &quot;project_id&quot;: &quot;01978918-ea3b-7272-9ffe-b75e4678cba5&quot;,
-        &quot;assignee_id&quot;: &quot;01978918-ea3d-725e-9931-1b4902e54715&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01978cf9-4bef-7312-b3ab-a0a66677158b&quot;,
+        &quot;project_id&quot;: &quot;01978cf9-4bf3-71a5-a40b-6ca839d724c0&quot;,
+        &quot;assignee_id&quot;: &quot;01978cf9-4bf5-722e-a3e7-5c748590c8a0&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -11761,17 +11761,17 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-ea6d-70df-aaa0-5ae6f2896366&quot;,
+        &quot;id&quot;: &quot;01978cf9-4c20-70b6-8979-f60804a3fe99&quot;,
         &quot;name&quot;: &quot;Bailey Inc&quot;,
         &quot;description&quot;: &quot;Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.&quot;,
         &quot;due_date&quot;: &quot;1977-08-15 10:47:14&quot;,
         &quot;status&quot;: &quot;done&quot;,
         &quot;position&quot;: 123724,
-        &quot;workspace_id&quot;: &quot;01978918-ea63-7122-a94a-8682d5c2a941&quot;,
-        &quot;project_id&quot;: &quot;01978918-ea69-7221-861e-58f09fde15af&quot;,
-        &quot;assignee_id&quot;: &quot;01978918-ea6b-700f-9df2-8e6f7310088a&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01978cf9-4c18-7308-a1e8-74645ae9b8a6&quot;,
+        &quot;project_id&quot;: &quot;01978cf9-4c1d-712b-84ef-6671a1ab2025&quot;,
+        &quot;assignee_id&quot;: &quot;01978cf9-4c1f-7011-9642-45af53632c22&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -11819,7 +11819,7 @@ fetch(url, {
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="tasks-PATCHapi-v1-tasks">
-                    Bulk edit tasks
+                    Bulk edit tasks positions
                 </h2>
             </div>
         </div>
@@ -11846,7 +11846,7 @@ fetch(url, {
                                     </div>
         </div>
 
-        <p>Bulk edit tasks in a workspace.</p>
+        <p>Bulk edit tasks positions in a workspace.</p>
     </div>
     <div class="sl-flex">
         <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
@@ -12002,33 +12002,6 @@ fetch(url, {
 </div>
 
             </div>
-    <div class="expandable sl-text-sm sl-border-l sl-ml-7">
-        <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
-    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
-    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
-        <div class="sl-flex sl-items-center sl-max-w-full">
-                                        <div class="sl-flex sl-items-baseline sl-text-base">
-                    <div class="sl-font-mono sl-font-semibold sl-mr-2">status</div>
-                                            <span class="sl-truncate sl-text-muted">string</span>
-                                    </div>
-                                    </div>
-                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
-            <p>The status of the task.</p>
-        </div>
-                            Must be one of:
-            <ul style="list-style-position: inside; list-style-type: square;"><li><code>backlog</code></li> <li><code>todo</code></li> <li><code>in_progress</code></li> <li><code>in_review</code></li> <li><code>done</code></li></ul>
-                                    <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
-                <span>Example:</span> <!-- <span> important for spacing -->
-                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
-                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        done
-                    </div>
-                </div>
-            </div>
-            </div>
-</div>
-
-            </div>
             </div>
             </div>
                             </div>
@@ -12156,8 +12129,7 @@ fetch(url, {
     "tasks": [
         {
             "id": "01972a18-9d62-72ff-8a2b-d55e57b34d1c",
-            "position": 10,
-            "status": "done"
+            "position": 10
         }
     ]
 }</div>
@@ -12259,8 +12231,7 @@ You can check the Dev Tools console for debugging information.</p>
     \"tasks\": [
         {
             \"id\": \"01972a18-9d62-72ff-8a2b-d55e57b34d1c\",
-            \"position\": 10,
-            \"status\": \"done\"
+            \"position\": 10
         }
     ]
 }"
@@ -12285,8 +12256,7 @@ let body = {
     "tasks": [
         {
             "id": "01972a18-9d62-72ff-8a2b-d55e57b34d1c",
-            "position": 10,
-            "status": "done"
+            "position": 10
         }
     ]
 };
@@ -12336,7 +12306,7 @@ fetch(url, {
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
-    &quot;message&quot;: &quot;Tasks updated successfully&quot;,
+    &quot;message&quot;: &quot;Tasks positions updated successfully&quot;,
     &quot;status&quot;: 200
 }</code></pre>
                                                                             </div>
@@ -12785,17 +12755,17 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-ea92-72ea-b42e-58860011986b&quot;,
+        &quot;id&quot;: &quot;01978cf9-4c46-73cc-bd1a-ba41b751df3c&quot;,
         &quot;name&quot;: &quot;Price Ltd&quot;,
         &quot;description&quot;: &quot;Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.&quot;,
         &quot;due_date&quot;: &quot;2020-03-13 08:10:43&quot;,
         &quot;status&quot;: &quot;backlog&quot;,
         &quot;position&quot;: 814216,
-        &quot;workspace_id&quot;: &quot;01978918-ea89-71da-b90f-e0cba00ae4ce&quot;,
-        &quot;project_id&quot;: &quot;01978918-ea8f-7398-a658-603cf28e0aab&quot;,
-        &quot;assignee_id&quot;: &quot;01978918-ea91-71c2-b3d4-696785886cb5&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01978cf9-4c3e-7213-8a65-ab3c2192d938&quot;,
+        &quot;project_id&quot;: &quot;01978cf9-4c43-715b-93e8-0b5f194a98c6&quot;,
+        &quot;assignee_id&quot;: &quot;01978cf9-4c45-7083-b6fe-612bbf0dacaa&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -13264,20 +13234,20 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01978918-e874-7057-8e9a-159da6983c11&quot;,
+            &quot;id&quot;: &quot;01978cf9-4a46-7200-bcda-c78768cc90c2&quot;,
             &quot;name&quot;: &quot;Morgan Hirthe&quot;,
             &quot;email&quot;: &quot;dare.emelie@example.com&quot;,
-            &quot;email_verified_at&quot;: &quot;2025-06-19T16:49:59.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+            &quot;email_verified_at&quot;: &quot;2025-06-20T10:53:56.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;01978918-e8aa-7012-9a45-65b5679976cd&quot;,
+            &quot;id&quot;: &quot;01978cf9-4a62-70a3-87cd-8530ce61420a&quot;,
             &quot;name&quot;: &quot;Prof. Mina Bauch&quot;,
             &quot;email&quot;: &quot;okeefe.isidro@example.org&quot;,
-            &quot;email_verified_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+            &quot;email_verified_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -13673,12 +13643,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e8bd-7310-bb98-fba8e7076d8a&quot;,
+        &quot;id&quot;: &quot;01978cf9-4a74-70fd-a79e-f3392a164695&quot;,
         &quot;name&quot;: &quot;Morgan Hirthe&quot;,
         &quot;email&quot;: &quot;imclaughlin@example.org&quot;,
-        &quot;email_verified_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;email_verified_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -14513,22 +14483,22 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;01978918-e8d6-73e1-94f3-3c6d21cf16cd&quot;,
-            &quot;name&quot;: &quot;Price Ltd&quot;,
-            &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-            &quot;user_id&quot;: &quot;01978918-e8d4-7246-812f-c05052fd7908&quot;,
-            &quot;invite_code&quot;: &quot;ZgO7KvMWYP&quot;,
-            &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+            &quot;id&quot;: &quot;01978cf9-4a90-734c-b453-dd1727a675de&quot;,
+            &quot;name&quot;: &quot;Hirthe Inc&quot;,
+            &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
+            &quot;user_id&quot;: &quot;01978cf9-4a8e-7002-a51d-a28b131310ff&quot;,
+            &quot;invite_code&quot;: &quot;8ZgO7KvMWY&quot;,
+            &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;01978918-e8dd-7254-8dec-050a4476fb56&quot;,
+            &quot;id&quot;: &quot;01978cf9-4a95-734c-8e89-9f36f944e5e9&quot;,
             &quot;name&quot;: &quot;Raynor Ltd&quot;,
-            &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/007733?text=business+Workspace+adipisci&quot;,
-            &quot;user_id&quot;: &quot;01978918-e8dc-70b2-b291-805a5be80f9f&quot;,
-            &quot;invite_code&quot;: &quot;sRPGaP0UJZ&quot;,
-            &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+            &quot;image_path&quot;: &quot;seeding-photos/11.jpeg&quot;,
+            &quot;user_id&quot;: &quot;01978cf9-4a94-72b7-8e45-29f016b6064f&quot;,
+            &quot;invite_code&quot;: &quot;insRPGaP0U&quot;,
+            &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -14701,7 +14671,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phplflqj36d0ob30mOlojN
+                        /tmp/phpj1tlmee541jj8injGFe
                     </div>
                 </div>
             </div>
@@ -14947,7 +14917,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/phplflqj36d0ob30mOlojN" </code></pre>                                        </div>
+    --form "image=@/tmp/phpj1tlmee541jj8injGFe" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -15013,13 +14983,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e900-72aa-ac3b-737a4762c6c3&quot;,
-        &quot;name&quot;: &quot;Bailey Inc&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
-        &quot;user_id&quot;: &quot;01978918-e8ff-7357-9bf7-ce3339ec504b&quot;,
-        &quot;invite_code&quot;: &quot;ddZ1ySN2uu&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;id&quot;: &quot;01978cf9-4ab4-720d-aaad-6b8267a6a1bd&quot;,
+        &quot;name&quot;: &quot;Bailey Ltd&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
+        &quot;user_id&quot;: &quot;01978cf9-4ab3-72d0-ba8b-0422a47e6e0e&quot;,
+        &quot;invite_code&quot;: &quot;bddZ1ySN2u&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -15219,7 +15189,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/php6ac0r6qlqinlbfOAIkO
+                        /tmp/phpbcs95sorv8t8fKJPhpe
                     </div>
                 </div>
             </div>
@@ -15498,7 +15468,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/php6ac0r6qlqinlbfOAIkO" </code></pre>                                        </div>
+    --form "image=@/tmp/phpbcs95sorv8t8fKJPhpe" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -15566,13 +15536,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e916-723a-bc38-c59cf1997607&quot;,
-        &quot;name&quot;: &quot;Bailey Inc&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cccc?text=business+Workspace+animi&quot;,
-        &quot;user_id&quot;: &quot;01978918-e914-7091-b9fd-eaa2ac29d3a8&quot;,
-        &quot;invite_code&quot;: &quot;ICeDI7xc8Z&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;id&quot;: &quot;01978cf9-4ac9-724c-a0c1-46479c658848&quot;,
+        &quot;name&quot;: &quot;Bailey Ltd&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
+        &quot;user_id&quot;: &quot;01978cf9-4ac8-722e-aa61-78747e648c2c&quot;,
+        &quot;invite_code&quot;: &quot;eICeDI7xc8&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -16032,13 +16002,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e927-7370-8a53-e32de646a05d&quot;,
-        &quot;name&quot;: &quot;Price Ltd&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-        &quot;user_id&quot;: &quot;01978918-e926-7166-a2ad-1b62ee0741c1&quot;,
-        &quot;invite_code&quot;: &quot;NncBs5Cvlv&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;id&quot;: &quot;01978cf9-4adb-7222-b77a-25ac8dc5a59b&quot;,
+        &quot;name&quot;: &quot;Hirthe Inc&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
+        &quot;user_id&quot;: &quot;01978cf9-4ada-7398-a6e1-387a42d16278&quot;,
+        &quot;invite_code&quot;: &quot;4NncBs5Cvl&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -16957,13 +16927,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;01978918-e943-7145-b1ee-cb2f53261be5&quot;,
-        &quot;name&quot;: &quot;Price Ltd&quot;,
-        &quot;image_path&quot;: &quot;https://via.placeholder.com/640x480.png/00cc99?text=business+Workspace+nostrum&quot;,
-        &quot;user_id&quot;: &quot;01978918-e942-7311-b9b0-07d8c2851cca&quot;,
-        &quot;invite_code&quot;: &quot;8JzXP5lHud&quot;,
-        &quot;created_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-19T16:50:00.000000Z&quot;
+        &quot;id&quot;: &quot;01978cf9-4af2-7378-922e-9f8df39094ca&quot;,
+        &quot;name&quot;: &quot;Hirthe Inc&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
+        &quot;user_id&quot;: &quot;01978cf9-4af0-7207-ada9-123faca16988&quot;,
+        &quot;invite_code&quot;: &quot;nsRPGaP0UJ&quot;,
+        &quot;created_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-20T10:53:57.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>

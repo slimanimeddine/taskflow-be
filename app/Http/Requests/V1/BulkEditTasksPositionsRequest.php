@@ -4,7 +4,7 @@ namespace App\Http\Requests\V1;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BulkEditTasksRequest extends FormRequest
+class BulkEditTasksPositionsRequest extends FormRequest
 {
     public function rules(): array
     {
@@ -12,7 +12,6 @@ class BulkEditTasksRequest extends FormRequest
             'tasks' => ['required', 'array'],
             'tasks.*.id' => ['required', 'exists:tasks,id'],
             'tasks.*.position' => ['required', 'integer'],
-            'tasks.*.status' => ['sometimes', 'in:backlog,todo,in_progress,in_review,done'],
         ];
     }
 
@@ -29,11 +28,7 @@ class BulkEditTasksRequest extends FormRequest
             'tasks.*.position' => [
                 'description' => 'The position of the task in the list',
                 'example' => 10,
-            ],
-            'tasks.*.status' => [
-                'description' => 'The status of the task',
-                'example' => 'done',
-            ],
+            ]
         ];
     }
 }
