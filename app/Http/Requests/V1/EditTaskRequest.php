@@ -11,7 +11,7 @@ class EditTaskRequest extends FormRequest
         return [
             'name' => ['sometimes', 'string', 'min:1', 'max:50'],
             'description' => ['sometimes', 'nullable', 'string'],
-            'due_date' => ['sometimes', 'nullable', 'date'],
+            'due_date' => ['sometimes', 'date'],
             'position' => ['sometimes', 'integer'],
             'status' => ['sometimes', 'string', 'in:backlog,todo,in_progress,in_review,done'],
             'project_id' => ['sometimes', 'uuid', 'exists:projects,id'],

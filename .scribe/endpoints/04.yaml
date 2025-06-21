@@ -39,7 +39,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978cf9-4b5c-72c0-bd55-0d209e003048","image_path":"seeding-photos\/30.jpeg","name":"Cole-Pfeffer","workspace_id":"01978cf9-4b5a-7037-9d9f-4f7cb6a230bc","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
+        content: '{"data":{"id":"0197901d-ccdb-7017-b091-16157bbeaed5","image_path":"seeding-photos\/37.jpeg","name":"Quos ratione non unde blanditiis.","workspace_id":"0197901d-ccd9-7202-b025-6671f8dff08b","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -103,7 +103,7 @@ endpoints:
         name: projectId
         description: ''
         required: true
-        example: 01978cf0-52b5-706c-b29f-3d2b29064da2
+        example: 0197901b-9bb7-73d8-a923-c615a1d10ce8
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -120,7 +120,7 @@ endpoints:
         nullable: false
         custom: []
     cleanUrlParameters:
-      projectId: 01978cf0-52b5-706c-b29f-3d2b29064da2
+      projectId: 0197901b-9bb7-73d8-a923-c615a1d10ce8
       workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
     queryParameters: []
     cleanQueryParameters: []
@@ -152,7 +152,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978cf9-4b79-7180-b64b-9e344c722e04","image_path":"seeding-photos\/16.jpeg","name":"Bailey Ltd","workspace_id":"01978cf9-4b78-7285-ad8f-6913c3fe890c","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
+        content: '{"data":{"id":"0197901d-ccef-7012-a38c-45cdb11ce57b","image_path":"seeding-photos\/16.jpeg","name":"Et animi quos velit.","workspace_id":"0197901d-ccee-7266-af3b-7271de72f22d","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -300,14 +300,14 @@ endpoints:
         name: workspaceId
         description: ''
         required: true
-        example: 01978cf0-51a0-700d-9e65-f695d347bb4f
+        example: 0197901b-9ac9-7349-8c31-b0ec0496c868
         type: string
         enumValues: []
         exampleWasSpecified: false
         nullable: false
         custom: []
     cleanUrlParameters:
-      workspaceId: 01978cf0-51a0-700d-9e65-f695d347bb4f
+      workspaceId: 0197901b-9ac9-7349-8c31-b0ec0496c868
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -316,7 +316,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"01978cf9-4b92-7220-95c6-9c67fa2f5d15","image_path":"seeding-photos\/1.jpeg","name":"Hirthe Inc","workspace_id":"01978cf9-4b8f-72ff-8020-30bdfa9d04b3","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"},{"id":"01978cf9-4b9d-7164-856c-77b4a982db14","image_path":"seeding-photos\/10.jpeg","name":"Haag and Sons","workspace_id":"01978cf9-4b9b-709d-848c-b28fbb959eb9","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}]}'
+        content: '{"data":[{"id":"0197901d-cd06-7217-a8a2-24ebdff37e39","image_path":"seeding-photos\/1.jpeg","name":"Quidem nostrum qui commodi incidunt.","workspace_id":"0197901d-cd05-7329-80b3-7d278a573888","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"},{"id":"0197901d-cd0e-7034-9480-37f2c66105a8","image_path":"seeding-photos\/2.jpeg","name":"Doloremque id aut libero aliquam.","workspace_id":"0197901d-cd0d-7055-b6ff-e24cf6d6c887","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -418,7 +418,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978cf9-4bb5-7061-9f65-30f76524d69d","image_path":"seeding-photos\/16.jpeg","name":"Bailey Ltd","workspace_id":"01978cf9-4bb3-735a-a203-a93154ad487f","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
+        content: '{"data":{"id":"0197901d-cd20-70c4-998d-1155601ed301","image_path":"seeding-photos\/16.jpeg","name":"Et animi quos velit.","workspace_id":"0197901d-cd1f-72c2-b6e0-e808cf43b230","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
         headers: []
         description: Success
         custom: []

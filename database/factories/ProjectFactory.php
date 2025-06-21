@@ -20,7 +20,7 @@ class ProjectFactory extends Factory
         $selectedImage = fake()->numberBetween(1, 40);
 
         return [
-            'name' => fake()->company(),
+            'name' => fake()->sentence(4),
             'image_path' => "seeding-photos/{$selectedImage}.jpeg",
             'workspace_id' => Workspace::factory(),
         ];

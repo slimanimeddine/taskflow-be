@@ -130,6 +130,16 @@ endpoints:
         exampleWasSpecified: true
         nullable: false
         custom: []
+      page:
+        name: page
+        description: 'the page number to retrieve.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
     cleanQueryParameters:
       'filter[name]': 'Design mockup'
       'filter[due_date]': '2023-10-01'
@@ -140,6 +150,7 @@ endpoints:
       'filter[assignee]': 01972a18-9d62-72ff-8a2b-d55e57b34d1c
       sort: '-due_date'
       paginate: 1
+      page: 1
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -398,12 +409,12 @@ endpoints:
       due_date:
         name: due_date
         description: 'The due date for the task. Must be a valid date.'
-        required: false
+        required: true
         example: '2023-10-01T12:00:00Z'
         type: string
         enumValues: []
         exampleWasSpecified: false
-        nullable: true
+        nullable: false
         custom: []
       status:
         name: status
@@ -462,7 +473,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978cf9-4bf6-72f5-b824-4bbf4040c5db","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01978cf9-4bef-7312-b3ab-a0a66677158b","project_id":"01978cf9-4bf3-71a5-a40b-6ca839d724c0","assignee_id":"01978cf9-4bf5-722e-a3e7-5c748590c8a0","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
+        content: '{"data":{"id":"0197901d-cd54-7397-8d6d-48cdab03e7bf","name":"Eius et animi quos.","description":"Fugiat sunt nihil accusantium harum mollitia. Deserunt aut ab provident perspiciatis quo omnis nostrum. Adipisci quidem nostrum qui commodi incidunt iure.","due_date":"2025-11-25 06:39:24","status":"done","position":5745,"workspace_id":"0197901d-cd4b-73f4-bf61-c8cb1d9af6b3","project_id":"0197901d-cd50-71e7-9637-d5b60d502ce7","assignee_id":"0197901d-cd52-73ab-8957-cf04107ea05c","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -689,7 +700,7 @@ endpoints:
         type: string
         enumValues: []
         exampleWasSpecified: false
-        nullable: true
+        nullable: false
         custom: []
       position:
         name: position
@@ -748,7 +759,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978cf9-4c20-70b6-8979-f60804a3fe99","name":"Bailey Inc","description":"Velit et fugiat sunt nihil accusantium. Mollitia modi deserunt aut ab provident perspiciatis quo. Nostrum aut adipisci quidem nostrum. Commodi incidunt iure odit.","due_date":"1977-08-15 10:47:14","status":"done","position":123724,"workspace_id":"01978cf9-4c18-7308-a1e8-74645ae9b8a6","project_id":"01978cf9-4c1d-712b-84ef-6671a1ab2025","assignee_id":"01978cf9-4c1f-7011-9642-45af53632c22","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
+        content: '{"data":{"id":"0197901d-cd7a-7020-9cb2-aa338d0eb0da","name":"Eius et animi quos.","description":"Fugiat sunt nihil accusantium harum mollitia. Deserunt aut ab provident perspiciatis quo omnis nostrum. Adipisci quidem nostrum qui commodi incidunt iure.","due_date":"2025-11-25 06:39:24","status":"done","position":5745,"workspace_id":"0197901d-cd72-730f-bd06-41ddac773286","project_id":"0197901d-cd77-717a-96b9-abb2707ee8a5","assignee_id":"0197901d-cd79-7379-b90c-a72ca219eabe","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -926,7 +937,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"01978cf9-4c46-73cc-bd1a-ba41b751df3c","name":"Price Ltd","description":"Commodi incidunt iure odit. Et modi ipsum nostrum omnis autem et consequatur. Dolores enim non facere tempora.","due_date":"2020-03-13 08:10:43","status":"backlog","position":814216,"workspace_id":"01978cf9-4c3e-7213-8a65-ab3c2192d938","project_id":"01978cf9-4c43-715b-93e8-0b5f194a98c6","assignee_id":"01978cf9-4c45-7083-b6fe-612bbf0dacaa","created_at":"2025-06-20T10:53:57.000000Z","updated_at":"2025-06-20T10:53:57.000000Z"}}'
+        content: '{"data":{"id":"0197901d-cd9f-721c-ac07-ff66d3ddf437","name":"Adipisci quidem nostrum qui commodi.","description":"Odit et et modi. Nostrum omnis autem et consequatur aut. Enim non facere tempora ex voluptatem laboriosam praesentium. Adipisci molestias fugit deleniti distinctio eum doloremque id.","due_date":"2025-10-04 13:08:10","status":"todo","position":2204,"workspace_id":"0197901d-cd98-7106-9a55-fc3aaa46ef84","project_id":"0197901d-cd9d-7051-a243-f6b770a1b3fe","assignee_id":"0197901d-cd9e-709c-a928-cc4d17690a40","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
         headers: []
         description: Success
         custom: []

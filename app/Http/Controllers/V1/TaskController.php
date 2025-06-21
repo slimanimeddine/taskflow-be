@@ -108,7 +108,7 @@ class TaskController extends ApiController
             'description' => $request->description,
             'due_date' => $request->due_date,
             'status' => $request->status,
-            'position' => $highestPosition !== null ? $highestPosition + 1 : 1,
+            'position' => $highestPosition !== null ? $highestPosition + 1 : 0,
             'workspace_id' => $workspace->id,
             'project_id' => $project->id,
             'assignee_id' => $assignee->id,
@@ -133,6 +133,7 @@ class TaskController extends ApiController
      * @queryParam filter[assignee] string task assignee id. Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
      * @queryParam sort string sort tasks. Enum:name,-name,due_date,-due_date,status,-status,project,-project,assignee,-assignee. Example: -due_date
      * @queryParam paginate integer required whether to paginate the results. Enum:1,0. Example: 1
+     * @queryParam page integer the page number to retrieve. Example: 1
      *
      * @responseFile status=200 scenario="Paginated" storage/responses/tasks.paginated.json
      * @responseFile status=200 scenario="Not Paginated" storage/responses/tasks.not_paginated.json

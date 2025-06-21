@@ -20,11 +20,11 @@ class TaskFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->company(),
+            'name' => fake()->sentence(4),
             'description' => fake()->paragraph(),
-            'due_date' => fake()->dateTime(),
+            'due_date' => fake()->dateTimeBetween('now', '+1 year'),
             'status' => fake()->randomElement(['backlog', 'todo', 'in_progress', 'in_review', 'done']),
-            'position' => fake()->numberBetween(1000, 1000000),
+            'position' => fake()->numberBetween(1, 10000),
             'workspace_id' => Workspace::factory(),
             'project_id' => Project::factory(),
             'assignee_id' => User::factory(),

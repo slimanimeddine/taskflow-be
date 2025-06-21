@@ -11,7 +11,7 @@ class CreateTaskRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'min:1', 'max:50'],
             'description' => ['nullable', 'string'],
-            'due_date' => ['nullable', 'date'],
+            'due_date' => ['required', 'date'],
             'status' => ['required', 'string', 'in:backlog,todo,in_progress,in_review,done'],
             'workspace_id' => ['required', 'uuid', 'exists:workspaces,id'],
             'project_id' => ['required', 'uuid', 'exists:projects,id'],

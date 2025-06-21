@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -15,9 +14,9 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('name');
             $table->text('description')->nullable();
-            $table->dateTime('due_date')->nullable();
+            $table->dateTime('due_date');
             $table->enum('status', ['backlog', 'todo', 'in_progress', 'in_review', 'done']);
-            $table->integer('position');
+            $table->integer('position')->default(0);
             $table->foreignUuid('workspace_id')->constrained('workspaces')->onDelete('cascade');
             $table->foreignUuid('project_id')->constrained('projects')->onDelete('cascade');
             $table->foreignUuid('assignee_id')->constrained('users')->onDelete('cascade');

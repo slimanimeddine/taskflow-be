@@ -20,7 +20,7 @@ class WorkspaceFactory extends Factory
         $selectedImage = fake()->numberBetween(1, 40);
 
         return [
-            'name' => fake()->company(),
+            'name' => fake()->sentence(4),
             'image_path' => "seeding-photos/{$selectedImage}.jpeg",
             'user_id' => User::factory(),
             'invite_code' => fake()->unique()->regexify('[A-Za-z0-9]{10}'),
