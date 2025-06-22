@@ -55,8 +55,6 @@ export interface User {
   all_workspaces: Workspace[]
   admin_workspaces: Workspace[]
   member_workspaces: Workspace[]
-  tokens: PersonalAccessToken[]
-  notifications: DatabaseNotification[]
 }
 
 export interface Workspace {

@@ -294,7 +294,7 @@ class TaskController extends ApiController
      *
      * @apiResource scenario=Success App\Http\Resources\V1\TaskResource
      *
-     * @apiResourceModel App\Models\Task
+     * @apiResourceModel App\Models\Task with=project,assignee
      *
      * @response 401 scenario=Unauthenticated {
      *       "message": "Unauthenticated",
@@ -311,7 +311,7 @@ class TaskController extends ApiController
     public function show(Request $request, string $taskId)
     {
         $user = $request->user();
-        $task = Task::find($taskId);
+        $task = Task::with(['project', 'assignee'])->where('id', $taskId)->first();
 
         if (!$task) {
             return $this->notFound('Task not found');
