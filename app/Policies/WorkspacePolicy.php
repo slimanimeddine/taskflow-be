@@ -61,4 +61,9 @@ class WorkspacePolicy
     {
         return $this->show($user, $workspace);
     }
+
+    public function viewWorkspaceStats(User $user, Workspace $workspace): bool
+    {
+        return $this->show($user, $workspace);
+    }
 }

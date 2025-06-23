@@ -112,7 +112,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -168,7 +168,7 @@ class WorkspaceController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -209,7 +209,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -252,7 +252,7 @@ class WorkspaceController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -265,5 +265,66 @@ class WorkspaceController extends ApiController
         ]);
 
         return new WorkspaceResource($workspace);
+    }
+
+    /**
+     * View workspace stats
+     *
+     * View statistics for the specified workspace.
+     *
+     * @authenticated
+     *
+     * @urlParam workspaceId string required the id of the workspace Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @response 200 scenario=Success {
+     *       "message": "Workspace stats retrieved successfully",
+     *       "data": [
+     *           "total_projects": 10,
+     *           "total_tasks": 50,
+     *           "total_members": 5,
+     *           "completed_tasks": 30,
+     *           "overdue_tasks": 5,
+     *       ]
+     *       "status": 200
+     * }
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "You are not authorized to view stats for this workspace.",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "Workspace not found",
+     *       "status": 404
+     * }
+     */
+    public function viewWorkspaceStats(Request $request, string $workspaceId)
+    {
+        $user = $request->user();
+        $workspace = Workspace::find($workspaceId);
+
+        if (!$workspace) {
+            return $this->notFound('Workspace not found');
+        }
+
+        if ($user->cannot('viewWorkspaceStats', $workspace)) {
+            return $this->unauthorized('You are not authorized to view stats for this workspace.');
+        }
+
+        $totalProjects = $workspace->projects()->count();
+        $totalTasks = $workspace->tasks()->count();
+        $totalMembers = $workspace->users()->count();
+        $completedTasks = $workspace->tasks()->where('status', 'done')->count();
+        $overdueTasks = $workspace->tasks()->where('status', '!=', 'done')
+            ->where('due_date', '<', now())->count();
+
+        return $this->success('Workspace stats retrieved successfully', [
+            'total_projects' => $totalProjects,
+            'total_tasks' => $totalTasks,
+            'total_members' => $totalMembers,
+            'completed_tasks' => $completedTasks,
+            'overdue_tasks' => $overdueTasks,
+        ]);
     }
 }

@@ -535,6 +535,18 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-projects-GETapi-v1-projects--projectId--stats">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="View project stats">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#projects-GETapi-v1-projects--projectId--stats">
+                                                    View project stats
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
+                                                                            </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
                                              id="toc-item-projects-GETapi-v1-workspaces--workspaceId--projects">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="List workspace projects">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
@@ -772,6 +784,18 @@
                                                                             </div>
                                                                     <div class="expandable">
                                         <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
+                                             id="toc-item-workspaces-GETapi-v1-workspaces--workspaceId--stats">
+                                            <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="View workspace stats">
+                                                <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
+                                                   href="#workspaces-GETapi-v1-workspaces--workspaceId--stats">
+                                                    View workspace stats
+                                                </a>
+                                            </div>
+                                                                                    </div>
+
+                                                                            </div>
+                                                                    <div class="expandable">
+                                        <div class="sl-flex sl-items-center sl-h-md sl-pr-4 sl-pl-8 sl-bg-canvas-100 hover:sl-bg-canvas-200 sl-cursor-pointer sl-select-none"
                                              id="toc-item-workspaces-DELETEapi-v1-workspaces--workspaceId-">
                                             <div class="sl-flex-1 sl-items-center sl-truncate sl-mr-1.5 sl-p-0" title="Delete workspace">
                                                 <a class="ElementsTableOfContentsItem sl-block sl-no-underline"
@@ -800,7 +824,7 @@
 
         </div>
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
-            Last updated: June 21, 2025
+            Last updated: June 23, 2025
         </div>
 
         <div class="sl-flex sl-items-center sl-px-4 sl-py-3 sl-border-t">
@@ -4793,12 +4817,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cc8f-71d4-9830-2b50954ce611&quot;,
-        &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;0197901d-cc8a-7252-8b9d-d34991705ed0&quot;,
-        &quot;workspace_id&quot;: &quot;0197901d-cc8e-71fc-a8b0-eef54c3d2731&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;id&quot;: &quot;01979dfd-484d-734b-9d0e-f0505b5b2c7d&quot;,
+        &quot;role&quot;: &quot;member&quot;,
+        &quot;user_id&quot;: &quot;01979dfd-4848-72cb-b64b-ac49ec94b4d3&quot;,
+        &quot;workspace_id&quot;: &quot;01979dfd-484b-7037-939a-e50c68946324&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -5327,12 +5351,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cca1-727d-b716-72f19765a80c&quot;,
+        &quot;id&quot;: &quot;01979dfd-485d-72f8-82c0-a7aa26817762&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;0197901d-cc9b-72e8-8f81-fc2ee49c27c7&quot;,
-        &quot;workspace_id&quot;: &quot;0197901d-cca0-7157-abe0-8cd3dee5c0af&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;user_id&quot;: &quot;01979dfd-4858-7220-9db0-771fc971432b&quot;,
+        &quot;workspace_id&quot;: &quot;01979dfd-485b-7283-a49b-413dc07cc907&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -6361,12 +6385,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-ccc2-7337-93e7-e716cb49700e&quot;,
+        &quot;id&quot;: &quot;01979dfd-487c-72fb-8337-3edfea0cd599&quot;,
         &quot;role&quot;: &quot;admin&quot;,
-        &quot;user_id&quot;: &quot;0197901d-ccbd-7086-ac4e-dc85f676e75c&quot;,
-        &quot;workspace_id&quot;: &quot;0197901d-ccc1-7184-8d8e-7534fb834575&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;user_id&quot;: &quot;01979dfd-4877-70f3-8fc5-72c2c793a79e&quot;,
+        &quot;workspace_id&quot;: &quot;01979dfd-487a-73bb-bfca-82fb5ffac100&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -6856,12 +6880,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-ccdb-7017-b091-16157bbeaed5&quot;,
-        &quot;image_path&quot;: &quot;seeding-photos/37.jpeg&quot;,
-        &quot;name&quot;: &quot;Quos ratione non unde blanditiis.&quot;,
-        &quot;workspace_id&quot;: &quot;0197901d-ccd9-7202-b025-6671f8dff08b&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;id&quot;: &quot;01979dfd-4891-70e3-b228-3d2eaa6e84a9&quot;,
+        &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
+        &quot;name&quot;: &quot;Quidem nostrum qui commodi incidunt.&quot;,
+        &quot;workspace_id&quot;: &quot;01979dfd-4890-70c7-9de4-ee2f6613c83a&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -7104,7 +7128,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/php39buih7dl99fdGnHipA
+                        /tmp/phppv4cs5dc2n4i1oLmNiB
                     </div>
                 </div>
             </div>
@@ -7395,7 +7419,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/php39buih7dl99fdGnHipA" </code></pre>                                        </div>
+    --form "image=@/tmp/phppv4cs5dc2n4i1oLmNiB" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -7463,12 +7487,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-ccef-7012-a38c-45cdb11ce57b&quot;,
+        &quot;id&quot;: &quot;01979dfd-48a5-7188-b572-514d0ecbeece&quot;,
         &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
         &quot;name&quot;: &quot;Et animi quos velit.&quot;,
-        &quot;workspace_id&quot;: &quot;0197901d-ccee-7266-af3b-7271de72f22d&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01979dfd-48a3-7239-a4d9-1d1f0db8a9a9&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -7974,6 +7998,471 @@ fetch(url, {
         <div class="sl-relative">
             <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
                 <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
+                    id="projects-GETapi-v1-projects--projectId--stats">
+                    View project stats
+                </h2>
+            </div>
+        </div>
+
+        <div class="sl-relative">
+            <div title="http://localhost:8000/api/v1/projects/{projectId}/stats"
+                     class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
+                >
+                                            <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
+                             style="background-color: green;"
+                        >
+                            GET
+                        </div>
+                                        <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
+                        <div dir="rtl"
+                             class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/projects/{projectId}/stats</div>
+                    </div>
+
+                                                    <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
+                                 style="background-color: darkred"
+                            >requires authentication
+                            </div>
+                                    </div>
+        </div>
+
+        <p>View statistics for the specified project.</p>
+    </div>
+    <div class="sl-flex">
+        <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
+            <div class="sl-stack sl-stack--vertical sl-stack--10 sl-flex sl-flex-col sl-items-stretch">
+                <div class="sl-stack sl-stack--vertical sl-stack--8 sl-flex sl-flex-col sl-items-stretch">
+                                            <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">
+                                Headers
+                            </h3>
+                            <div class="sl-text-sm">
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Authorization</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Content-Type</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Accept</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                            </div>
+                        </div>
+                    
+                                            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">URL Parameters</h3>
+
+                            <div class="sl-text-sm">
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">projectId</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                    <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                    <span class="sl-ml-2 sl-text-warning">required</span>
+                                    </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>the id of the project</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        01972a18-9d62-72ff-8a2b-d55e57b34d1c
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                            </div>
+                        </div>
+                    
+
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        <div data-testid="two-column-right" class="sl-relative sl-w-2/5 sl-ml-16" style="max-width: 500px;">
+            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+
+                                    <div class="sl-inverted">
+    <div class="sl-overflow-y-hidden sl-rounded-lg">
+        <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
+              data-method="GET"
+              data-path="api/v1/projects/{projectId}/stats"
+              data-hasfiles="0"
+              data-hasjsonbody="0">
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Auth
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                            <label aria-hidden="true"
+                                   for="auth-GETapi-v1-projects--projectId--stats">Authorization</label>
+                            <span class="sl-mx-3">:</span>
+                            <div class="sl-flex sl-flex-1">
+                                <div class="sl-input sl-flex-1 sl-relative">
+                                    <code>Bearer </code>
+                                    <input aria-label="Authorization"
+                                           id="auth-GETapi-v1-projects--projectId--stats"
+                                           data-component="header"
+                                           data-prefix="Bearer "
+                                           name="Authorization"
+                                           placeholder="{YOUR_AUTH_KEY}"
+                                           class="auth-value sl-relative sl-w-3/5 sl-h-md sl-text-base sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Headers
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                                                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-projects--projectId--stats-Content-Type">Content-Type</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Content-Type" name="Content-Type"
+                                               id="header-GETapi-v1-projects--projectId--stats-Content-Type"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-projects--projectId--stats-Accept">Accept</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Accept" name="Accept"
+                                               id="header-GETapi-v1-projects--projectId--stats-Accept"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            URL Parameters
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                                                            <label aria-hidden="true"
+                                       for="urlparam-GETapi-v1-projects--projectId--stats-projectId">projectId</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="projectId" name="projectId"
+                                               id="urlparam-GETapi-v1-projects--projectId--stats-projectId"
+                                               placeholder="the id of the project"
+                                               value="01972a18-9d62-72ff-8a2b-d55e57b34d1c" data-component="url"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            
+            
+            
+            <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
+                <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
+                    <button type="button" data-endpoint="GETapi-v1-projects--projectId--stats"
+                            class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
+                    >
+                        Send Request 💥
+                    </button>
+                </div>
+            </div>
+
+            <div data-endpoint="GETapi-v1-projects--projectId--stats"
+                 class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
+                <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                     role="button">
+                    <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                        <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                 data-icon="caret-down"
+                                 class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                      d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                            </svg>
+                        </div>
+                        Request failed with error
+                    </div>
+                </div>
+                <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                    <div class="sl-panel__content sl-p-4">
+                        <p class="sl-pb-2"><strong class="error-message"></strong></p>
+                        <p class="sl-pb-2">Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</p>
+                    </div>
+                </div>
+            </div>
+
+                <div data-endpoint="GETapi-v1-projects--projectId--stats"
+                     class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Received response
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="sl-panel__content sl-p-4">
+                            <p class="sl-pb-2 response-status"></p>
+                            <pre><code class="sl-pb-2 response-content language-json"
+                                       data-empty-response-text="<Empty response>"
+                                       style="max-height: 300px;"></code></pre>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+                
+                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
+                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
+                                <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                                    <div class="sl--ml-2">
+                                        Example request:
+                                        <select class="example-request-lang-toggle sl-text-base"
+                                                aria-label="Request Sample Language"
+                                                onchange="switchExampleLanguage(event.target.value);">
+                                                                                            <option>bash</option>
+                                                                                            <option>javascript</option>
+                                                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-bash"
+                                     style="">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/projects/01972a18-9d62-72ff-8a2b-d55e57b34d1c/stats" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-javascript"
+                                     style="display: none;">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/projects/01972a18-9d62-72ff-8a2b-d55e57b34d1c/stats"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                    
+                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
+                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
+                                <div class="sl-flex sl-flex-1 sl-items-center sl-py-2">
+                                    <div class="sl--ml-2">
+                                        <div class="sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-text-muted sl-rounded sl-border-transparent sl-border">
+                                            <div class="sl-mb-2 sl-inline-block">Example response:</div>
+                                            <div class="sl-mb-2 sl-inline-block">
+                                                <select
+                                                        class="example-response-GETapi-v1-projects--projectId--stats-toggle sl-text-base"
+                                                        aria-label="Response sample"
+                                                        onchange="switchExampleResponse('GETapi-v1-projects--projectId--stats', event.target.value);">
+                                                                                                            <option value="0">200, Success</option>
+                                                                                                            <option value="1">401, Unauthenticated</option>
+                                                                                                            <option value="2">403, Unauthorized</option>
+                                                                                                            <option value="3">404, Not Found</option>
+                                                                                                    </select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                        class="sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 hover:sl-bg-canvas-50 active:sl-bg-canvas-100 sl-text-muted hover:sl-text-body focus:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70">
+                                    <div class="sl-mx-0">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy"
+                                             class="svg-inline--fa fa-copy fa-fw fa-sm sl-icon" role="img"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                  d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-projects--projectId--stats example-response-GETapi-v1-projects--projectId--stats-0"
+                                     style=" "
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+      &quot;message&quot;: &quot;message&quot;,
+      &quot;data&quot;: [
+          &quot;total_tasks&quot;: 50,
+          &quot;incomplete_tasks&quot;: 5,
+          &quot;completed_tasks&quot;: 30,
+          &quot;overdue_tasks&quot;: 5,
+      ]
+      &quot;status&quot;: 200
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-projects--projectId--stats example-response-GETapi-v1-projects--projectId--stats-1"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+      &quot;message&quot;: &quot;Unauthenticated&quot;,
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-projects--projectId--stats example-response-GETapi-v1-projects--projectId--stats-2"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+    &quot;message&quot;: &quot;message&quot;,
+    &quot;status&quot;: 403
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-projects--projectId--stats example-response-GETapi-v1-projects--projectId--stats-3"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+    &quot;message&quot;: &quot;message&quot;,
+    &quot;status&quot;: 404
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                    </div>
+                            </div>
+    </div>
+</div>
+
+                    <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
+    <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+        <div class="sl-relative">
+            <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
+                <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
                     id="projects-GETapi-v1-workspaces--workspaceId--projects">
                     List workspace projects
                 </h2>
@@ -8385,20 +8874,20 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;0197901d-cd06-7217-a8a2-24ebdff37e39&quot;,
+            &quot;id&quot;: &quot;01979dfd-48c5-7204-8d68-b11414415f4c&quot;,
             &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
             &quot;name&quot;: &quot;Quidem nostrum qui commodi incidunt.&quot;,
-            &quot;workspace_id&quot;: &quot;0197901d-cd05-7329-80b3-7d278a573888&quot;,
-            &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+            &quot;workspace_id&quot;: &quot;01979dfd-48c3-709b-9f57-5978170f96f5&quot;,
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;0197901d-cd0e-7034-9480-37f2c66105a8&quot;,
-            &quot;image_path&quot;: &quot;seeding-photos/2.jpeg&quot;,
-            &quot;name&quot;: &quot;Doloremque id aut libero aliquam.&quot;,
-            &quot;workspace_id&quot;: &quot;0197901d-cd0d-7055-b6ff-e24cf6d6c887&quot;,
-            &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+            &quot;id&quot;: &quot;01979dfd-48cc-73a2-937e-6d2682657b0c&quot;,
+            &quot;image_path&quot;: &quot;seeding-photos/25.jpeg&quot;,
+            &quot;name&quot;: &quot;Officia est dignissimos neque blanditiis.&quot;,
+            &quot;workspace_id&quot;: &quot;01979dfd-48cb-7072-852b-410f4def6bff&quot;,
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -8623,7 +9112,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpmc5fqv476ouk8kKApOC
+                        /tmp/phpv7kn7eup9ceb3ILHhdD
                     </div>
                 </div>
             </div>
@@ -8902,7 +9391,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Project"\
-    --form "image=@/tmp/phpmc5fqv476ouk8kKApOC" </code></pre>                                        </div>
+    --form "image=@/tmp/phpv7kn7eup9ceb3ILHhdD" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -8970,12 +9459,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cd20-70c4-998d-1155601ed301&quot;,
+        &quot;id&quot;: &quot;01979dfd-48e3-733a-a235-45d97418cbad&quot;,
         &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
         &quot;name&quot;: &quot;Et animi quos velit.&quot;,
-        &quot;workspace_id&quot;: &quot;0197901d-cd1f-72c2-b6e0-e808cf43b230&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01979dfd-48e2-73b5-8db6-6f7b25fb4f09&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -10589,17 +11078,17 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cd54-7397-8d6d-48cdab03e7bf&quot;,
+        &quot;id&quot;: &quot;01979dfd-4919-730d-a47c-cb9e2e1ff177&quot;,
         &quot;name&quot;: &quot;Eius et animi quos.&quot;,
         &quot;description&quot;: &quot;Fugiat sunt nihil accusantium harum mollitia. Deserunt aut ab provident perspiciatis quo omnis nostrum. Adipisci quidem nostrum qui commodi incidunt iure.&quot;,
-        &quot;due_date&quot;: &quot;2025-11-25 06:39:24&quot;,
+        &quot;due_date&quot;: &quot;2025-11-27 23:18:34&quot;,
         &quot;status&quot;: &quot;done&quot;,
         &quot;position&quot;: 5745,
-        &quot;workspace_id&quot;: &quot;0197901d-cd4b-73f4-bf61-c8cb1d9af6b3&quot;,
-        &quot;project_id&quot;: &quot;0197901d-cd50-71e7-9637-d5b60d502ce7&quot;,
-        &quot;assignee_id&quot;: &quot;0197901d-cd52-73ab-8957-cf04107ea05c&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01979dfd-4912-73fd-bfd3-840a2c483e79&quot;,
+        &quot;project_id&quot;: &quot;01979dfd-4916-72ba-8a7b-bde81be2721e&quot;,
+        &quot;assignee_id&quot;: &quot;01979dfd-4918-7379-a882-f617cd56e181&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -11799,17 +12288,17 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cd7a-7020-9cb2-aa338d0eb0da&quot;,
+        &quot;id&quot;: &quot;01979dfd-4963-7110-9404-68b82df7c335&quot;,
         &quot;name&quot;: &quot;Eius et animi quos.&quot;,
         &quot;description&quot;: &quot;Fugiat sunt nihil accusantium harum mollitia. Deserunt aut ab provident perspiciatis quo omnis nostrum. Adipisci quidem nostrum qui commodi incidunt iure.&quot;,
-        &quot;due_date&quot;: &quot;2025-11-25 06:39:24&quot;,
+        &quot;due_date&quot;: &quot;2025-11-27 23:18:34&quot;,
         &quot;status&quot;: &quot;done&quot;,
         &quot;position&quot;: 5745,
-        &quot;workspace_id&quot;: &quot;0197901d-cd72-730f-bd06-41ddac773286&quot;,
-        &quot;project_id&quot;: &quot;0197901d-cd77-717a-96b9-abb2707ee8a5&quot;,
-        &quot;assignee_id&quot;: &quot;0197901d-cd79-7379-b90c-a72ca219eabe&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01979dfd-4953-7072-b71c-44dca6f351f6&quot;,
+        &quot;project_id&quot;: &quot;01979dfd-495a-73b3-aad1-e8cbf9da44ce&quot;,
+        &quot;assignee_id&quot;: &quot;01979dfd-495c-710e-be3b-29c6753eb00e&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -12793,17 +13282,33 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cd9f-721c-ac07-ff66d3ddf437&quot;,
+        &quot;id&quot;: &quot;01979dfd-4994-712f-abc9-d48825f8dac3&quot;,
         &quot;name&quot;: &quot;Adipisci quidem nostrum qui commodi.&quot;,
         &quot;description&quot;: &quot;Odit et et modi. Nostrum omnis autem et consequatur aut. Enim non facere tempora ex voluptatem laboriosam praesentium. Adipisci molestias fugit deleniti distinctio eum doloremque id.&quot;,
-        &quot;due_date&quot;: &quot;2025-10-04 13:08:10&quot;,
+        &quot;due_date&quot;: &quot;2025-10-07 05:47:20&quot;,
         &quot;status&quot;: &quot;todo&quot;,
         &quot;position&quot;: 2204,
-        &quot;workspace_id&quot;: &quot;0197901d-cd98-7106-9a55-fc3aaa46ef84&quot;,
-        &quot;project_id&quot;: &quot;0197901d-cd9d-7051-a243-f6b770a1b3fe&quot;,
-        &quot;assignee_id&quot;: &quot;0197901d-cd9e-709c-a928-cc4d17690a40&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;workspace_id&quot;: &quot;01979dfd-498c-725c-ad0e-f3c7cd71f854&quot;,
+        &quot;project_id&quot;: &quot;01979dfd-4991-7008-b27f-f39805513b39&quot;,
+        &quot;assignee_id&quot;: &quot;01979dfd-4993-72ab-9de9-a0f9d1655ad7&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;project&quot;: {
+            &quot;id&quot;: &quot;01979dfd-4991-7008-b27f-f39805513b39&quot;,
+            &quot;image_path&quot;: &quot;seeding-photos/15.jpeg&quot;,
+            &quot;name&quot;: &quot;Accusamus ut et.&quot;,
+            &quot;workspace_id&quot;: &quot;01979dfd-4990-71c9-be59-5c3c3dee603d&quot;,
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
+        },
+        &quot;assignee&quot;: {
+            &quot;id&quot;: &quot;01979dfd-4993-72ab-9de9-a0f9d1655ad7&quot;,
+            &quot;name&quot;: &quot;Okey Towne&quot;,
+            &quot;email&quot;: &quot;emilie87@example.org&quot;,
+            &quot;email_verified_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
+        }
     }
 }</code></pre>
                                                                             </div>
@@ -13272,20 +13777,20 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;0197901d-cbbb-735b-9f08-f25470e82919&quot;,
+            &quot;id&quot;: &quot;01979dfd-4799-7070-8b03-2306bff50efe&quot;,
             &quot;name&quot;: &quot;Morgan Hirthe&quot;,
             &quot;email&quot;: &quot;dare.emelie@example.com&quot;,
-            &quot;email_verified_at&quot;: &quot;2025-06-21T01:32:40.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+            &quot;email_verified_at&quot;: &quot;2025-06-23T18:11:50.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;0197901d-cbe1-70da-9b04-b2fe2baf3d86&quot;,
+            &quot;id&quot;: &quot;01979dfd-47b5-73ec-ae62-5977f80abdfe&quot;,
             &quot;name&quot;: &quot;Prof. Mina Bauch&quot;,
             &quot;email&quot;: &quot;okeefe.isidro@example.org&quot;,
-            &quot;email_verified_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-            &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+            &quot;email_verified_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -13681,12 +14186,12 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cbf1-719d-802b-8b5d6c254138&quot;,
+        &quot;id&quot;: &quot;01979dfd-47c4-7098-9cf6-103ae5b2fc06&quot;,
         &quot;name&quot;: &quot;Morgan Hirthe&quot;,
         &quot;email&quot;: &quot;imclaughlin@example.org&quot;,
-        &quot;email_verified_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;email_verified_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -14521,22 +15026,22 @@ fetch(url, {
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: [
         {
-            &quot;id&quot;: &quot;0197901d-cc07-73fa-9e03-f61d91b2188b&quot;,
+            &quot;id&quot;: &quot;01979dfd-47db-73d6-8035-e899dd802296&quot;,
             &quot;name&quot;: &quot;Quidem nostrum qui commodi incidunt.&quot;,
             &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
-            &quot;user_id&quot;: &quot;0197901d-cc05-7086-91d1-ef731a2bf64d&quot;,
+            &quot;user_id&quot;: &quot;01979dfd-47da-716c-a852-5dece4b90d4e&quot;,
             &quot;invite_code&quot;: &quot;O7KvMWYPh3&quot;,
-            &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
         },
         {
-            &quot;id&quot;: &quot;0197901d-cc0c-71f2-932c-545eb0a941e3&quot;,
+            &quot;id&quot;: &quot;01979dfd-47e0-7065-92bb-e35f55b7c0d9&quot;,
             &quot;name&quot;: &quot;Molestias fugit deleniti distinctio eum.&quot;,
             &quot;image_path&quot;: &quot;seeding-photos/10.jpeg&quot;,
-            &quot;user_id&quot;: &quot;0197901d-cc0b-733e-8212-d0dc9fb43434&quot;,
+            &quot;user_id&quot;: &quot;01979dfd-47df-73e3-b90e-a2c87a45a934&quot;,
             &quot;invite_code&quot;: &quot;aP0UJZ5MG8&quot;,
-            &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+            &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
         }
     ]
 }</code></pre>
@@ -14709,7 +15214,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpekiqfl9rq8u5bBAgBmk
+                        /tmp/php1nsqt8lb8brj7oHlKOm
                     </div>
                 </div>
             </div>
@@ -14955,7 +15460,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/phpekiqfl9rq8u5bBAgBmk" </code></pre>                                        </div>
+    --form "image=@/tmp/php1nsqt8lb8brj7oHlKOm" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -15021,13 +15526,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cc28-7284-9065-d9b6026d8609&quot;,
+        &quot;id&quot;: &quot;01979dfd-47f8-72fd-9c0a-51806162ec38&quot;,
         &quot;name&quot;: &quot;Et animi quos velit.&quot;,
         &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
-        &quot;user_id&quot;: &quot;0197901d-cc27-716f-89ec-793d40a0b10c&quot;,
+        &quot;user_id&quot;: &quot;01979dfd-47f7-727e-93c8-763cb6930296&quot;,
         &quot;invite_code&quot;: &quot;dZ1ySN2uuM&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -15227,7 +15732,7 @@ fetch(url, {
                 <span>Example:</span> <!-- <span> important for spacing -->
                 <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
                     <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
-                        /tmp/phpib7oro0v8u5vckiKnfl
+                        /tmp/phpmkmh1shvkrbk7CEgfEn
                     </div>
                 </div>
             </div>
@@ -15506,7 +16011,7 @@ You can check the Dev Tools console for debugging information.</p>
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
     --form "name=My Workspace"\
-    --form "image=@/tmp/phpib7oro0v8u5vckiKnfl" </code></pre>                                        </div>
+    --form "image=@/tmp/phpmkmh1shvkrbk7CEgfEn" </code></pre>                                        </div>
                                     </div>
                                 </div>
                                                             <div class="sl-bg-canvas-100 example-request example-request-javascript"
@@ -15574,13 +16079,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cc44-73d8-a3ad-b0273b80b938&quot;,
+        &quot;id&quot;: &quot;01979dfd-4808-731e-bc49-d28643daba7e&quot;,
         &quot;name&quot;: &quot;Et animi quos velit.&quot;,
         &quot;image_path&quot;: &quot;seeding-photos/16.jpeg&quot;,
-        &quot;user_id&quot;: &quot;0197901d-cc3b-7106-b567-d719c17e15ba&quot;,
+        &quot;user_id&quot;: &quot;01979dfd-4807-72a5-a3c0-b15a0bfec742&quot;,
         &quot;invite_code&quot;: &quot;CeDI7xc8Zg&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -16040,13 +16545,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cc56-7029-b8fe-7c8335c14ef2&quot;,
+        &quot;id&quot;: &quot;01979dfd-4817-7150-8a4b-ac927627d2c5&quot;,
         &quot;name&quot;: &quot;Quidem nostrum qui commodi incidunt.&quot;,
         &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
-        &quot;user_id&quot;: &quot;0197901d-cc54-7099-bd4a-098c33e672c7&quot;,
+        &quot;user_id&quot;: &quot;01979dfd-4815-707a-8abb-87c33c54a3b1&quot;,
         &quot;invite_code&quot;: &quot;cBs5CvlvNi&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>
@@ -16073,6 +16578,472 @@ fetch(url, {
                                                                             </div>
                                 </div>
                                                             <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-workspaces--workspaceId- example-response-GETapi-v1-workspaces--workspaceId--3"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+    &quot;message&quot;: &quot;Workspace not found&quot;,
+    &quot;status&quot;: 404
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                    </div>
+                            </div>
+    </div>
+</div>
+
+                    <div class="sl-stack sl-stack--vertical sl-stack--8 HttpOperation sl-flex sl-flex-col sl-items-stretch sl-w-full">
+    <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+        <div class="sl-relative">
+            <div class="sl-stack sl-stack--horizontal sl-stack--5 sl-flex sl-flex-row sl-items-center">
+                <h2 class="sl-text-3xl sl-leading-tight sl-font-prose sl-text-heading sl-mt-5 sl-mb-1"
+                    id="workspaces-GETapi-v1-workspaces--workspaceId--stats">
+                    View workspace stats
+                </h2>
+            </div>
+        </div>
+
+        <div class="sl-relative">
+            <div title="http://localhost:8000/api/v1/workspaces/{workspaceId}/stats"
+                     class="sl-stack sl-stack--horizontal sl-stack--3 sl-inline-flex sl-flex-row sl-items-center sl-max-w-full sl-font-mono sl-py-2 sl-pr-4 sl-bg-canvas-50 sl-rounded-lg"
+                >
+                                            <div class="sl-text-lg sl-font-semibold sl-px-2.5 sl-py-1 sl-text-on-primary sl-rounded-lg"
+                             style="background-color: green;"
+                        >
+                            GET
+                        </div>
+                                        <div class="sl-flex sl-overflow-x-hidden sl-text-lg sl-select-all">
+                        <div dir="rtl"
+                             class="sl-overflow-x-hidden sl-truncate sl-text-muted">http://localhost:8000</div>
+                        <div class="sl-flex-1 sl-font-semibold">/api/v1/workspaces/{workspaceId}/stats</div>
+                    </div>
+
+                                                    <div class="sl-font-prose sl-font-semibold sl-px-1.5 sl-py-0.5 sl-text-on-primary sl-rounded-lg"
+                                 style="background-color: darkred"
+                            >requires authentication
+                            </div>
+                                    </div>
+        </div>
+
+        <p>View statistics for the specified workspace.</p>
+    </div>
+    <div class="sl-flex">
+        <div data-testid="two-column-left" class="sl-flex-1 sl-w-0">
+            <div class="sl-stack sl-stack--vertical sl-stack--10 sl-flex sl-flex-col sl-items-stretch">
+                <div class="sl-stack sl-stack--vertical sl-stack--8 sl-flex sl-flex-col sl-items-stretch">
+                                            <div class="sl-stack sl-stack--vertical sl-stack--5 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">
+                                Headers
+                            </h3>
+                            <div class="sl-text-sm">
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Authorization</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        Bearer {YOUR_AUTH_KEY}
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Content-Type</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">Accept</div>
+                                    </div>
+                                    </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        application/json
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                            </div>
+                        </div>
+                    
+                                            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+                            <h3 class="sl-text-2xl sl-leading-snug sl-font-prose">URL Parameters</h3>
+
+                            <div class="sl-text-sm">
+                                                                    <div class="sl-flex sl-relative sl-max-w-full sl-py-2 sl-pl-3">
+    <div class="sl-w-1 sl-mt-2 sl-mr-3 sl--ml-3 sl-border-t"></div>
+    <div class="sl-stack sl-stack--vertical sl-stack--1 sl-flex sl-flex-1 sl-flex-col sl-items-stretch sl-max-w-full sl-ml-2 ">
+        <div class="sl-flex sl-items-center sl-max-w-full">
+                                        <div class="sl-flex sl-items-baseline sl-text-base">
+                    <div class="sl-font-mono sl-font-semibold sl-mr-2">workspaceId</div>
+                                            <span class="sl-truncate sl-text-muted">string</span>
+                                    </div>
+                                    <div class="sl-flex-1 sl-h-px sl-mx-3"></div>
+                    <span class="sl-ml-2 sl-text-warning">required</span>
+                                    </div>
+                <div class="sl-prose sl-markdown-viewer" style="font-size: 12px;">
+            <p>the id of the workspace</p>
+        </div>
+                                            <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-baseline sl-text-muted">
+                <span>Example:</span> <!-- <span> important for spacing -->
+                <div class="sl-flex sl-flex-1 sl-flex-wrap" style="gap: 4px;">
+                    <div class="sl-max-w-full sl-break-all sl-px-1 sl-bg-canvas-tint sl-text-muted sl-rounded sl-border">
+                        01972a18-9d62-72ff-8a2b-d55e57b34d1c
+                    </div>
+                </div>
+            </div>
+            </div>
+</div>
+                                                            </div>
+                        </div>
+                    
+
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        <div data-testid="two-column-right" class="sl-relative sl-w-2/5 sl-ml-16" style="max-width: 500px;">
+            <div class="sl-stack sl-stack--vertical sl-stack--6 sl-flex sl-flex-col sl-items-stretch">
+
+                                    <div class="sl-inverted">
+    <div class="sl-overflow-y-hidden sl-rounded-lg">
+        <form class="TryItPanel sl-bg-canvas-100 sl-rounded-lg"
+              data-method="GET"
+              data-path="api/v1/workspaces/{workspaceId}/stats"
+              data-hasfiles="0"
+              data-hasjsonbody="0">
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Auth
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                            <label aria-hidden="true"
+                                   for="auth-GETapi-v1-workspaces--workspaceId--stats">Authorization</label>
+                            <span class="sl-mx-3">:</span>
+                            <div class="sl-flex sl-flex-1">
+                                <div class="sl-input sl-flex-1 sl-relative">
+                                    <code>Bearer </code>
+                                    <input aria-label="Authorization"
+                                           id="auth-GETapi-v1-workspaces--workspaceId--stats"
+                                           data-component="header"
+                                           data-prefix="Bearer "
+                                           name="Authorization"
+                                           placeholder="{YOUR_AUTH_KEY}"
+                                           class="auth-value sl-relative sl-w-3/5 sl-h-md sl-text-base sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Headers
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                                                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-workspaces--workspaceId--stats-Content-Type">Content-Type</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Content-Type" name="Content-Type"
+                                               id="header-GETapi-v1-workspaces--workspaceId--stats-Content-Type"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                                                            <label aria-hidden="true"
+                                       for="header-GETapi-v1-workspaces--workspaceId--stats-Accept">Accept</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="Accept" name="Accept"
+                                               id="header-GETapi-v1-workspaces--workspaceId--stats-Accept"
+                                               value="application/json" data-component="header"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            
+                            <div class="sl-panel sl-outline-none sl-w-full expandable">
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            URL Parameters
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="ParameterGrid sl-p-4">
+                                                            <label aria-hidden="true"
+                                       for="urlparam-GETapi-v1-workspaces--workspaceId--stats-workspaceId">workspaceId</label>
+                                <span class="sl-mx-3">:</span>
+                                <div class="sl-flex sl-flex-1">
+                                    <div class="sl-input sl-flex-1 sl-relative">
+                                        <input aria-label="workspaceId" name="workspaceId"
+                                               id="urlparam-GETapi-v1-workspaces--workspaceId--stats-workspaceId"
+                                               placeholder="the id of the workspace"
+                                               value="01972a18-9d62-72ff-8a2b-d55e57b34d1c" data-component="url"
+                                               class="sl-relative sl-w-full sl-h-md sl-text-base sl-pr-2.5 sl-pl-2.5 sl-rounded sl-border-transparent hover:sl-border-input focus:sl-border-primary sl-border">
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            
+            
+            
+            <div class="SendButtonHolder sl-mt-4 sl-p-4 sl-pt-0">
+                <div class="sl-stack sl-stack--horizontal sl-stack--2 sl-flex sl-flex-row sl-items-center">
+                    <button type="button" data-endpoint="GETapi-v1-workspaces--workspaceId--stats"
+                            class="tryItOut-btn sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-bg-primary hover:sl-bg-primary-dark active:sl-bg-primary-darker disabled:sl-bg-canvas-100 sl-text-on-primary disabled:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70"
+                    >
+                        Send Request 💥
+                    </button>
+                </div>
+            </div>
+
+            <div data-endpoint="GETapi-v1-workspaces--workspaceId--stats"
+                 class="tryItOut-error expandable sl-panel sl-outline-none sl-w-full" hidden>
+                <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                     role="button">
+                    <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                        <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                 data-icon="caret-down"
+                                 class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path fill="currentColor"
+                                      d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                            </svg>
+                        </div>
+                        Request failed with error
+                    </div>
+                </div>
+                <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                    <div class="sl-panel__content sl-p-4">
+                        <p class="sl-pb-2"><strong class="error-message"></strong></p>
+                        <p class="sl-pb-2">Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</p>
+                    </div>
+                </div>
+            </div>
+
+                <div data-endpoint="GETapi-v1-workspaces--workspaceId--stats"
+                     class="tryItOut-response expandable sl-panel sl-outline-none sl-w-full" hidden>
+                    <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-4 sl-pl-3 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-cursor-pointer sl-select-none"
+                         role="button">
+                        <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                            <div class="sl-flex sl-items-center sl-mr-1.5 expansion-chevrons expansion-chevrons-solid expanded">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                     data-icon="caret-down"
+                                     class="svg-inline--fa fa-caret-down fa-fw sl-icon" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path fill="currentColor"
+                                          d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"></path>
+                                </svg>
+                            </div>
+                            Received response
+                        </div>
+                    </div>
+                    <div class="sl-panel__content-wrapper sl-bg-canvas-100 children" role="region">
+                        <div class="sl-panel__content sl-p-4">
+                            <p class="sl-pb-2 response-status"></p>
+                            <pre><code class="sl-pb-2 response-content language-json"
+                                       data-empty-response-text="<Empty response>"
+                                       style="max-height: 300px;"></code></pre>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+                
+                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
+                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
+                                <div class="sl-flex sl-flex-1 sl-items-center sl-h-lg">
+                                    <div class="sl--ml-2">
+                                        Example request:
+                                        <select class="example-request-lang-toggle sl-text-base"
+                                                aria-label="Request Sample Language"
+                                                onchange="switchExampleLanguage(event.target.value);">
+                                                                                            <option>bash</option>
+                                                                                            <option>javascript</option>
+                                                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-bash"
+                                     style="">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost:8000/api/v1/workspaces/01972a18-9d62-72ff-8a2b-d55e57b34d1c/stats" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="sl-bg-canvas-100 example-request example-request-javascript"
+                                     style="display: none;">
+                                    <div class="sl-px-0 sl-py-1">
+                                        <div style="max-height: 400px;" class="sl-overflow-y-auto sl-rounded">
+                                            <pre><code class="language-javascript">const url = new URL(
+    "http://localhost:8000/api/v1/workspaces/01972a18-9d62-72ff-8a2b-d55e57b34d1c/stats"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>                                        </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                    
+                                            <div class="sl-panel sl-outline-none sl-w-full sl-rounded-lg">
+                            <div class="sl-panel__titlebar sl-flex sl-items-center sl-relative focus:sl-z-10 sl-text-base sl-leading-none sl-pr-3 sl-pl-4 sl-bg-canvas-200 sl-text-body sl-border-input focus:sl-border-primary sl-select-none">
+                                <div class="sl-flex sl-flex-1 sl-items-center sl-py-2">
+                                    <div class="sl--ml-2">
+                                        <div class="sl-h-sm sl-text-base sl-font-medium sl-px-1.5 sl-text-muted sl-rounded sl-border-transparent sl-border">
+                                            <div class="sl-mb-2 sl-inline-block">Example response:</div>
+                                            <div class="sl-mb-2 sl-inline-block">
+                                                <select
+                                                        class="example-response-GETapi-v1-workspaces--workspaceId--stats-toggle sl-text-base"
+                                                        aria-label="Response sample"
+                                                        onchange="switchExampleResponse('GETapi-v1-workspaces--workspaceId--stats', event.target.value);">
+                                                                                                            <option value="0">200, Success</option>
+                                                                                                            <option value="1">401, Unauthenticated</option>
+                                                                                                            <option value="2">403, Unauthorized</option>
+                                                                                                            <option value="3">404, Not Found</option>
+                                                                                                    </select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                        class="sl-button sl-h-sm sl-text-base sl-font-medium sl-px-1.5 hover:sl-bg-canvas-50 active:sl-bg-canvas-100 sl-text-muted hover:sl-text-body focus:sl-text-body sl-rounded sl-border-transparent sl-border disabled:sl-opacity-70">
+                                    <div class="sl-mx-0">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="copy"
+                                             class="svg-inline--fa fa-copy fa-fw fa-sm sl-icon" role="img"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="currentColor"
+                                                  d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z"></path>
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-workspaces--workspaceId--stats example-response-GETapi-v1-workspaces--workspaceId--stats-0"
+                                     style=" "
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+      &quot;message&quot;: &quot;Workspace stats retrieved successfully&quot;,
+      &quot;data&quot;: [
+          &quot;total_projects&quot;: 10,
+          &quot;total_tasks&quot;: 50,
+          &quot;total_members&quot;: 5,
+          &quot;completed_tasks&quot;: 30,
+          &quot;overdue_tasks&quot;: 5,
+      ]
+      &quot;status&quot;: 200
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-workspaces--workspaceId--stats example-response-GETapi-v1-workspaces--workspaceId--stats-1"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+      &quot;message&quot;: &quot;Unauthenticated&quot;,
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-workspaces--workspaceId--stats example-response-GETapi-v1-workspaces--workspaceId--stats-2"
+                                     style=" display: none;"
+                                >
+                                    <div class="sl-panel__content sl-p-0">                                                                                                                                
+                                            <pre><code style="max-height: 300px;"
+                                                       class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
+    &quot;message&quot;: &quot;You are not authorized to view stats for this workspace.&quot;,
+    &quot;status&quot;: 403
+}</code></pre>
+                                                                            </div>
+                                </div>
+                                                            <div class="sl-panel__content-wrapper sl-bg-canvas-100 example-response-GETapi-v1-workspaces--workspaceId--stats example-response-GETapi-v1-workspaces--workspaceId--stats-3"
                                      style=" display: none;"
                                 >
                                     <div class="sl-panel__content sl-p-0">                                                                                                                                
@@ -16965,13 +17936,13 @@ fetch(url, {
                                             <pre><code style="max-height: 300px;"
                                                        class="language-json sl-overflow-x-auto sl-overflow-y-auto">{
     &quot;data&quot;: {
-        &quot;id&quot;: &quot;0197901d-cc75-72c7-9b28-cba3aa180374&quot;,
+        &quot;id&quot;: &quot;01979dfd-4832-70e6-b201-0bdace68b164&quot;,
         &quot;name&quot;: &quot;Quidem nostrum qui commodi incidunt.&quot;,
         &quot;image_path&quot;: &quot;seeding-photos/1.jpeg&quot;,
-        &quot;user_id&quot;: &quot;0197901d-cc74-7389-be63-71ce12fdaf59&quot;,
+        &quot;user_id&quot;: &quot;01979dfd-4831-7355-b9f8-7cecdcec02ce&quot;,
         &quot;invite_code&quot;: &quot;PGaP0UJZ5M&quot;,
-        &quot;created_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2025-06-21T01:32:41.000000Z&quot;
+        &quot;created_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2025-06-23T18:11:51.000000Z&quot;
     }
 }</code></pre>
                                                                             </div>

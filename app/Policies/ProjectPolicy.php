@@ -31,4 +31,9 @@ class ProjectPolicy
 
         return $isAdmin;
     }
+
+    public function viewProjectStats(User $user, Project $project): bool
+    {
+        return $this->show($user, $project);
+    }
 }

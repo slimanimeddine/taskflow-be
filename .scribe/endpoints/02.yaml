@@ -28,7 +28,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"0197901d-cc07-73fa-9e03-f61d91b2188b","name":"Quidem nostrum qui commodi incidunt.","image_path":"seeding-photos\/1.jpeg","user_id":"0197901d-cc05-7086-91d1-ef731a2bf64d","invite_code":"O7KvMWYPh3","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"},{"id":"0197901d-cc0c-71f2-932c-545eb0a941e3","name":"Molestias fugit deleniti distinctio eum.","image_path":"seeding-photos\/10.jpeg","user_id":"0197901d-cc0b-733e-8212-d0dc9fb43434","invite_code":"aP0UJZ5MG8","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}]}'
+        content: '{"data":[{"id":"01979dfd-47db-73d6-8035-e899dd802296","name":"Quidem nostrum qui commodi incidunt.","image_path":"seeding-photos\/1.jpeg","user_id":"01979dfd-47da-716c-a852-5dece4b90d4e","invite_code":"O7KvMWYPh3","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"},{"id":"01979dfd-47e0-7065-92bb-e35f55b7c0d9","name":"Molestias fugit deleniti distinctio eum.","image_path":"seeding-photos\/10.jpeg","user_id":"01979dfd-47df-73e3-b90e-a2c87a45a934","invite_code":"aP0UJZ5MG8","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -99,7 +99,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197901d-cc28-7284-9065-d9b6026d8609","name":"Et animi quos velit.","image_path":"seeding-photos\/16.jpeg","user_id":"0197901d-cc27-716f-89ec-793d40a0b10c","invite_code":"dZ1ySN2uuM","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
+        content: '{"data":{"id":"01979dfd-47f8-72fd-9c0a-51806162ec38","name":"Et animi quos velit.","image_path":"seeding-photos\/16.jpeg","user_id":"01979dfd-47f7-727e-93c8-763cb6930296","invite_code":"dZ1ySN2uuM","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -181,7 +181,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197901d-cc44-73d8-a3ad-b0273b80b938","name":"Et animi quos velit.","image_path":"seeding-photos\/16.jpeg","user_id":"0197901d-cc3b-7106-b567-d719c17e15ba","invite_code":"CeDI7xc8Zg","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
+        content: '{"data":{"id":"01979dfd-4808-731e-bc49-d28643daba7e","name":"Et animi quos velit.","image_path":"seeding-photos\/16.jpeg","user_id":"01979dfd-4807-72a5-a3c0-b15a0bfec742","invite_code":"CeDI7xc8Zg","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -261,7 +261,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197901d-cc56-7029-b8fe-7c8335c14ef2","name":"Quidem nostrum qui commodi incidunt.","image_path":"seeding-photos\/1.jpeg","user_id":"0197901d-cc54-7099-bd4a-098c33e672c7","invite_code":"cBs5CvlvNi","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
+        content: '{"data":{"id":"01979dfd-4817-7150-8a4b-ac927627d2c5","name":"Quidem nostrum qui commodi incidunt.","image_path":"seeding-photos\/1.jpeg","user_id":"01979dfd-4815-707a-8abb-87c33c54a3b1","invite_code":"cBs5CvlvNi","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -279,6 +279,97 @@ endpoints:
         content: |-
           {
                 "message": "You are not authorized to visit this workspace.",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "Workspace not found",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/workspaces/{workspaceId}/stats'
+    metadata:
+      groupName: Workspaces
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'View workspace stats'
+      description: 'View statistics for the specified workspace.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      workspaceId:
+        name: workspaceId
+        description: 'the id of the workspace'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      workspaceId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+                "message": "Workspace stats retrieved successfully",
+                "data": [
+                    "total_projects": 10,
+                    "total_tasks": 50,
+                    "total_members": 5,
+                    "completed_tasks": 30,
+                    "overdue_tasks": 5,
+                ]
+                "status": 200
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "You are not authorized to view stats for this workspace.",
                 "status": 403
           }
         headers: []
@@ -425,7 +516,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197901d-cc75-72c7-9b28-cba3aa180374","name":"Quidem nostrum qui commodi incidunt.","image_path":"seeding-photos\/1.jpeg","user_id":"0197901d-cc74-7389-be63-71ce12fdaf59","invite_code":"PGaP0UJZ5M","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
+        content: '{"data":{"id":"01979dfd-4832-70e6-b201-0bdace68b164","name":"Quidem nostrum qui commodi incidunt.","image_path":"seeding-photos\/1.jpeg","user_id":"01979dfd-4831-7355-b9f8-7cecdcec02ce","invite_code":"PGaP0UJZ5M","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}}'
         headers: []
         description: Success
         custom: []

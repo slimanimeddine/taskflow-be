@@ -41,7 +41,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197901d-ccdb-7017-b091-16157bbeaed5","image_path":"seeding-photos\/37.jpeg","name":"Quos ratione non unde blanditiis.","workspace_id":"0197901d-ccd9-7202-b025-6671f8dff08b","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
+        content: '{"data":{"id":"01979dfd-4891-70e3-b228-3d2eaa6e84a9","image_path":"seeding-photos\/1.jpeg","name":"Quidem nostrum qui commodi incidunt.","workspace_id":"01979dfd-4890-70c7-9de4-ee2f6613c83a","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -154,7 +154,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197901d-ccef-7012-a38c-45cdb11ce57b","image_path":"seeding-photos\/16.jpeg","name":"Et animi quos velit.","workspace_id":"0197901d-ccee-7266-af3b-7271de72f22d","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
+        content: '{"data":{"id":"01979dfd-48a5-7188-b572-514d0ecbeece","image_path":"seeding-photos\/16.jpeg","name":"Et animi quos velit.","workspace_id":"01979dfd-48a3-7239-a4d9-1d1f0db8a9a9","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}}'
         headers: []
         description: Success
         custom: []
@@ -283,6 +283,96 @@ endpoints:
   -
     httpMethods:
       - GET
+    uri: 'api/v1/projects/{projectId}/stats'
+    metadata:
+      groupName: Projects
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'View project stats'
+      description: 'View statistics for the specified project.'
+      authenticated: true
+      custom: []
+    headers:
+      Authorization: 'Bearer {YOUR_AUTH_KEY}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      projectId:
+        name: projectId
+        description: 'the id of the project'
+        required: true
+        example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        custom: []
+    cleanUrlParameters:
+      projectId: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: |-
+          {
+                "message": "message",
+                "data": [
+                    "total_tasks": 50,
+                    "incomplete_tasks": 5,
+                    "completed_tasks": 30,
+                    "overdue_tasks": 5,
+                ]
+                "status": 200
+          }
+        headers: []
+        description: Success
+        custom: []
+      -
+        status: 401
+        content: |-
+          {
+                "message": "Unauthenticated",
+          }
+        headers: []
+        description: Unauthenticated
+        custom: []
+      -
+        status: 403
+        content: |-
+          {
+                "message": "message",
+                "status": 403
+          }
+        headers: []
+        description: Unauthorized
+        custom: []
+      -
+        status: 404
+        content: |-
+          {
+                "message": "message",
+                "status": 404
+          }
+        headers: []
+        description: 'Not Found'
+        custom: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
     uri: 'api/v1/workspaces/{workspaceId}/projects'
     metadata:
       groupName: Projects
@@ -318,7 +408,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":"0197901d-cd06-7217-a8a2-24ebdff37e39","image_path":"seeding-photos\/1.jpeg","name":"Quidem nostrum qui commodi incidunt.","workspace_id":"0197901d-cd05-7329-80b3-7d278a573888","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"},{"id":"0197901d-cd0e-7034-9480-37f2c66105a8","image_path":"seeding-photos\/2.jpeg","name":"Doloremque id aut libero aliquam.","workspace_id":"0197901d-cd0d-7055-b6ff-e24cf6d6c887","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}]}'
+        content: '{"data":[{"id":"01979dfd-48c5-7204-8d68-b11414415f4c","image_path":"seeding-photos\/1.jpeg","name":"Quidem nostrum qui commodi incidunt.","workspace_id":"01979dfd-48c3-709b-9f57-5978170f96f5","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"},{"id":"01979dfd-48cc-73a2-937e-6d2682657b0c","image_path":"seeding-photos\/25.jpeg","name":"Officia est dignissimos neque blanditiis.","workspace_id":"01979dfd-48cb-7072-852b-410f4def6bff","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}]}'
         headers: []
         description: Success
         custom: []
@@ -420,7 +510,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":"0197901d-cd20-70c4-998d-1155601ed301","image_path":"seeding-photos\/16.jpeg","name":"Et animi quos velit.","workspace_id":"0197901d-cd1f-72c2-b6e0-e808cf43b230","created_at":"2025-06-21T01:32:41.000000Z","updated_at":"2025-06-21T01:32:41.000000Z"}}'
+        content: '{"data":{"id":"01979dfd-48e3-733a-a235-45d97418cbad","image_path":"seeding-photos\/16.jpeg","name":"Et animi quos velit.","workspace_id":"01979dfd-48e2-73b5-8db6-6f7b25fb4f09","created_at":"2025-06-23T18:11:51.000000Z","updated_at":"2025-06-23T18:11:51.000000Z"}}'
         headers: []
         description: Success
         custom: []

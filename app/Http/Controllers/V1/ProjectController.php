@@ -45,7 +45,7 @@ class ProjectController extends ApiController
 
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -88,7 +88,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $workspace = Workspace::find($workspaceId);
 
-        if (! $workspace) {
+        if (!$workspace) {
             return $this->notFound('Workspace not found');
         }
 
@@ -142,7 +142,7 @@ class ProjectController extends ApiController
 
         $project = Project::find($projectId);
 
-        if (! $project) {
+        if (!$project) {
             return $this->notFound('Project not found');
         }
 
@@ -183,7 +183,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $project = Project::find($projectId);
 
-        if (! $project) {
+        if (!$project) {
             return $this->notFound('Project not found');
         }
 
@@ -238,7 +238,7 @@ class ProjectController extends ApiController
         $user = $request->user();
         $project = Project::find($projectId);
 
-        if (! $project) {
+        if (!$project) {
             return $this->notFound('Project not found');
         }
 
@@ -249,5 +249,63 @@ class ProjectController extends ApiController
         $project->delete();
 
         return $this->successNoData('Project deleted successfully');
+    }
+
+    /**
+     * View project stats
+     *
+     * View statistics for the specified project.
+     *
+     * @authenticated
+     *
+     * @urlParam projectId string required the id of the project Example: 01972a18-9d62-72ff-8a2b-d55e57b34d1c
+     *
+     * @response 200 scenario=Success {
+     *       "message": "message",
+     *       "data": [
+     *           "total_tasks": 50,
+     *           "incomplete_tasks": 5,
+     *           "completed_tasks": 30,
+     *           "overdue_tasks": 5,
+     *       ]
+     *       "status": 200
+     * }
+     * @response 401 scenario=Unauthenticated {
+     *       "message": "Unauthenticated",
+     * }
+     * @response 403 scenario=Unauthorized {
+     *       "message": "message",
+     *       "status": 403
+     * }
+     * @response 404 scenario="Not Found" {
+     *       "message": "message",
+     *       "status": 404
+     * }
+     */
+    public function viewProjectStats(Request $request, string $projectId)
+    {
+        $user = $request->user();
+        $project = Project::find($projectId);
+
+        if (!$project) {
+            return $this->notFound('Project not found');
+        }
+
+        if ($user->cannot('viewProjectStats', $project)) {
+            return $this->unauthorized('You are not authorized to view stats for this project.');
+        }
+
+        $totalTasks = $project->tasks()->count();
+        $incompleteTasks = $project->tasks()->where('status', '!=', 'done')->count();
+        $completedTasks = $project->tasks()->where('status', 'done')->count();
+        $overdueTasks = $project->tasks()->where('status', '!=', 'done')
+            ->where('due_date', '<', now())->count();
+
+        return $this->success('Project stats retrieved successfully', [
+            'total_tasks' => $totalTasks,
+            'incomplete_tasks' => $incompleteTasks,
+            'completed_tasks' => $completedTasks,
+            'overdue_tasks' => $overdueTasks,
+        ]);
     }
 }
