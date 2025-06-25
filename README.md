@@ -39,7 +39,7 @@
 
 ## About The Project
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+TaskFlow is a comprehensive project management tool designed to help teams organize tasks, track progress, and collaborate effectively.
 
 ### Other Parts
 
@@ -47,7 +47,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Features
 
-#### Feature 00
+- User registration (sign-up) and login (sign-in)
+- Email verification and password reset
+- Secure authentication using Laravel Sanctum
+- CRUD operations for workspaces, projects and tasks.
+- Filter, Sort and paginate tasks.
+- Documented endpoints using Scribe.
 
 Lorem ipsum dolor sit amet,
 
@@ -57,10 +62,9 @@ Lorem ipsum dolor sit amet,
 
 - [Laravel](https://laravel.com/)
 - [Laravel-query-builder](https://spatie.be/docs/laravel-query-builder/v6/introduction)
-- [Laravel Scout](https://laravel.com/docs/11.x/scout)
 - [Typesense](https://typesense.org/)
-- [Laravel Sanctum](https://laravel.com/docs/11.x/sanctum)
-- [Laravel Reverb](https://laravel.com/docs/11.x/reverb)
+- [Laravel Sanctum](https://laravel.com/docs/12.x/sanctum)
+- [Model Typer](https://github.com/fumeapp/modeltyper)
 - [Scribe](https://scribe.knuckles.wtf/)
 - [Resend](https://resend.com/)
 
