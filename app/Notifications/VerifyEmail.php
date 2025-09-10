@@ -36,7 +36,7 @@ class VerifyEmail extends Notification
     {
         $id = $notifiable->getKey();
         $hash = sha1($notifiable->getEmailForVerification());
-        $url = env('FRONTEND_URL').'/email/verify/'.$id.'/'.$hash;
+        $url = config('app.frontend_url').'/email/verify/'.$id.'/'.$hash;
 
         $signedUrl = UrlSigner::sign($url, now()->addMinutes(5));
 
